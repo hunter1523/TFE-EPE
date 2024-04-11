@@ -1,0 +1,718 @@
+﻿castran = {
+	color = { 0.25 0.5 0.08 }
+
+	ethos = ethos_stoic
+	heritage = heritage_celtiberian
+	language = language_celtiberian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists # Juli: Celtiberians are well-known pastoralist
+		tradition_castle_keepers # Juli: Their id literally means castle people, they made well known forts
+		tradition_ancient_miners # Cybr: Rich in various ores and minerals
+		tradition_metal_craftsmanship # Cybr: High degree of sophistication with smithing and stoneworking
+		tradition_sacred_springs # Cybr: Lots of water worship and sacred springs that remained important even after Christianization
+	}
+	
+	name_list = name_list_castran
+	
+	coa_gfx = { celtic_coa_gfx }
+	building_gfx = { iberian_building_gfx  } # Matt: previously western_building_gfx
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}
+
+asturian = {
+	color = { 0.4 0.8 0.2 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_celtiberian
+	language = language_celtiberian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_castle_keepers
+		tradition_mountaineers # Cybr: Trained for mountain warfare
+		tradition_horse_breeder # Cybr: Bred famous mountain horses apparently
+		tradition_hunters # Cybr: Hunter-Gatherers
+	}
+	
+	name_list = name_list_castran
+	
+	coa_gfx = { celtic_coa_gfx }
+	building_gfx = { iberian_building_gfx  } # Matt: previously western_building_gfx
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}
+
+cantabrian = {
+	color = { 0.35 0.7 0.1 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_celtiberian
+	language = language_celtiberian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_poetry
+		tradition_mountaineers
+		tradition_ancient_miners
+		tradition_sacred_groves # Cybr: Worshipped trees and stuff
+	}
+	
+	name_list = name_list_cantabrian
+	
+	coa_gfx = { celtic_coa_gfx }
+	building_gfx = { iberian_building_gfx  } # Matt: previously western_building_gfx
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}
+
+aquitanian = {
+	color = { 0.5 0.4 0.1}
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_iberian
+	language = language_basque
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_visigothic_codes
+		tradition_mountaineers
+		tradition_wedding_ceremonies
+	}
+	
+	name_list = name_list_basque
+	
+	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx } # Matt: previously mediterranean_building_gfx
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}
+
+suebi = {
+	color = { 0.8 0.7 0.4 }
+	created = 500.1.1
+	parents = { old_suebi hispano_roman }
+	
+	ethos = ethos_spiritual # Juli: Some of the first groops to adopt chritianity and also prone to worship stuff
+	heritage = heritage_central_germanic
+	language = language_suebi
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_stand_and_fight # Cybr: From vanilla Suebi, replacing Migrators because... they're done migrating?
+		tradition_agrarian # Cybr: From vanilla Suebi
+		tradition_hunters # Juli: Noted for being hunters as oposed to more agriciultural
+		tradition_sacred_groves # Juli: Murdered people in their woods!
+		tradition_mountain_homes # Juli: They come very hilly places :0
+	}
+	
+	name_list = name_list_suebi
+	
+	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		2 = european_caucasian_occitan_01
+		1 = european_med_iberian_1
+		1 = european_med_iberian_36
+		2 = european_caucasian_occitan_02
+		1 = european_med_iberian_2
+		1 = european_med_iberian_37
+		2 = european_caucasian_occitan_03
+		1 = european_med_iberian_3
+		1 = european_med_iberian_38
+		2 = european_caucasian_occitan_04
+		1 = european_med_iberian_4
+		1 = european_med_iberian_39
+		2 = european_caucasian_occitan_05
+		1 = european_med_iberian_5
+		1 = european_med_iberian_40
+		2 = european_caucasian_occitan_06
+		1 = european_med_iberian_6
+		1 = european_med_iberian_41
+		2 = european_caucasian_occitan_07
+		1 = european_med_iberian_7
+		1 = european_med_iberian_42
+		2 = european_caucasian_occitan_08
+		1 = european_med_iberian_8
+		1 = european_med_iberian_43
+		2 = european_caucasian_occitan_09
+		1 = european_med_iberian_9
+		1 = european_med_iberian_44
+		2 = european_caucasian_occitan_10
+		1 = european_med_iberian_10
+		1 = european_med_iberian_45
+		2 = european_caucasian_occitan_11
+		1 = european_med_iberian_11
+		1 = european_med_iberian_46
+		2 = european_caucasian_occitan_12
+		1 = european_med_iberian_12
+		1 = european_med_iberian_47
+		2 = european_caucasian_occitan_13
+		1 = european_med_iberian_13
+		1 = european_med_iberian_48
+		2 = european_caucasian_occitan_14
+		1 = european_med_iberian_14
+		1 = european_med_iberian_49
+		2 = european_caucasian_occitan_15
+		1 = european_med_iberian_15
+		1 = european_med_iberian_50
+		2 = european_caucasian_occitan_16
+		1 = european_med_iberian_16
+		1 = european_med_iberian_51
+		2 = european_caucasian_occitan_17
+		1 = european_med_iberian_17
+		1 = european_med_iberian_52
+		2 = european_caucasian_occitan_18
+		1 = european_med_iberian_18
+		1 = european_med_iberian_53
+		2 = european_caucasian_occitan_19
+		1 = european_med_iberian_19
+		1 = european_med_iberian_54
+		2 = european_caucasian_occitan_20
+		1 = european_med_iberian_20
+		1 = european_med_iberian_55
+		2 = european_caucasian_occitan_21
+		1 = european_med_iberian_21
+		1 = european_med_iberian_56
+		2 = european_caucasian_occitan_22
+		1 = european_med_iberian_22
+		1 = european_med_iberian_57
+		2 = european_caucasian_occitan_23
+		1 = european_med_iberian_23
+		1 = european_med_iberian_58
+		2 = european_caucasian_occitan_24
+		1 = european_med_iberian_24
+		1 = european_med_iberian_59
+		2 = european_caucasian_occitan_25
+		1 = european_med_iberian_25
+		1 = european_med_iberian_60
+		2 = european_caucasian_occitan_26
+		1 = european_med_iberian_26
+		1 = european_med_iberian_61
+		2 = european_caucasian_occitan_27
+		1 = european_med_iberian_27
+		1 = european_med_iberian_62
+		2 = european_caucasian_occitan_28
+		1 = european_med_iberian_28
+		1 = european_med_iberian_63
+		2 = european_caucasian_occitan_29
+		1 = european_med_iberian_29
+		1 = european_med_iberian_64
+		2 = european_caucasian_occitan_30
+		1 = european_med_iberian_30
+		1 = european_med_iberian_65
+		2 = european_caucasian_occitan_31
+		1 = european_med_iberian_31
+		1 = european_med_iberian_66
+		2 = european_caucasian_occitan_32
+		1 = european_med_iberian_32
+		1 = european_med_iberian_67
+		2 = european_caucasian_occitan_33
+		1 = european_med_iberian_33
+		1 = european_med_iberian_68
+		2 = european_caucasian_occitan_34
+		1 = european_med_iberian_34
+		1 = european_med_iberian_69
+		2 = european_caucasian_occitan_35
+		1 = european_med_iberian_35
+		1 = european_med_iberian_70
+	}
+}
+
+basque = {
+	color = basque
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_iberian
+	language = language_basque
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mountaineers
+		tradition_wedding_ceremonies
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	name_list = name_list_basque
+	
+	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}
+
+aragonese = {
+	color = { 0.80 0.67 0.24  }
+	created = 1035.10.18
+	parents = { basque catalan }
+
+	ethos = ethos_bellicose
+	heritage = heritage_iberian
+	language = language_occitano_romance
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_visigothic_codes
+		tradition_martial_admiration
+		tradition_mountaineers
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp2_ritualised_friendship
+		requires_dlc_flag = the_fate_of_iberia
+		fallback = tradition_wedding_ceremonies
+	}
+	dlc_tradition = {
+		trait = tradition_fp2_state_ransoming
+		requires_dlc_flag = the_fate_of_iberia
+	}
+	
+	name_list = name_list_aragonese
+	
+	coa_gfx = { iberian_group_coa_gfx western_coa_gfx }
+	building_gfx = { iberian_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { iberian_christian_unit_gfx }
+	
+	ethnicities = {
+		2 = european_med_iberian_1
+		2 = european_med_iberian_2
+		2 = european_med_iberian_3
+		2 = european_med_iberian_4
+		2 = european_med_iberian_5
+		2 = european_med_iberian_6
+		2 = european_med_iberian_7
+		2 = european_med_iberian_8
+		2 = european_med_iberian_9
+		2 = european_med_iberian_10
+		2 = european_med_iberian_11
+		2 = european_med_iberian_12
+		2 = european_med_iberian_13
+		2 = european_med_iberian_14
+		2 = european_med_iberian_15
+		2 = european_med_iberian_16
+		2 = european_med_iberian_17
+		2 = european_med_iberian_18
+		2 = european_med_iberian_19
+		2 = european_med_iberian_20
+		2 = european_med_iberian_21
+		2 = european_med_iberian_22
+		2 = european_med_iberian_23
+		2 = european_med_iberian_24
+		2 = european_med_iberian_25
+		2 = european_med_iberian_26
+		2 = european_med_iberian_27
+		2 = european_med_iberian_28
+		2 = european_med_iberian_29
+		2 = european_med_iberian_30
+		2 = european_med_iberian_31
+		2 = european_med_iberian_32
+		2 = european_med_iberian_33
+		2 = european_med_iberian_34
+		2 = european_med_iberian_35
+		2 = european_med_iberian_36
+		2 = european_med_iberian_37
+		2 = european_med_iberian_38
+		2 = european_med_iberian_39
+		2 = european_med_iberian_40
+		2 = european_med_iberian_41
+		2 = european_med_iberian_42
+		2 = european_med_iberian_43
+		2 = european_med_iberian_44
+		2 = european_med_iberian_45
+		2 = european_med_iberian_46
+		2 = european_med_iberian_47
+		2 = european_med_iberian_48
+		2 = european_med_iberian_49
+		2 = european_med_iberian_50
+		2 = european_med_iberian_51
+		2 = european_med_iberian_52
+		2 = european_med_iberian_53
+		2 = european_med_iberian_54
+		2 = european_med_iberian_55
+		2 = european_med_iberian_56
+		2 = european_med_iberian_57
+		2 = european_med_iberian_58
+		2 = european_med_iberian_59
+		2 = european_med_iberian_60
+		2 = european_med_iberian_61
+		2 = european_med_iberian_62
+		2 = european_med_iberian_63
+		2 = european_med_iberian_64
+		2 = european_med_iberian_65
+		2 = european_med_iberian_66
+		2 = european_med_iberian_67
+		2 = european_med_iberian_68
+		2 = european_med_iberian_69
+		2 = european_med_iberian_70
+	}
+}

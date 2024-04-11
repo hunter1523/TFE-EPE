@@ -1,0 +1,2404 @@
+﻿# Western Iranian.
+persian = {
+	color = persian
+	
+	ethos = ethos_courtly
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_gardening
+		tradition_mard_o_mard # Changed Futuwa to Mard-o-Mard
+		tradition_ce1_ritual_washing
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_irrigation_experts
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_dryland_dwellers
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_philosopher_culture
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_enlightened_magnates
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_poetry
+	}
+	
+	name_list = name_list_persian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { west_iranian_unit_gfx iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_persian_1
+		2 = iranian_persian_2
+		2 = iranian_persian_3
+		2 = iranian_persian_4
+		2 = iranian_persian_5
+		2 = iranian_persian_6
+		2 = iranian_persian_7
+		2 = iranian_persian_8
+		2 = iranian_persian_9
+		2 = iranian_persian_10
+		2 = iranian_persian_11
+		2 = iranian_persian_12
+		2 = iranian_persian_13
+		2 = iranian_persian_14
+		2 = iranian_persian_15
+		2 = iranian_persian_16
+		2 = iranian_persian_17
+		2 = iranian_persian_18
+		2 = iranian_persian_19
+		2 = iranian_persian_20
+		2 = iranian_persian_21
+		2 = iranian_persian_22
+		2 = iranian_persian_23
+		2 = iranian_persian_24
+		2 = iranian_persian_25
+		2 = iranian_persian_26
+		2 = iranian_persian_27
+		2 = iranian_persian_28
+		2 = iranian_persian_29
+		2 = iranian_persian_30
+		2 = iranian_persian_31
+		2 = iranian_persian_32
+		2 = iranian_persian_33
+		2 = iranian_persian_34
+		2 = iranian_persian_35
+		2 = iranian_persian_36
+		2 = iranian_persian_37
+		2 = iranian_persian_38
+		2 = iranian_persian_39
+		2 = iranian_persian_40
+		2 = iranian_persian_41
+		2 = iranian_persian_42
+		2 = iranian_persian_43
+		2 = iranian_persian_44
+		2 = iranian_persian_45
+		2 = iranian_persian_46
+		2 = iranian_persian_47
+		2 = iranian_persian_48
+		2 = iranian_persian_49
+		2 = iranian_persian_50
+		2 = iranian_persian_51
+		2 = iranian_persian_52
+		2 = iranian_persian_53
+		2 = iranian_persian_54
+		2 = iranian_persian_55
+		2 = iranian_persian_56
+		2 = iranian_persian_57
+		2 = iranian_persian_58
+		2 = iranian_persian_59
+		2 = iranian_persian_60
+		2 = iranian_persian_61
+		2 = iranian_persian_62
+		2 = iranian_persian_63
+		2 = iranian_persian_64
+		2 = iranian_persian_65
+		2 = iranian_persian_66
+		2 = iranian_persian_67
+		2 = iranian_persian_68
+		2 = iranian_persian_69
+		2 = iranian_persian_70
+		2 = iranian_persian_71
+		2 = iranian_persian_72
+		2 = iranian_persian_73
+		2 = iranian_persian_74
+		2 = iranian_persian_75
+		2 = iranian_persian_76
+		2 = iranian_persian_77
+		2 = iranian_persian_78
+		2 = iranian_persian_79
+		2 = iranian_persian_80
+		2 = iranian_persian_81
+		2 = iranian_persian_82
+		2 = iranian_persian_83
+		2 = iranian_persian_84
+		2 = iranian_persian_85
+		2 = iranian_persian_86
+		2 = iranian_persian_87
+		2 = iranian_persian_88
+		2 = iranian_persian_89
+		2 = iranian_persian_90
+		2 = iranian_persian_91
+		2 = iranian_persian_92
+		2 = iranian_persian_93
+		2 = iranian_persian_94
+		2 = iranian_persian_95
+		2 = iranian_persian_96
+		2 = iranian_persian_97
+		2 = iranian_persian_98
+		2 = iranian_persian_99
+		2 = iranian_persian_100
+		2 = iranian_persian_101
+		2 = iranian_persian_102
+		2 = iranian_persian_103
+		2 = iranian_persian_104
+		2 = iranian_persian_105
+		2 = iranian_persian_106
+		2 = iranian_persian_107
+		2 = iranian_persian_108
+		2 = iranian_persian_109
+	}
+}
+
+
+kurdish = {
+	color = { 0.3 0.35 0.1 }
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_swords_for_hire
+		tradition_mountain_homes
+		tradition_eye_for_an_eye
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_fierce_independence
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_mard_o_mard
+	 }
+	
+	name_list = name_list_kurdish
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_kurdish_1
+		2 = iranian_kurdish_2
+		2 = iranian_kurdish_3
+		2 = iranian_kurdish_4
+		2 = iranian_kurdish_5
+		2 = iranian_kurdish_6
+		2 = iranian_kurdish_7
+		2 = iranian_kurdish_8
+		2 = iranian_kurdish_9
+		2 = iranian_kurdish_10
+		2 = iranian_kurdish_11
+		2 = iranian_kurdish_12
+		2 = iranian_kurdish_13
+		2 = iranian_kurdish_14
+		2 = iranian_kurdish_15
+		2 = iranian_kurdish_16
+		2 = iranian_kurdish_17
+		2 = iranian_kurdish_18
+		2 = iranian_kurdish_19
+		2 = iranian_kurdish_20
+		2 = iranian_kurdish_21
+		2 = iranian_kurdish_22
+		2 = iranian_kurdish_23
+		2 = iranian_kurdish_24
+		2 = iranian_kurdish_25
+		2 = iranian_kurdish_26
+		2 = iranian_kurdish_27
+		2 = iranian_kurdish_28
+		2 = iranian_kurdish_29
+		2 = iranian_kurdish_30
+		2 = iranian_kurdish_31
+		2 = iranian_kurdish_32
+		2 = iranian_kurdish_33
+		2 = iranian_kurdish_34
+		2 = iranian_kurdish_35
+		2 = iranian_kurdish_36
+		2 = iranian_kurdish_37
+		2 = iranian_kurdish_38
+		2 = iranian_kurdish_39
+		2 = iranian_kurdish_40
+	}
+}
+
+baloch = {
+	color = { 0.4 0.4 0.05 }
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mard_o_mard
+		tradition_desert_nomads
+		tradition_esteemed_hospitality
+		tradition_isolationist
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_jirga
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	name_list = name_list_baloch
+
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_baloch_1
+		2 = iranian_baloch_2
+		2 = iranian_baloch_3
+		2 = iranian_baloch_4
+		2 = iranian_baloch_5
+		2 = iranian_baloch_6
+		2 = iranian_baloch_7
+		2 = iranian_baloch_8
+		2 = iranian_baloch_9
+		2 = iranian_baloch_10
+		2 = iranian_baloch_11
+		2 = iranian_baloch_12
+		2 = iranian_baloch_13
+		2 = iranian_baloch_14
+		2 = iranian_baloch_15
+		2 = iranian_baloch_16
+		2 = iranian_baloch_17
+		2 = iranian_baloch_18
+		2 = iranian_baloch_19
+		2 = iranian_baloch_20
+		2 = iranian_baloch_21
+		2 = iranian_baloch_22
+		2 = iranian_baloch_23
+		2 = iranian_baloch_24
+		2 = iranian_baloch_25
+		2 = iranian_baloch_26
+		2 = iranian_baloch_27
+		2 = iranian_baloch_28
+		2 = iranian_baloch_29
+		2 = iranian_baloch_30
+		2 = iranian_baloch_31
+		2 = iranian_baloch_32
+		2 = iranian_baloch_33
+		2 = iranian_baloch_34
+		2 = iranian_baloch_35
+		2 = iranian_baloch_36
+		2 = iranian_baloch_37
+		2 = iranian_baloch_38
+		2 = iranian_baloch_39
+		2 = iranian_baloch_40
+		2 = iranian_baloch_41
+		2 = iranian_baloch_42
+		2 = iranian_baloch_43
+		2 = iranian_baloch_44
+		2 = iranian_baloch_45
+	}
+}
+
+daylamite = {
+	color = { 0.75 0.85 0.35 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_swords_for_hire
+		tradition_stalwart_defenders
+		tradition_warriors_of_alborz
+	}
+	
+	dlc_tradition = {
+		trait = tradition_fp3_pragmatic_creed
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_mard_o_mard
+	 }
+
+	name_list = name_list_daylamite
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		2 = iranian_daylamite_1
+		2 = iranian_daylamite_2
+		2 = iranian_daylamite_3
+		2 = iranian_daylamite_4
+		2 = iranian_daylamite_5
+		2 = iranian_daylamite_6
+		2 = iranian_daylamite_7
+		2 = iranian_daylamite_8
+		2 = iranian_daylamite_9
+		2 = iranian_daylamite_10
+		2 = iranian_daylamite_11
+		2 = iranian_daylamite_12
+		2 = iranian_daylamite_13
+		2 = iranian_daylamite_14
+		2 = iranian_daylamite_15
+		2 = iranian_daylamite_16
+		2 = iranian_daylamite_17
+		2 = iranian_daylamite_18
+		2 = iranian_daylamite_19
+		2 = iranian_daylamite_20
+		2 = iranian_daylamite_21
+		2 = iranian_daylamite_22
+		2 = iranian_daylamite_23
+	}
+}
+
+tajik = {
+	color = { 0.7 0.75 0.35 }
+	
+	ethos = ethos_spiritual
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers
+		tradition_mard_o_mard
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_irrigation_experts
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_dryland_dwellers
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_philosopher_culture
+	}
+	
+	name_list = name_list_tajik
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_persian_1
+		2 = iranian_persian_2
+		2 = iranian_persian_3
+		2 = iranian_persian_4
+		2 = iranian_persian_5
+		2 = iranian_persian_6
+		2 = iranian_persian_7
+		2 = iranian_persian_8
+		2 = iranian_persian_9
+		2 = iranian_persian_10
+		2 = iranian_persian_11
+		2 = iranian_persian_12
+		2 = iranian_persian_13
+		2 = iranian_persian_14
+		2 = iranian_persian_15
+		2 = iranian_persian_16
+		2 = iranian_persian_17
+		2 = iranian_persian_18
+		2 = iranian_persian_19
+		2 = iranian_persian_20
+		2 = iranian_persian_21
+		2 = iranian_persian_22
+		2 = iranian_persian_23
+		2 = iranian_persian_24
+		2 = iranian_persian_25
+		2 = iranian_persian_26
+		2 = iranian_persian_27
+		2 = iranian_persian_28
+		2 = iranian_persian_29
+		2 = iranian_persian_30
+		2 = iranian_persian_31
+		2 = iranian_persian_32
+		2 = iranian_persian_33
+		2 = iranian_persian_34
+		2 = iranian_persian_35
+		2 = iranian_persian_36
+		2 = iranian_persian_37
+		2 = iranian_persian_38
+		2 = iranian_persian_39
+		2 = iranian_persian_40
+		2 = iranian_persian_41
+		2 = iranian_persian_42
+		2 = iranian_persian_43
+		2 = iranian_persian_44
+		2 = iranian_persian_45
+		2 = iranian_persian_46
+		2 = iranian_persian_47
+		2 = iranian_persian_48
+		2 = iranian_persian_49
+		2 = iranian_persian_50
+		2 = iranian_persian_51
+		2 = iranian_persian_52
+		2 = iranian_persian_53
+		2 = iranian_persian_54
+		2 = iranian_persian_55
+		2 = iranian_persian_56
+		2 = iranian_persian_57
+		2 = iranian_persian_58
+		2 = iranian_persian_59
+		2 = iranian_persian_60
+		2 = iranian_persian_61
+		2 = iranian_persian_62
+		2 = iranian_persian_63
+		2 = iranian_persian_64
+		2 = iranian_persian_65
+		2 = iranian_persian_66
+		2 = iranian_persian_67
+		2 = iranian_persian_68
+		2 = iranian_persian_69
+		2 = iranian_persian_70
+		2 = iranian_persian_71
+		2 = iranian_persian_72
+		2 = iranian_persian_73
+		2 = iranian_persian_74
+		2 = iranian_persian_75
+		2 = iranian_persian_76
+		2 = iranian_persian_77
+		2 = iranian_persian_78
+		2 = iranian_persian_79
+		2 = iranian_persian_80
+		2 = iranian_persian_81
+		2 = iranian_persian_82
+		2 = iranian_persian_83
+		2 = iranian_persian_84
+		2 = iranian_persian_85
+		2 = iranian_persian_86
+		2 = iranian_persian_87
+		2 = iranian_persian_88
+		2 = iranian_persian_89
+		2 = iranian_persian_90
+		2 = iranian_persian_91
+		2 = iranian_persian_92
+		2 = iranian_persian_93
+		2 = iranian_persian_94
+		2 = iranian_persian_95
+		2 = iranian_persian_96
+		2 = iranian_persian_97
+		2 = iranian_persian_98
+		2 = iranian_persian_99
+		2 = iranian_persian_100
+		2 = iranian_persian_101
+		2 = iranian_persian_102
+		2 = iranian_persian_103
+		2 = iranian_persian_104
+		2 = iranian_persian_105
+		2 = iranian_persian_106
+		2 = iranian_persian_107
+		2 = iranian_persian_108
+		2 = iranian_persian_109
+	}
+}
+
+# Eastern Iranian.
+
+afghan = { # a.k.a. Pashtun
+	color = afghan
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_loyal_soldiers
+		tradition_esteemed_hospitality
+		tradition_mountain_homes
+		tradition_mard_o_mard
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_jirga
+		requires_dlc_flag = legacy_of_persia
+	}
+
+	name_list = name_list_afghan
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_afghan_1
+		2 = iranian_afghan_2
+		2 = iranian_afghan_3
+		2 = iranian_afghan_4
+		2 = iranian_afghan_5
+		2 = iranian_afghan_6
+		2 = iranian_afghan_7
+		2 = iranian_afghan_8
+		2 = iranian_afghan_9
+		2 = iranian_afghan_10
+		2 = iranian_afghan_11
+		2 = iranian_afghan_12
+		2 = iranian_afghan_13
+		2 = iranian_afghan_14
+		2 = iranian_afghan_15
+		2 = iranian_afghan_16
+		2 = iranian_afghan_17
+		2 = iranian_afghan_18
+		2 = iranian_afghan_19
+		2 = iranian_afghan_20
+		2 = iranian_afghan_21
+		2 = iranian_afghan_22
+		2 = iranian_afghan_23
+		2 = iranian_afghan_24
+		2 = iranian_afghan_25
+		2 = iranian_afghan_26
+		2 = iranian_afghan_27
+		2 = iranian_afghan_28
+		2 = iranian_afghan_29
+		2 = iranian_afghan_30
+		2 = iranian_afghan_31
+		2 = iranian_afghan_32
+		2 = iranian_afghan_33
+		2 = iranian_afghan_34
+		2 = iranian_afghan_35
+		2 = iranian_afghan_36
+		2 = iranian_afghan_37
+		2 = iranian_afghan_38
+		2 = iranian_afghan_39
+		2 = iranian_afghan_40
+		2 = iranian_afghan_41
+		2 = iranian_afghan_42
+		2 = iranian_afghan_43
+		2 = iranian_afghan_44
+		2 = iranian_afghan_45
+		2 = iranian_afghan_46
+		2 = iranian_afghan_47
+		2 = iranian_afghan_48
+		2 = iranian_afghan_49
+		2 = iranian_afghan_50
+	}
+}
+khwarezmian = {
+	color = { 0.85 0.75 0.45 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_tocharian # heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers
+		tradition_sogdian_naf # Cybr: Silk Road cities
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_beacon_of_learning
+		requires_dlc_flag = legacy_of_persia
+		fallback = tradition_city_keepers
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_khwarezmian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_daylamite_1
+		2 = iranian_daylamite_2
+		2 = iranian_daylamite_3
+		2 = iranian_daylamite_4
+		2 = iranian_daylamite_5
+		2 = iranian_daylamite_6
+		2 = iranian_daylamite_7
+		2 = iranian_daylamite_8
+		2 = iranian_daylamite_9
+		2 = iranian_daylamite_10
+		2 = iranian_daylamite_11
+		2 = iranian_daylamite_12
+		2 = iranian_daylamite_13
+		2 = iranian_daylamite_14
+		2 = iranian_daylamite_15
+		2 = iranian_daylamite_16
+		2 = iranian_daylamite_17
+		2 = iranian_daylamite_18
+		2 = iranian_daylamite_19
+		2 = iranian_daylamite_20
+		2 = iranian_daylamite_21
+		2 = iranian_daylamite_22
+		2 = iranian_daylamite_23
+		2 = iranian_sogdian_01
+		2 = iranian_sogdian_02
+		2 = iranian_sogdian_03
+		2 = iranian_sogdian_04
+		2 = iranian_sogdian_05
+		2 = iranian_sogdian_06
+		2 = iranian_sogdian_07
+		2 = iranian_sogdian_08
+		2 = iranian_sogdian_09
+		2 = iranian_sogdian_10
+		2 = iranian_sogdian_11
+		2 = iranian_sogdian_12
+		2 = iranian_sogdian_13
+		2 = iranian_sogdian_14
+		2 = iranian_sogdian_15
+		2 = iranian_sogdian_16
+		2 = iranian_sogdian_17
+		2 = iranian_sogdian_18
+		2 = iranian_sogdian_19
+		2 = iranian_sogdian_20
+		2 = iranian_sogdian_21
+		2 = iranian_sogdian_22
+		2 = iranian_sogdian_23
+		2 = iranian_sogdian_24
+		2 = iranian_sogdian_25
+		2 = iranian_sogdian_26
+		2 = iranian_sogdian_27
+		2 = iranian_sogdian_28
+		2 = iranian_sogdian_29
+		2 = iranian_sogdian_30
+		2 = iranian_sogdian_31
+		2 = iranian_sogdian_32
+		2 = iranian_sogdian_33
+		2 = iranian_sogdian_34
+		2 = iranian_sogdian_35
+		2 = iranian_sogdian_36
+		2 = iranian_sogdian_37
+		2 = iranian_sogdian_38
+		2 = iranian_sogdian_39
+		2 = iranian_sogdian_40
+		2 = iranian_sogdian_41
+		2 = iranian_sogdian_42
+		2 = iranian_sogdian_43
+		2 = iranian_sogdian_44
+		2 = iranian_sogdian_45
+		2 = iranian_sogdian_46
+		2 = iranian_sogdian_47
+	}
+}
+
+# Just hangs out with Iranian.
+
+tocharian = {
+	color = tocharian
+	
+	ethos = ethos_spiritual
+	heritage = heritage_tocharian
+	language = language_tocharian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers
+		tradition_xenophilic
+		tradition_philosopher_culture
+		tradition_religious_patronage
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_tocharian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { epe_han_chinese_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = asian_tocharian_1
+		2 = asian_tocharian_2
+		2 = asian_tocharian_3
+		2 = asian_tocharian_4 
+		2 = asian_tocharian_5
+		2 = asian_tocharian_6
+		2 = asian_tocharian_7
+		2 = asian_tocharian_8
+		2 = asian_tocharian_9 
+		2 = asian_tocharian_10
+		2 = asian_tocharian_11
+		2 = asian_tocharian_12
+		2 = asian_tocharian_13
+		2 = asian_tocharian_14 
+		2 = asian_tocharian_15
+		2 = asian_tocharian_16
+		2 = asian_tocharian_17
+		2 = asian_tocharian_18
+		2 = asian_tocharian_19
+		2 = asian_tocharian_20
+		2 = asian_tocharian_21
+		2 = asian_tocharian_22
+		2 = asian_tocharian_23
+		2 = asian_tocharian_24
+		2 = asian_tocharian_25 
+		2 = asian_tocharian_26
+		2 = asian_tocharian_27
+		2 = asian_tocharian_28
+		2 = asian_tocharian_29
+		2 = asian_tocharian_30 
+		2 = asian_tocharian_31
+		2 = asian_tocharian_32
+		2 = asian_tocharian_33
+		2 = asian_tocharian_34
+		2 = asian_tocharian_35 
+		2 = asian_tocharian_36
+		2 = asian_tocharian_37
+		2 = asian_tocharian_38
+		2 = asian_tocharian_39
+		2 = asian_tocharian_40
+		2 = asian_tocharian_41
+		2 = asian_tocharian_42
+		2 = asian_tocharian_43
+		2 = asian_tocharian_44
+		2 = asian_tocharian_45 
+		2 = asian_tocharian_46
+		2 = asian_tocharian_47
+		2 = asian_tocharian_48
+		2 = asian_tocharian_49
+		2 = asian_tocharian_50 
+		2 = asian_tocharian_51
+		2 = asian_tocharian_52
+		2 = asian_tocharian_53
+		2 = asian_tocharian_54
+		2 = asian_tocharian_55 
+		2 = asian_tocharian_56
+		2 = asian_tocharian_57
+		2 = asian_tocharian_58
+		2 = asian_tocharian_59
+		2 = asian_tocharian_60
+	}
+}
+
+
+median = {
+	color = { 0.8 0.9 0.4 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_poetry
+		tradition_philosopher_culture
+		tradition_gardening
+		tradition_mountain_homes # Cybr: Switched from Dryland Dwellers due to mountainous region of Media
+		tradition_mard_o_mard
+	}
+	
+	name_list = name_list_persian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_kurdish_1
+		2 = iranian_kurdish_2
+		2 = iranian_kurdish_3
+		2 = iranian_kurdish_4
+		2 = iranian_kurdish_5
+		2 = iranian_kurdish_6
+		2 = iranian_kurdish_7
+		2 = iranian_kurdish_8
+		2 = iranian_kurdish_9
+		2 = iranian_kurdish_10
+		2 = iranian_kurdish_11
+		2 = iranian_kurdish_12
+		2 = iranian_kurdish_13
+		2 = iranian_kurdish_14
+		2 = iranian_kurdish_15
+		2 = iranian_kurdish_16
+		2 = iranian_kurdish_17
+		2 = iranian_kurdish_18
+		2 = iranian_kurdish_19
+		2 = iranian_kurdish_20
+		2 = iranian_kurdish_21
+		2 = iranian_kurdish_22
+		2 = iranian_kurdish_23
+		2 = iranian_kurdish_24
+		2 = iranian_kurdish_25
+		2 = iranian_kurdish_26
+		2 = iranian_kurdish_27
+		2 = iranian_kurdish_28
+		2 = iranian_kurdish_29
+		2 = iranian_kurdish_30
+		2 = iranian_kurdish_31
+		2 = iranian_kurdish_32
+		2 = iranian_kurdish_33
+		2 = iranian_kurdish_34
+		2 = iranian_kurdish_35
+		2 = iranian_kurdish_36
+		2 = iranian_kurdish_37
+		2 = iranian_kurdish_38
+		2 = iranian_kurdish_39
+		2 = iranian_kurdish_40
+	}
+}
+parthian = {
+	color = { 0.75 0.45 0.95  }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_dryland_dwellers
+		tradition_horse_lords # Cybr: Famous for their cavalry
+		tradition_caravaneers # Cybr: Increase in Silk Road trade
+		tradition_mystical_ancestors # Cybr: Something to represent the 7 Noble Parthian clans, maybe a custom tradition in the future
+		tradition_mard_o_mard
+	}
+
+	# dlc_tradition = {
+	# 	trait = tradition_malleable_invaders
+	# 	requires_dlc_flag = hybridize_culture
+	# }
+	
+	name_list = name_list_persian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { west_iranian_unit_gfx iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_persian_1
+		2 = iranian_persian_2
+		2 = iranian_persian_3
+		2 = iranian_persian_4
+		2 = iranian_persian_5
+		2 = iranian_persian_6
+		2 = iranian_persian_7
+		2 = iranian_persian_8
+		2 = iranian_persian_9
+		2 = iranian_persian_10
+		2 = iranian_persian_11
+		2 = iranian_persian_12
+		2 = iranian_persian_13
+		2 = iranian_persian_14
+		2 = iranian_persian_15
+		2 = iranian_persian_16
+		2 = iranian_persian_17
+		2 = iranian_persian_18
+		2 = iranian_persian_19
+		2 = iranian_persian_20
+		2 = iranian_persian_21
+		2 = iranian_persian_22
+		2 = iranian_persian_23
+		2 = iranian_persian_24
+		2 = iranian_persian_25
+		2 = iranian_persian_26
+		2 = iranian_persian_27
+		2 = iranian_persian_28
+		2 = iranian_persian_29
+		2 = iranian_persian_30
+		2 = iranian_persian_31
+		2 = iranian_persian_32
+		2 = iranian_persian_33
+		2 = iranian_persian_34
+		2 = iranian_persian_35
+		2 = iranian_persian_36
+		2 = iranian_persian_37
+		2 = iranian_persian_38
+		2 = iranian_persian_39
+		2 = iranian_persian_40
+		2 = iranian_persian_41
+		2 = iranian_persian_42
+		2 = iranian_persian_43
+		2 = iranian_persian_44
+		2 = iranian_persian_45
+		2 = iranian_persian_46
+		2 = iranian_persian_47
+		2 = iranian_persian_48
+		2 = iranian_persian_49
+		2 = iranian_persian_50
+		2 = iranian_persian_51
+		2 = iranian_persian_52
+		2 = iranian_persian_53
+		2 = iranian_persian_54
+		2 = iranian_persian_55
+		2 = iranian_persian_56
+		2 = iranian_persian_57
+		2 = iranian_persian_58
+		2 = iranian_persian_59
+		2 = iranian_persian_60
+		2 = iranian_persian_61
+		2 = iranian_persian_62
+		2 = iranian_persian_63
+		2 = iranian_persian_64
+		2 = iranian_persian_65
+		2 = iranian_persian_66
+		2 = iranian_persian_67
+		2 = iranian_persian_68
+		2 = iranian_persian_69
+		2 = iranian_persian_70
+		2 = iranian_persian_71
+		2 = iranian_persian_72
+		2 = iranian_persian_73
+		2 = iranian_persian_74
+		2 = iranian_persian_75
+		2 = iranian_persian_76
+		2 = iranian_persian_77
+		2 = iranian_persian_78
+		2 = iranian_persian_79
+		2 = iranian_persian_80
+		2 = iranian_persian_81
+		2 = iranian_persian_82
+		2 = iranian_persian_83
+		2 = iranian_persian_84
+		2 = iranian_persian_85
+		2 = iranian_persian_86
+		2 = iranian_persian_87
+		2 = iranian_persian_88
+		2 = iranian_persian_89
+		2 = iranian_persian_90
+		2 = iranian_persian_91
+		2 = iranian_persian_92
+		2 = iranian_persian_93
+		2 = iranian_persian_94
+		2 = iranian_persian_95
+		2 = iranian_persian_96
+		2 = iranian_persian_97
+		2 = iranian_persian_98
+		2 = iranian_persian_99
+		2 = iranian_persian_100
+		2 = iranian_persian_101
+		2 = iranian_persian_102
+		2 = iranian_persian_103
+		2 = iranian_persian_104
+		2 = iranian_persian_105
+		2 = iranian_persian_106
+		2 = iranian_persian_107
+		2 = iranian_persian_108
+		2 = iranian_persian_109
+	}
+}
+
+
+# Moved from 00_iranian.txt, with changes to better reflect the focus on the Tarim Basin city-states
+saka = {
+	color = { 0.4 0.2 0.75  }
+	
+	ethos = ethos_bureaucratic # Cybr: LOTS of documents lying around
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers
+		tradition_language_scholars # Cybr: Translators
+		tradition_artisans
+	}
+
+	# dlc_tradition = {
+	# 	trait = tradition_fp3_irrigation_experts
+	# 	requires_dlc_flag = legacy_of_persia
+	# 	fallback = tradition_dryland_dwellers
+	# }
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_saka
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+        clothing_gfx = { epe_han_chinese_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
+
+pactyan = {
+	color = { 0.65 0.95 0.55 }
+	history_loc_override = pactyan_history_loc
+	
+	ethos = ethos_communal
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		# Cybr: Since they are basically Proto-Afghans I just copypasta'd the Afghan traditions
+		tradition_loyal_soldiers
+		tradition_esteemed_hospitality
+		tradition_mountain_homes
+		tradition_mard_o_mard
+	}
+
+	# FP3 traditions
+	dlc_tradition = {
+		trait = tradition_fp3_jirga
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_afghan # Proto-Afghans
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_afghan_1
+		2 = iranian_afghan_2
+		2 = iranian_afghan_3
+		2 = iranian_afghan_4
+		2 = iranian_afghan_5
+		2 = iranian_afghan_6
+		2 = iranian_afghan_7
+		2 = iranian_afghan_8
+		2 = iranian_afghan_9
+		2 = iranian_afghan_10
+		2 = iranian_afghan_11
+		2 = iranian_afghan_12
+		2 = iranian_afghan_13
+		2 = iranian_afghan_14
+		2 = iranian_afghan_15
+		2 = iranian_afghan_16
+		2 = iranian_afghan_17
+		2 = iranian_afghan_18
+		2 = iranian_afghan_19
+		2 = iranian_afghan_20
+		2 = iranian_afghan_21
+		2 = iranian_afghan_22
+		2 = iranian_afghan_23
+		2 = iranian_afghan_24
+		2 = iranian_afghan_25
+		2 = iranian_afghan_26
+		2 = iranian_afghan_27
+		2 = iranian_afghan_28
+		2 = iranian_afghan_29
+		2 = iranian_afghan_30
+		2 = iranian_afghan_31
+		2 = iranian_afghan_32
+		2 = iranian_afghan_33
+		2 = iranian_afghan_34
+		2 = iranian_afghan_35
+		2 = iranian_afghan_36
+		2 = iranian_afghan_37
+		2 = iranian_afghan_38
+		2 = iranian_afghan_39
+		2 = iranian_afghan_40
+		2 = iranian_afghan_41
+		2 = iranian_afghan_42
+		2 = iranian_afghan_43
+		2 = iranian_afghan_44
+		2 = iranian_afghan_45
+		2 = iranian_afghan_46
+		2 = iranian_afghan_47
+		2 = iranian_afghan_48
+		2 = iranian_afghan_49
+		2 = iranian_afghan_50
+	}
+}
+cadusian = {
+	color = { 0.8 0.6 0.0 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_iranian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_quarrelsome # Cybr: Xenophon said they were very warlike, and they often rebelled against Achaemenid central authority
+		tradition_mountain_homes # Cybr: Lived in mountainous region
+		tradition_mountaineers # Cybr: Mountain warriors
+	}
+
+	# FP3 traditions
+	dlc_tradition = {
+		trait = tradition_fp3_pragmatic_creed
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_persian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_daylamite_1
+		2 = iranian_daylamite_2
+		2 = iranian_daylamite_3
+		2 = iranian_daylamite_4
+		2 = iranian_daylamite_5
+		2 = iranian_daylamite_6
+		2 = iranian_daylamite_7
+		2 = iranian_daylamite_8
+		2 = iranian_daylamite_9
+		2 = iranian_daylamite_10
+		2 = iranian_daylamite_11
+		2 = iranian_daylamite_12
+		2 = iranian_daylamite_13
+		2 = iranian_daylamite_14
+		2 = iranian_daylamite_15
+		2 = iranian_daylamite_16
+		2 = iranian_daylamite_17
+		2 = iranian_daylamite_18
+		2 = iranian_daylamite_19
+		2 = iranian_daylamite_20
+		2 = iranian_daylamite_21
+		2 = iranian_daylamite_22
+		2 = iranian_daylamite_23
+	}
+}
+hephthalite = {
+	color = { 0.35 0.03 0.19 }
+
+	parents = { saka tiele }
+
+	created = 350.1.1 # First mentioned in 361 CE, likely part of wave of major nomadic migrations in Central Asia c. 350 CE
+	history_loc_override = iranian_hun_history_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Cybr: Warriors from the steppes
+		tradition_mountain_homes # Cybr: May have originated from the Pamir region
+		tradition_sacred_mountains # Cybr: Zun was a solar mountain god
+		tradition_city_keepers # Cybr: Although they may (or may not) have started off as nomads, they often settled into cities, and according to recent scholarship the Kidarite/Hephthalite period was one of increased urban growth in the eastern Iranian worlds
+		tradition_nomadic_migrations # Cybr: nomad empire
+	}
+
+	dlc_tradition = { # Did a lot of culture blending later on
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_hephthalite
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { epe_eastern_turk_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+	}
+}
+
+
+
+turco_hephthalite = {
+	color = { 0.20 0.08 0.25  }
+
+	parents = { hephthalite turkish }
+
+	created = 665.1.1 # Approximate date of when Barha Tegin's rule begins
+	
+	ethos = ethos_stoic
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mountain_homes # Cybr: May have originated from the Pamir region
+		tradition_sacred_mountains # Cybr: Zun was a solar mountain god
+		tradition_city_keepers # Cybr: Although they may (or may not) have started off as nomads, they often settled into cities, and according to recent scholarship the Kidarite/Hephthalite period was one of increased urban growth in the eastern Iranian worlds
+		tradition_fervent_temple_builders # Cybr: Lots of Zun/Buddhist/Hindu religious sites
+		#tradition_quarrelsome # Cybr: Quarreling I guess
+	}
+
+	dlc_tradition = {
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+
+	# FP3 traditions
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_hephthalite
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	#clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
+
+
+aorsi = {
+	color = { 233 145 77 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_iranian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Cybr: Steppe nomads
+		tradition_steppe_tolerance # Cybr: Steppe nomads
+		tradition_caravaneers # Cybr: Controlled northern Silk Road
+		tradition_metal_craftsmanship # Cybr: Famous for gold ornaments
+		tradition_nomadic_migrations # Cybr: nomads
+	}
+	
+	name_list = name_list_alan # Sarmatian group
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
+bactrian = {
+	color = { 248 138 71 }
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers # Cybr: Silk Road
+		tradition_mountain_homes # Cybr: Mostly in Afghanistan and Tajikistan
+		tradition_sogdian_naf # Cybr: Silk Road cities
+	}
+
+	dlc_tradition = { # Many cultures came through here
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+
+	# FP3 traditions
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_bactrian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_sogdian_01
+		2 = iranian_afghan_1
+		2 = iranian_sogdian_02
+		2 = iranian_afghan_2
+		2 = iranian_sogdian_03
+		2 = iranian_afghan_3
+		2 = iranian_sogdian_04
+		2 = iranian_afghan_4
+		2 = iranian_sogdian_05
+		2 = iranian_afghan_5
+		2 = iranian_sogdian_06
+		2 = iranian_afghan_6
+		2 = iranian_sogdian_07
+		2 = iranian_afghan_7
+		2 = iranian_sogdian_08
+		2 = iranian_afghan_8
+		2 = iranian_sogdian_09
+		2 = iranian_afghan_9
+		2 = iranian_sogdian_10
+		2 = iranian_afghan_10
+		2 = iranian_sogdian_11
+		2 = iranian_afghan_11
+		2 = iranian_sogdian_12
+		2 = iranian_afghan_12
+		2 = iranian_sogdian_13
+		2 = iranian_afghan_13
+		2 = iranian_sogdian_14
+		2 = iranian_afghan_14
+		2 = iranian_sogdian_15
+		2 = iranian_afghan_15
+		2 = iranian_sogdian_16
+		2 = iranian_afghan_16
+		2 = iranian_sogdian_17
+		2 = iranian_afghan_17
+		2 = iranian_sogdian_18
+		2 = iranian_afghan_18
+		2 = iranian_sogdian_19
+		2 = iranian_afghan_19
+		2 = iranian_sogdian_20
+		2 = iranian_afghan_20
+		2 = iranian_sogdian_21
+		2 = iranian_afghan_21
+		2 = iranian_sogdian_22
+		2 = iranian_afghan_22
+		2 = iranian_sogdian_23
+		2 = iranian_afghan_23
+		2 = iranian_sogdian_24
+		2 = iranian_afghan_24
+		2 = iranian_sogdian_25
+		2 = iranian_afghan_25
+		2 = iranian_sogdian_26
+		2 = iranian_afghan_26
+		2 = iranian_sogdian_27
+		2 = iranian_afghan_27
+		2 = iranian_sogdian_28
+		2 = iranian_afghan_28
+		2 = iranian_sogdian_29
+		2 = iranian_afghan_29
+		2 = iranian_sogdian_30
+		2 = iranian_afghan_30
+		2 = iranian_sogdian_31
+		2 = iranian_afghan_31
+		2 = iranian_sogdian_32
+		2 = iranian_afghan_32
+		2 = iranian_sogdian_33
+		2 = iranian_afghan_33
+		2 = iranian_sogdian_34
+		2 = iranian_afghan_34
+		2 = iranian_sogdian_35
+		2 = iranian_afghan_35
+		2 = iranian_sogdian_36
+		2 = iranian_afghan_36
+		2 = iranian_sogdian_37
+		2 = iranian_afghan_37
+		2 = iranian_sogdian_38
+		2 = iranian_afghan_38
+		2 = iranian_sogdian_39
+		2 = iranian_afghan_39
+		2 = iranian_sogdian_40
+		2 = iranian_afghan_40
+		2 = iranian_sogdian_41
+		2 = iranian_afghan_41
+		2 = iranian_sogdian_42
+		2 = iranian_afghan_42
+		2 = iranian_sogdian_43
+		2 = iranian_afghan_43
+		2 = iranian_sogdian_44
+		2 = iranian_afghan_44
+		2 = iranian_sogdian_45
+		2 = iranian_afghan_45
+		2 = iranian_sogdian_46
+		2 = iranian_afghan_46
+		2 = iranian_sogdian_47
+		2 = iranian_afghan_47
+		2 = iranian_sogdian_49
+		2 = iranian_afghan_48
+		2 = iranian_sogdian_50
+		2 = iranian_afghan_49
+		2 = iranian_sogdian_51
+		2 = iranian_afghan_50
+		2 = iranian_sogdian_52
+		2 = iranian_sogdian_53
+		2 = iranian_sogdian_54
+	}
+}
+wusun = {
+	color = { 0.19 0.08 0.87 }
+	
+	ethos = ethos_stoic # By this time they're basically on the run
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Cybr: Steppe nomads
+		tradition_steppe_tolerance # Cybr: Steppe nomads
+		tradition_pastoralists # Cybr: Pastoral based economy
+		tradition_hereditary_hierarchy # Cybr: Highly stratified society
+		tradition_nomadic_migrations # Cybr: nomads fleeing stuff
+	}
+	
+	name_list = name_list_wusun
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { turkic_building_gfx steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
+# Xionites were at least part Iranian in origin and influence, though likely mixed with Turkic and Proto-Mongolic elements
+# See https://iranicaonline.org/articles/chionites-lat for more info
+xionite = {
+	color = { 147 124 93 }
+
+	parents = { saka tiele }
+
+	created = 350.1.1 # First mentioned around the 350s CE, likely part of wave of major nomadic migrations in Central Asia c. 350 CE
+	history_loc_override = iranian_hun_history_loc
+	
+	ethos = ethos_bellicose
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE 
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords # Cybr: Steppe nomads
+		tradition_steppe_tolerance # Cybr: Steppe nomads
+		tradition_city_keepers # Cybr: Although they may (or may not) have started off as nomads, they often settled into cities, and according to recent scholarship the Kidarite/Hephthalite period was one of increased urban growth in the eastern Iranian worlds
+		tradition_nomadic_migrations # Cybr: nomad empire
+	}
+	
+	dlc_tradition = { # Did a lot of culture blending later on
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_hephthalite
+
+	coa_gfx = { turkic_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { turkic_building_gfx steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_saka_02
+		2 = iranian_saka_03
+		2 = iranian_saka_04
+		2 = iranian_saka_05
+		2 = iranian_saka_06
+		2 = iranian_saka_07
+		2 = iranian_saka_08
+		2 = iranian_saka_09
+		2 = iranian_saka_10
+		2 = iranian_saka_11
+		2 = iranian_saka_12
+		2 = iranian_saka_13
+		2 = iranian_saka_14
+		2 = iranian_saka_15
+		2 = iranian_saka_16
+		2 = iranian_saka_17
+		2 = iranian_saka_18
+		2 = iranian_saka_19
+		2 = iranian_saka_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
+
+
+shaka = {
+	color = { 0.4 0.1 0.75  }
+	
+	parents = { saka saurashtri }
+	created = 150.1.1
+	history_loc_override = iranian_shaka_history_loc
+
+	ethos = ethos_bellicose
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_rajasthani
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_warrior_culture
+		tradition_religion_blending
+		tradition_caste_system
+	}
+	
+	name_list = name_list_shaka
+	
+	coa_gfx = { indo_aryan_group_coa_gfx iranian_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = indian_northern_1
+		2 = iranian_saka_02
+		2 = indian_northern_2
+		2 = iranian_saka_03
+		2 = indian_northern_3
+		2 = iranian_saka_04
+		2 = indian_northern_4
+		2 = iranian_saka_05
+		2 = indian_northern_5
+		2 = iranian_saka_06
+		2 = indian_northern_6
+		2 = iranian_saka_07
+		2 = indian_northern_7
+		2 = iranian_saka_08
+		2 = indian_northern_8
+		2 = iranian_saka_09
+		2 = indian_northern_9
+		2 = iranian_saka_10
+		2 = indian_northern_10
+		2 = iranian_saka_11
+		2 = indian_northern_11
+		2 = iranian_saka_12
+		2 = indian_northern_12
+		2 = iranian_saka_13
+		2 = indian_northern_13
+		2 = iranian_saka_14
+		2 = indian_northern_14
+		2 = iranian_saka_15
+		2 = indian_northern_15
+		2 = iranian_saka_16
+		2 = indian_northern_16
+		2 = iranian_saka_17
+		2 = indian_northern_17
+		2 = iranian_saka_18
+		2 = indian_northern_18
+		2 = iranian_saka_19
+		2 = indian_northern_19
+		2 = iranian_saka_20
+		2 = indian_northern_20
+	}
+}
+
+
+yuezhi = {
+
+	color = { 120 88 150 }
+
+	parents = { tocharian bactrian }
+
+	created = 2.1.1
+	history_loc_override = yuezhi_history_loc
+	
+	ethos = ethos_egalitarian # Many diverse influences
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_horse_lords 			# Cybr: Warriors from the steppes
+		tradition_city_keepers 			# Cybr: To represent Bactrian cities
+		tradition_horse_breeder			# Cybr: Noted for their horses in Chinese records
+		tradition_steppe_tolerance		# Cybr: Sponsored many different religions
+		#tradition_nomadic_migrations	# Kushans are kinda settled down by now
+	}
+
+	dlc_tradition = { # Did a lot of culture blending later on
+		trait = tradition_malleable_invaders
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_tocharian # Need custom namelist in the future
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = asian_tocharian_1
+		2 = iranian_sogdian_01
+		2 = asian_tocharian_2
+		2 = iranian_sogdian_02
+		2 = asian_tocharian_3
+		2 = iranian_sogdian_03
+		2 = asian_tocharian_4
+ 		2 = iranian_sogdian_04
+		2 = asian_tocharian_5
+		2 = iranian_sogdian_05
+		2 = asian_tocharian_6
+		2 = iranian_sogdian_06
+		2 = asian_tocharian_7
+		2 = iranian_sogdian_07
+		2 = asian_tocharian_8
+		2 = iranian_sogdian_08
+		2 = asian_tocharian_9 
+		2 = iranian_sogdian_09
+		2 = asian_tocharian_10
+		2 = iranian_sogdian_10
+		2 = asian_tocharian_11
+		2 = iranian_sogdian_11
+		2 = asian_tocharian_12
+		2 = iranian_sogdian_12
+		2 = asian_tocharian_13
+		2 = iranian_sogdian_13
+		2 = asian_tocharian_14
+ 		2 = iranian_sogdian_14
+		2 = asian_tocharian_15
+		2 = iranian_sogdian_15
+		2 = asian_tocharian_16
+		2 = iranian_sogdian_16
+		2 = asian_tocharian_17
+		2 = iranian_sogdian_17
+		2 = asian_tocharian_18
+		2 = iranian_sogdian_18
+		2 = asian_tocharian_19
+		2 = iranian_sogdian_19
+		2 = asian_tocharian_20
+		2 = iranian_sogdian_20
+		2 = asian_tocharian_21
+		2 = iranian_sogdian_21
+		2 = asian_tocharian_22
+		2 = iranian_sogdian_22
+		2 = asian_tocharian_23
+		2 = iranian_sogdian_23
+		2 = asian_tocharian_24
+		2 = iranian_sogdian_24
+		2 = asian_tocharian_25
+ 		2 = iranian_sogdian_25
+		2 = asian_tocharian_26
+		2 = iranian_sogdian_26
+		2 = asian_tocharian_27
+		2 = iranian_sogdian_27
+		2 = asian_tocharian_28
+		2 = iranian_sogdian_28
+		2 = asian_tocharian_29
+		2 = iranian_sogdian_29
+		2 = asian_tocharian_30
+ 		2 = iranian_sogdian_30
+		2 = asian_tocharian_31
+		2 = iranian_sogdian_31
+		2 = asian_tocharian_32
+		2 = iranian_sogdian_32
+		2 = asian_tocharian_33
+		2 = iranian_sogdian_33
+		2 = asian_tocharian_34
+		2 = iranian_sogdian_34
+		2 = asian_tocharian_35
+ 		2 = iranian_sogdian_35
+		2 = asian_tocharian_36
+		2 = iranian_sogdian_36
+		2 = asian_tocharian_37
+		2 = iranian_sogdian_37
+		2 = asian_tocharian_38
+		2 = iranian_sogdian_38
+		2 = asian_tocharian_39
+		2 = iranian_sogdian_39
+		2 = asian_tocharian_40
+		2 = iranian_sogdian_40
+		2 = asian_tocharian_41
+		2 = iranian_sogdian_41
+		2 = asian_tocharian_42
+		2 = iranian_sogdian_42
+		2 = asian_tocharian_43
+		2 = iranian_sogdian_43
+		2 = asian_tocharian_44
+		2 = iranian_sogdian_44
+		2 = asian_tocharian_45
+		2 = iranian_sogdian_45
+	}
+}
+
+# Cybrxkhan's notes:
+# When the Yuezhi were defeated by the Xiongnu during the Han Dynasty, they split into two groups.
+# The larger group, the Da Yuezhi or Great Yuezhi, fled westward and *probably* became the later Kushans.
+# A smaller group, the Xiao Yuezhi or Lesser Yuezhi, sought shelter with various Qiang tribes in Qinghai.
+# Their descendants may have endured into the late Han period and possibly beyond, adopting Qiang customs
+# and gradually assimilating into Qiang, Xiongnu, and Han populations. For example, the Yuezhi monk Dharmarakṣa
+# who was from Dunhuang and flourished in the 4th century may have been of Little Yuezhi extraction.
+# Meanwhile, the Lu Shuihu branch of Xiongnu (from which the Juqu of Northern Liang hail) could have been partly Yuezhi too.
+# Due to the ambiguity of these non-Chinese ethnicities, it's hard to say for sure if the Lesser Yuezhi
+# survived in any recognizable form into late antiquity. Their presence here is speculative and should not
+# be assumed to be true or the scholarly consensus, like with many issues of ethnicity in this period.
+xiao_yuezhi = {
+
+	color = { 77 66 88 }
+
+	parents = { yuezhi qiang }
+
+	created = 5.1.1
+	history_loc_override = xiao_yuezhi_history_loc
+	
+	ethos = ethos_stoic # Survived in the mountains of Qinghai after fleeing the Xiongnu
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_qiangic # Adopted Qiang customs
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_himalayan_settlers	# Cybr: In the mountains of Qinghai
+		tradition_horse_lords 			# Cybr: Warriors from the steppes
+		tradition_swords_for_hire		# Cybr: Huangzhong Army, some from Xiao Yuezhi tribes were called to serve in Han Dynasty armies
+	}
+
+	dlc_tradition = { # Assimilated into Qiang, Xiongnu, Han cultures
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_qiang # name_list_tocharian # Assimilating into Qiang tribes
+	
+	coa_gfx = { tibetan_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+        clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = asian_tocharian_1
+		2 = asian_tocharian_2
+		2 = asian_tocharian_3
+		2 = asian_tocharian_4 
+		2 = asian_tocharian_5
+		2 = asian_tocharian_6
+		2 = asian_tocharian_7
+		2 = asian_tocharian_8
+		2 = asian_tocharian_9 
+		2 = asian_tocharian_10
+		2 = asian_tocharian_11
+		2 = asian_tocharian_12
+		2 = asian_tocharian_13
+		2 = asian_tocharian_14 
+		2 = asian_tocharian_15
+		2 = asian_tocharian_16
+		2 = asian_tocharian_17
+		2 = asian_tocharian_18
+		2 = asian_tocharian_19
+		2 = asian_tocharian_20
+		2 = asian_tocharian_21
+		2 = asian_tocharian_22
+		2 = asian_tocharian_23
+		2 = asian_tocharian_24
+		2 = asian_tocharian_25 
+		2 = asian_tocharian_26
+		2 = asian_tocharian_27
+		2 = asian_tocharian_28
+		2 = asian_tocharian_29
+		2 = asian_tocharian_30 
+		2 = asian_tocharian_31
+		2 = asian_tocharian_32
+		2 = asian_tocharian_33
+		2 = asian_tocharian_34
+		2 = asian_tocharian_35 
+		2 = asian_tocharian_36
+		2 = asian_tocharian_37
+		2 = asian_tocharian_38
+		2 = asian_tocharian_39
+		2 = asian_tocharian_40
+		2 = asian_tocharian_41
+		2 = asian_tocharian_42
+		2 = asian_tocharian_43
+		2 = asian_tocharian_44
+		2 = asian_tocharian_45 
+		2 = asian_tocharian_46
+		2 = asian_tocharian_47
+		2 = asian_tocharian_48
+		2 = asian_tocharian_49
+		2 = asian_tocharian_50 
+		2 = asian_tocharian_51
+		2 = asian_tocharian_52
+		2 = asian_tocharian_53
+		2 = asian_tocharian_54
+		2 = asian_tocharian_55 
+		2 = asian_tocharian_56
+		2 = asian_tocharian_57
+		2 = asian_tocharian_58
+		2 = asian_tocharian_59
+		2 = asian_tocharian_60
+	}
+}
+
+sogdian = {
+	color = { 0.43 0.32 0.32 }
+	
+	ethos = ethos_egalitarian
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers
+		tradition_religion_blending
+		tradition_sogdian_naf # Cybr: Silk Road cities
+	}
+
+	dlc_tradition = { # Many cultures came through here
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_sogdian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_sogdian_01
+		2 = iranian_sogdian_02
+		2 = iranian_sogdian_03
+		2 = iranian_sogdian_04
+		2 = iranian_sogdian_05
+		2 = iranian_sogdian_06
+		2 = iranian_sogdian_07
+		2 = iranian_sogdian_08
+		2 = iranian_sogdian_09
+		2 = iranian_sogdian_10
+		2 = iranian_sogdian_11
+		2 = iranian_sogdian_12
+		2 = iranian_sogdian_13
+		2 = iranian_sogdian_14
+		2 = iranian_sogdian_15
+		2 = iranian_sogdian_16
+		2 = iranian_sogdian_17
+		2 = iranian_sogdian_18
+		2 = iranian_sogdian_19
+		2 = iranian_sogdian_20
+		2 = iranian_sogdian_21
+		2 = iranian_sogdian_22
+		2 = iranian_sogdian_23
+		2 = iranian_sogdian_24
+		2 = iranian_sogdian_25
+		2 = iranian_sogdian_26
+		2 = iranian_sogdian_27
+		2 = iranian_sogdian_28
+		2 = iranian_sogdian_29
+		2 = iranian_sogdian_30
+		2 = iranian_sogdian_31
+		2 = iranian_sogdian_32
+		2 = iranian_sogdian_33
+		2 = iranian_sogdian_34
+		2 = iranian_sogdian_35
+		2 = iranian_sogdian_36
+		2 = iranian_sogdian_37
+		2 = iranian_sogdian_38
+		2 = iranian_sogdian_39
+		2 = iranian_sogdian_40
+		2 = iranian_sogdian_41
+		2 = iranian_sogdian_42
+		2 = iranian_sogdian_43
+		2 = iranian_sogdian_44
+		2 = iranian_sogdian_45
+		2 = iranian_sogdian_46
+		2 = iranian_sogdian_47
+	}
+}
+
+
+elymaean = {
+	color = { 144 66 44 }
+
+	parents = { elamite persian }
+
+	created = 5.1.1
+	history_loc_override = elymaean_history_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_iranian
+	language = language_elamite # It is possible it may have survived as late as the medieval Islamic period as "Khuzi" but this is extremely speculative
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mountain_homes # Cybr: Lived in the mountainous regions of SE Iran
+		tradition_dryland_dwellers # Cybr: Khuzestan, a part of the Elamite territory, was desert
+		tradition_adaptive_skirmishing # Cybr: Famous for their skills in archery and camel archery
+		#tradition_hit_and_run # Cybr: Famous for their skills in archery and camel archery
+		tradition_religion_blending # Cybr: Mixed together older Elamite (?) gods with Mesopotamian, Iranian, and Hellenic ones
+		tradition_fervent_temple_builders # Cybr: Elamite ziggurats and temples
+	}
+	
+	name_list = name_list_persian
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_persian_1
+		2 = iranian_persian_2
+		2 = iranian_persian_3
+		2 = iranian_persian_4
+		2 = iranian_persian_5
+		2 = iranian_persian_6
+		2 = iranian_persian_7
+		2 = iranian_persian_8
+		2 = iranian_persian_9
+		2 = iranian_persian_10
+		2 = iranian_persian_11
+		2 = iranian_persian_12
+		2 = iranian_persian_13
+		2 = iranian_persian_14
+		2 = iranian_persian_15
+		2 = iranian_persian_16
+		2 = iranian_persian_17
+		2 = iranian_persian_18
+		2 = iranian_persian_19
+		2 = iranian_persian_20
+		2 = iranian_persian_21
+		2 = iranian_persian_22
+		2 = iranian_persian_23
+		2 = iranian_persian_24
+		2 = iranian_persian_25
+		2 = iranian_persian_26
+		2 = iranian_persian_27
+		2 = iranian_persian_28
+		2 = iranian_persian_29
+		2 = iranian_persian_30
+		2 = iranian_persian_31
+		2 = iranian_persian_32
+		2 = iranian_persian_33
+		2 = iranian_persian_34
+		2 = iranian_persian_35
+		2 = iranian_persian_36
+		2 = iranian_persian_37
+		2 = iranian_persian_38
+		2 = iranian_persian_39
+		2 = iranian_persian_40
+		2 = iranian_persian_41
+		2 = iranian_persian_42
+		2 = iranian_persian_43
+		2 = iranian_persian_44
+		2 = iranian_persian_45
+		2 = iranian_persian_46
+		2 = iranian_persian_47
+		2 = iranian_persian_48
+		2 = iranian_persian_49
+		2 = iranian_persian_50
+		2 = iranian_persian_51
+		2 = iranian_persian_52
+		2 = iranian_persian_53
+		2 = iranian_persian_54
+		2 = iranian_persian_55
+		2 = iranian_persian_56
+		2 = iranian_persian_57
+		2 = iranian_persian_58
+		2 = iranian_persian_59
+		2 = iranian_persian_60
+		2 = iranian_persian_61
+		2 = iranian_persian_62
+		2 = iranian_persian_63
+		2 = iranian_persian_64
+		2 = iranian_persian_65
+		2 = iranian_persian_66
+		2 = iranian_persian_67
+		2 = iranian_persian_68
+		2 = iranian_persian_69
+		2 = iranian_persian_70
+		2 = iranian_persian_71
+		2 = iranian_persian_72
+		2 = iranian_persian_73
+		2 = iranian_persian_74
+		2 = iranian_persian_75
+		2 = iranian_persian_76
+		2 = iranian_persian_77
+		2 = iranian_persian_78
+		2 = iranian_persian_79
+		2 = iranian_persian_80
+		2 = iranian_persian_81
+		2 = iranian_persian_82
+		2 = iranian_persian_83
+		2 = iranian_persian_84
+		2 = iranian_persian_85
+		2 = iranian_persian_86
+		2 = iranian_persian_87
+		2 = iranian_persian_88
+		2 = iranian_persian_89
+		2 = iranian_persian_90
+		2 = iranian_persian_91
+		2 = iranian_persian_92
+		2 = iranian_persian_93
+		2 = iranian_persian_94
+		2 = iranian_persian_95
+		2 = iranian_persian_96
+		2 = iranian_persian_97
+		2 = iranian_persian_98
+		2 = iranian_persian_99
+		2 = iranian_persian_100
+		2 = iranian_persian_101
+		2 = iranian_persian_102
+		2 = iranian_persian_103
+		2 = iranian_persian_104
+		2 = iranian_persian_105
+		2 = iranian_persian_106
+		2 = iranian_persian_107
+		2 = iranian_persian_108
+		2 = iranian_persian_109
+	}
+}
+
+
+# Cybrxkhan's note, after discussions with Soraya:
+# Partly Indianized tribe of West Iranian origin centered around Loralai but with a sphere of influence spreading south and west into south Afghanistan
+# Paratarajas seem to have had Parthian and Indian elements
+parata = {
+	color = { 77 88 88 }
+
+	parents = { parthian sindhi }
+
+	created = 5.1.1
+	history_loc_override = parata_history_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_iranian
+	language = language_vrachada
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_caravaneers # Cybr: land trade link between Iran and India as well as links with Roman networks
+		tradition_dryland_dwellers # Cybr: In the desert-y areas of Afghanistan
+		tradition_religion_blending # Cybr: Mixed Zoroastrian and Hindu stuff in coinage and worship
+	}
+	
+	# Mixing of Persian/Parthian and Indian culture
+	dlc_tradition = {
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_sindhi
+	
+	coa_gfx = { indo_aryan_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		2 = indian_northern_1
+		2 = indian_northern_2
+		2 = indian_northern_3
+		2 = indian_northern_4
+		2 = indian_northern_5
+		2 = indian_northern_6
+		2 = indian_northern_7
+		2 = indian_northern_8
+		2 = indian_northern_9
+		2 = indian_northern_10
+		2 = indian_northern_11
+		2 = indian_northern_12
+		2 = indian_northern_13
+		2 = indian_northern_14
+		2 = indian_northern_15
+		2 = indian_northern_16
+		2 = indian_northern_17
+		2 = indian_northern_18
+		2 = indian_northern_19
+		2 = indian_northern_20
+		2 = indian_northern_21
+		2 = indian_northern_22
+		2 = indian_northern_23
+		2 = indian_northern_24
+		2 = indian_northern_25
+		2 = indian_northern_26
+		2 = indian_northern_27
+	}
+}
+
+
+
+
+# Cybrxkhan's notes:
+# Representing the older, original Ferghanan archaeological cultures before the arrival of the Saka/Greeks/Sogdians/whatever
+# Localized as Chust culture in-game, named after the Chust culture that flourished in the Ferghana Valley in the first and second millennium BCE
+old_ferghanan = {
+	color = { 69 80 88 }
+	
+	ethos = ethos_communal
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_agrarian 			# Cybr: Some of the earliest sedentary Iranian cultures
+		tradition_castle_keepers 	# Cybr: Fortified settlements in Ferghana
+	}
+	
+	name_list = name_list_saka # Known to be Iranian but not sure what else
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx epe_iranian_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		3 = indian_kashmiri_1
+		3 = indian_kashmiri_2
+		3 = indian_kashmiri_3
+		3 = indian_kashmiri_4
+		3 = indian_kashmiri_5
+		3 = indian_kashmiri_6
+		3 = indian_kashmiri_7
+		3 = indian_kashmiri_8
+		3 = indian_kashmiri_9
+		3 = indian_kashmiri_10
+		3 = indian_kashmiri_11
+		3 = indian_kashmiri_12
+		3 = indian_kashmiri_13
+		3 = indian_kashmiri_14
+		3 = indian_kashmiri_15
+		3 = indian_kashmiri_16
+		3 = indian_kashmiri_17
+		3 = indian_kashmiri_18
+		3 = indian_kashmiri_19
+		3 = indian_kashmiri_20
+		3 = indian_kashmiri_21
+		3 = indian_kashmiri_22
+		3 = indian_kashmiri_23
+	}
+}
+
+# Cybrxkhan's notes:
+# Representing Ferghana between the older Chust culture and when it fell into the Sogdian cultural sphere in the late game
+# Influences from the Saka, Sogdians, Kangju/Kaunchi, and possibly Greeks.
+# Archaeological cultures like the Eilatan, Shurabashat, Kugai-Karabulak, etc. This would also fall under the "Dayuan" mentioned in Chinese sources.
+# I did consider calling this Dayuan, but decided against it as it refers to a specific timeframe and I didn't want to split up cultures.
+# Purportedly there's some Greek influence, whether from Greeks the Achaemenids settled on their frontier, or from Greco-Bactria
+# However, my readings indicate at least archaeologically there doesn't seem to be heavy influence.
+ferghanan = {
+	color = { 48 50 102 }
+
+	parents = { old_ferghanan saka }
+
+	created = 5.1.1
+	history_loc_override = ferghanan_history_loc
+	
+	ethos = ethos_stoic
+	heritage = heritage_tocharian # Changed to "Serindian" for TFE
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_agrarian 			# Cybr: Some of the earliest sedentary Iranian cultures
+		#tradition_pastoralists 	# Cybr: Nomad influences
+		tradition_castle_keepers 	# Cybr: Fortified settlements in Ferghana
+		tradition_horse_breeder		# Cybr: Heavenly Horses
+		tradition_caravaneers 		# Cybr: Early Silk Road trade
+	}
+
+	dlc_tradition = { # Many cultures came through here
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	dlc_tradition = {
+		trait = tradition_fp3_frontier_warriors
+		requires_dlc_flag = legacy_of_persia
+	}
+	
+	name_list = name_list_saka # Eastern Iranian speakers 
+	
+	coa_gfx = { iranian_group_coa_gfx }
+	building_gfx = { iranian_building_gfx }
+	clothing_gfx = { iranian_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { iranian_unit_gfx }
+	
+	ethnicities = {
+		3 = indian_kashmiri_1
+		2 = iranian_saka_01
+		3 = indian_kashmiri_2
+		2 = iranian_saka_02
+		3 = indian_kashmiri_3
+		2 = iranian_saka_03
+		3 = indian_kashmiri_4
+		2 = iranian_saka_04
+		3 = indian_kashmiri_5
+		2 = iranian_saka_05
+		3 = indian_kashmiri_6
+		2 = iranian_saka_06
+		3 = indian_kashmiri_7
+		2 = iranian_saka_07
+		3 = indian_kashmiri_8
+		2 = iranian_saka_08
+		3 = indian_kashmiri_9
+		2 = iranian_saka_09
+		3 = indian_kashmiri_10
+		2 = iranian_saka_10
+		3 = indian_kashmiri_11
+		2 = iranian_saka_11
+		3 = indian_kashmiri_12
+		2 = iranian_saka_12
+		3 = indian_kashmiri_13
+		2 = iranian_saka_13
+		3 = indian_kashmiri_14
+		2 = iranian_saka_14
+		3 = indian_kashmiri_15
+		2 = iranian_saka_15
+		3 = indian_kashmiri_16
+		2 = iranian_saka_16
+		3 = indian_kashmiri_17
+		2 = iranian_saka_17
+		3 = indian_kashmiri_18
+		2 = iranian_saka_18
+		3 = indian_kashmiri_19
+		2 = iranian_saka_19
+		3 = indian_kashmiri_20
+		2 = iranian_saka_20
+		2 = iranian_sogdian_21
+		2 = iranian_sogdian_22
+		2 = iranian_sogdian_23
+		2 = iranian_sogdian_24
+		2 = iranian_sogdian_25
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

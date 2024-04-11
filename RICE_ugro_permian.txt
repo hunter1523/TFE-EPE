@@ -1,0 +1,86 @@
+﻿
+
+
+udmurt = { # Vanilla Komi now named Komi
+	color = { 0.35 0.65 0.45 } # 88, 166, 124 # 34.5, 65.1, 45.9 #58a67c
+	
+	ethos = ethos_communal
+	heritage = heritage_ugro_permian
+	language = language_ugro_permian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_forest_wardens
+		tradition_artisans
+		tradition_sacred_groves
+	}
+	
+	name_list = name_list_udmurt
+	
+	coa_gfx = { ugro_permian_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { northern_clothing_gfx  }
+	unit_gfx = { northern_unit_gfx }
+	
+	ethnicities = {
+		2 = steppe_volga_finn_mordvin_01
+		2 = steppe_volga_finn_mordvin_02
+		2 = steppe_volga_finn_mordvin_03
+		4 = european_caucasian_irish_01
+		2 = steppe_volga_finn_mordvin_04
+		2 = steppe_volga_finn_mordvin_05
+		2 = steppe_volga_finn_mordvin_06
+		4 = european_caucasian_irish_02
+		2 = steppe_volga_finn_mordvin_07
+		2 = steppe_volga_finn_mordvin_08
+		2 = steppe_volga_finn_mordvin_09
+		4 = european_caucasian_irish_03
+		2 = steppe_volga_finn_mordvin_10
+		2 = steppe_volga_finn_mordvin_11
+		2 = steppe_volga_finn_mordvin_12
+		4 = european_caucasian_irish_04
+		2 = steppe_volga_finn_mordvin_13
+		2 = steppe_volga_finn_mordvin_14
+		2 = steppe_volga_finn_mordvin_15
+		4 = european_caucasian_irish_05
+		2 = steppe_volga_finn_mordvin_16
+		2 = steppe_volga_finn_mordvin_17
+		2 = steppe_volga_finn_mordvin_18
+		4 = european_caucasian_irish_06
+		2 = steppe_volga_finn_mordvin_19
+		2 = steppe_volga_finn_mordvin_20
+		2 = steppe_volga_finn_mordvin_21
+		4 = european_caucasian_irish_07
+		2 = steppe_volga_finn_mordvin_22
+		2 = steppe_volga_finn_mordvin_23
+		2 = steppe_volga_finn_mordvin_24
+		4 = european_caucasian_irish_08
+		2 = steppe_volga_finn_mordvin_25
+		2 = steppe_volga_finn_mordvin_26
+		2 = steppe_volga_finn_mordvin_27
+		4 = european_caucasian_irish_09
+		2 = steppe_volga_finn_mordvin_28
+		2 = steppe_volga_finn_mordvin_29
+		2 = steppe_volga_finn_mordvin_30
+		4 = european_caucasian_irish_10
+		2 = steppe_volga_finn_mordvin_31
+		2 = steppe_volga_finn_mordvin_32
+		2 = steppe_volga_finn_mordvin_33
+		4 = european_caucasian_irish_11
+		2 = steppe_volga_finn_mordvin_34
+		2 = steppe_volga_finn_mordvin_35
+		2 = steppe_volga_finn_mordvin_36
+		4 = european_caucasian_irish_12
+		2 = steppe_volga_finn_mordvin_37
+		2 = steppe_volga_finn_mordvin_38
+		2 = steppe_volga_finn_mordvin_39
+		4 = european_caucasian_irish_13
+		2 = asian_tocharian_40
+		2 = asian_tocharian_41
+		2 = asian_tocharian_42
+		4 = european_caucasian_irish_14
+		2 = asian_tocharian_43
+		2 = asian_tocharian_44
+		2 = asian_tocharian_45
+		4 = european_caucasian_irish_15
+	}
+}
