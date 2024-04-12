@@ -1,0 +1,729 @@
+﻿ethiopian = {
+	color = ethiopian
+	
+	ethos = ethos_spiritual
+	heritage = heritage_east_african
+	language = language_ethiopic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_fervent_temple_builders
+		tradition_zealous_people
+		tradition_isolationist
+		tradition_amharic_highlanders
+	}
+	
+	name_list = name_list_ethiopian
+	
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { east_african_unit_gfx mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_ethiopian_01
+		2 = east_african_ethiopian_02
+		2 = east_african_ethiopian_03
+		2 = east_african_ethiopian_04
+		2 = east_african_ethiopian_05
+		2 = east_african_ethiopian_06
+		2 = east_african_ethiopian_07
+		2 = east_african_ethiopian_08
+		2 = east_african_ethiopian_09
+		2 = east_african_ethiopian_10
+		2 = east_african_ethiopian_11
+		2 = east_african_ethiopian_12
+		2 = east_african_ethiopian_13
+		2 = east_african_ethiopian_14
+		2 = east_african_ethiopian_15
+		2 = east_african_ethiopian_16
+		2 = east_african_ethiopian_17
+		2 = east_african_ethiopian_18
+		2 = east_african_ethiopian_19
+		2 = east_african_ethiopian_20
+		2 = east_african_ethiopian_21
+		2 = east_african_ethiopian_22
+		2 = east_african_ethiopian_23
+		2 = east_african_ethiopian_24
+		2 = east_african_ethiopian_25
+		2 = east_african_ethiopian_26
+		2 = east_african_ethiopian_27
+		2 = east_african_ethiopian_28
+		2 = east_african_ethiopian_29
+		2 = east_african_ethiopian_30
+		2 = east_african_ethiopian_31
+		2 = east_african_ethiopian_32
+		2 = east_african_ethiopian_33
+		2 = east_african_ethiopian_34
+		2 = east_african_ethiopian_35
+		2 = east_african_ethiopian_36
+		2 = east_african_ethiopian_37
+		2 = east_african_ethiopian_38
+		2 = east_african_ethiopian_39
+		2 = east_african_ethiopian_40
+		2 = east_african_ethiopian_41
+		2 = east_african_ethiopian_42
+	}
+}
+
+nubian = {
+	color = nubian
+	created = 350.1.1
+	parents = { noba meroitic }
+	ethos = ethos_spiritual
+	heritage = heritage_east_african
+	language = language_sudanic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_astute_diplomats
+		tradition_xenophilic
+		tradition_land_of_the_bow
+		tradition_agrarian
+		tradition_nubian_warrior_queens
+	}
+	
+	name_list = name_list_nubian
+
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { nubian_building_gfx african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { east_african_unit_gfx mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_nubian_01
+		2 = east_african_nubian_02
+		2 = east_african_nubian_03
+		2 = east_african_nubian_04
+		2 = east_african_nubian_05
+		2 = east_african_nubian_06
+		2 = east_african_nubian_07
+		2 = east_african_nubian_08
+		2 = east_african_nubian_09
+		2 = east_african_nubian_10
+		2 = east_african_nubian_11
+		2 = east_african_nubian_12
+		2 = east_african_nubian_13
+		2 = east_african_nubian_14
+		2 = east_african_nubian_15
+		2 = east_african_nubian_16
+		2 = east_african_nubian_17
+		2 = east_african_nubian_18
+		2 = east_african_nubian_19
+		2 = east_african_nubian_20
+		2 = east_african_nubian_21
+		2 = east_african_nubian_22
+		2 = east_african_nubian_23
+		2 = east_african_nubian_24
+		2 = east_african_nubian_25
+		2 = east_african_nubian_26
+		2 = east_african_nubian_27
+		2 = east_african_nubian_28
+		2 = east_african_nubian_29
+		2 = east_african_nubian_30
+		2 = east_african_nubian_31
+		2 = east_african_nubian_32
+		2 = east_african_nubian_33
+		2 = east_african_nubian_34
+		2 = east_african_nubian_35
+		2 = east_african_nubian_36
+		2 = east_african_nubian_37
+		2 = east_african_nubian_38
+		2 = east_african_nubian_39
+		2 = east_african_nubian_40
+		2 = east_african_nubian_41
+		2 = east_african_nubian_42
+		2 = east_african_nubian_43
+		2 = east_african_nubian_44
+		2 = east_african_nubian_45
+		2 = east_african_nubian_46
+		2 = east_african_nubian_47
+		2 = east_african_nubian_48
+		2 = east_african_nubian_49
+		2 = east_african_nubian_50
+	}
+}
+
+welayta = { #Represents Damot and Omotic languages for now - needs complete set of names and dynasties etc.
+	color = welayta
+	
+	ethos = ethos_stoic
+	heritage = heritage_east_african
+	language = language_omotic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_festivities
+		tradition_horn_mountain_skirmishing
+		tradition_mystical_ancestors
+	}
+	
+	name_list = name_list_welayta
+	
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { east_african_unit_gfx mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_africa_ethiopian_01
+		2 = east_african_nubian_01
+		2 = east_africa_ethiopian_02
+		2 = east_african_nubian_02
+		2 = east_african_ethiopian_01
+		2 = east_african_nubian_03
+		2 = east_african_ethiopian_02
+		2 = east_african_nubian_04
+		2 = east_african_ethiopian_03
+		2 = east_african_nubian_05
+		2 = east_african_ethiopian_04
+		2 = east_african_nubian_06
+		2 = east_african_ethiopian_05
+		2 = east_african_nubian_07
+		2 = east_african_ethiopian_06
+		2 = east_african_nubian_08
+		2 = east_african_ethiopian_07
+		2 = east_african_nubian_09
+		2 = east_african_ethiopian_08
+		2 = east_african_nubian_10
+		2 = east_african_ethiopian_09
+		2 = east_african_nubian_11
+		2 = east_african_ethiopian_10
+		2 = east_african_nubian_12
+		2 = east_african_ethiopian_11
+		2 = east_african_nubian_13
+		2 = east_african_ethiopian_12
+		2 = east_african_nubian_14
+		2 = east_african_ethiopian_13
+		2 = east_african_nubian_15
+		2 = east_african_ethiopian_14
+		2 = east_african_nubian_16
+		2 = east_african_ethiopian_15
+		2 = east_african_nubian_17
+		2 = east_african_ethiopian_16
+		2 = east_african_nubian_18
+		2 = east_african_ethiopian_17
+		2 = east_african_nubian_19
+		2 = east_african_ethiopian_18
+		2 = east_african_nubian_20
+		2 = east_african_ethiopian_19
+		2 = east_african_nubian_21
+		2 = east_african_ethiopian_20
+		2 = east_african_nubian_22
+		2 = east_african_ethiopian_21
+		2 = east_african_nubian_23
+		2 = east_african_ethiopian_22
+		2 = east_african_nubian_24
+		2 = east_african_ethiopian_23
+		2 = east_african_nubian_25
+		2 = east_african_ethiopian_24
+		2 = east_african_nubian_26
+		2 = east_african_ethiopian_25
+		2 = east_african_nubian_27
+		2 = east_african_ethiopian_26
+		2 = east_african_nubian_28
+		2 = east_african_ethiopian_27
+		2 = east_african_nubian_29
+		2 = east_african_ethiopian_28
+		2 = east_african_nubian_30
+		2 = east_african_ethiopian_29
+		2 = east_african_nubian_31
+		2 = east_african_ethiopian_30
+		2 = east_african_nubian_32
+		2 = east_african_ethiopian_31
+		2 = east_african_nubian_33
+		2 = east_african_ethiopian_32
+		2 = east_african_nubian_34
+		2 = east_african_ethiopian_33
+		2 = east_african_nubian_35
+		2 = east_african_ethiopian_34
+		2 = east_african_nubian_36
+		2 = east_african_ethiopian_35
+		2 = east_african_nubian_37
+		2 = east_african_ethiopian_36
+		2 = east_african_nubian_38
+		2 = east_african_ethiopian_37
+		2 = east_african_nubian_39
+		2 = east_african_ethiopian_38
+		2 = east_african_nubian_40
+		2 = east_african_ethiopian_39
+		2 = east_african_nubian_41
+		2 = east_african_ethiopian_40
+		2 = east_african_nubian_42
+		2 = east_african_ethiopian_41
+		2 = east_african_nubian_43
+		2 = east_african_ethiopian_42
+		2 = east_african_nubian_44
+		2 = east_african_nubian_45
+		2 = east_african_nubian_46
+		2 = east_african_nubian_47
+		2 = east_african_nubian_48
+		2 = east_african_nubian_49
+		2 = east_african_nubian_50
+	}
+}
+
+daju = {
+	color = hsv{ 0.17 0.8 0.7 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_east_african
+	language = language_sudanic
+	martial_custom = martial_custom_equal
+	traditions = {
+		tradition_warrior_culture
+		tradition_dryland_dwellers
+		tradition_nubian_warrior_queens
+	}
+	
+	name_list = name_list_daju
+	
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { nubian_building_gfx african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { central_african_unit_gfx sub_sahran_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_nubian_01
+		2 = east_african_nubian_02
+		2 = east_african_nubian_03
+		2 = east_african_nubian_04
+		2 = east_african_nubian_05
+		2 = east_african_nubian_06
+		2 = east_african_nubian_07
+		2 = east_african_nubian_08
+		2 = east_african_nubian_09
+		2 = east_african_nubian_10
+		2 = east_african_nubian_11
+		2 = east_african_nubian_12
+		2 = east_african_nubian_13
+		2 = east_african_nubian_14
+		2 = east_african_nubian_15
+		2 = east_african_nubian_16
+		2 = east_african_nubian_17
+		2 = east_african_nubian_18
+		2 = east_african_nubian_19
+		2 = east_african_nubian_20
+		2 = east_african_nubian_21
+		2 = east_african_nubian_22
+		2 = east_african_nubian_23
+		2 = east_african_nubian_24
+		2 = east_african_nubian_25
+		2 = east_african_nubian_26
+		2 = east_african_nubian_27
+		2 = east_african_nubian_28
+		2 = east_african_nubian_29
+		2 = east_african_nubian_30
+		2 = east_african_nubian_31
+		2 = east_african_nubian_32
+		2 = east_african_nubian_33
+		2 = east_african_nubian_34
+		2 = east_african_nubian_35
+		2 = east_african_nubian_36
+		2 = east_african_nubian_37
+		2 = east_african_nubian_38
+		2 = east_african_nubian_39
+		2 = east_african_nubian_40
+		2 = east_african_nubian_41
+		2 = east_african_nubian_42
+		2 = east_african_nubian_43
+		2 = east_african_nubian_44
+		2 = east_african_nubian_45
+		2 = east_african_nubian_46
+		2 = east_african_nubian_47
+		2 = east_african_nubian_48
+		2 = east_african_nubian_49
+		2 = east_african_nubian_50
+	}
+}
+
+# Integrated from Africa Plus mod
+dinka = {
+	color = { 108 39 25 }
+
+	ethos = ethos_communal
+	heritage = heritage_east_african
+	language = language_dinka
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_tribe_unity
+		tradition_wedding_ceremonies #Dinka dowries are no joke
+		tradition_zealous_people #fierce fighters against islam and many still following traditional religion
+		tradition_mystical_ancestors #the core of the clan system is the tracing of lineage to great ancestral figures
+	}
+
+	name_list = name_list_dinka
+
+	coa_gfx = { central_african_group_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx east_african_unit_gfx }
+
+	ethnicities = {
+		2 = east_africa_ethiopian_01
+		3 = east_african_nubian_01
+		2 = east_africa_ethiopian_02
+		3 = east_african_nubian_02
+		2 = east_african_ethiopian_01
+		3 = east_african_nubian_03
+		2 = east_african_ethiopian_02
+		3 = east_african_nubian_04
+		2 = east_african_ethiopian_03
+		3 = east_african_nubian_05
+		2 = east_african_ethiopian_04
+		3 = east_african_nubian_06
+		2 = east_african_ethiopian_05
+		3 = east_african_nubian_07
+		2 = east_african_ethiopian_06
+		3 = east_african_nubian_08
+		2 = east_african_ethiopian_07
+		3 = east_african_nubian_09
+		2 = east_african_ethiopian_08
+		3 = east_african_nubian_10
+		2 = east_african_ethiopian_09
+		3 = east_african_nubian_11
+		2 = east_african_ethiopian_10
+		3 = east_african_nubian_12
+		2 = east_african_ethiopian_11
+		3 = east_african_nubian_13
+		2 = east_african_ethiopian_12
+		3 = east_african_nubian_14
+		2 = east_african_ethiopian_13
+		3 = east_african_nubian_15
+		2 = east_african_ethiopian_14
+		3 = east_african_nubian_16
+		2 = east_african_ethiopian_15
+		3 = east_african_nubian_17
+		2 = east_african_ethiopian_16
+		3 = east_african_nubian_18
+		2 = east_african_ethiopian_17
+		3 = east_african_nubian_19
+		2 = east_african_ethiopian_18
+		3 = east_african_nubian_20
+		2 = east_african_ethiopian_19
+		3 = east_african_nubian_21
+		2 = east_african_ethiopian_20
+		3 = east_african_nubian_22
+		2 = east_african_ethiopian_21
+		3 = east_african_nubian_23
+		2 = east_african_ethiopian_22
+		3 = east_african_nubian_24
+		2 = east_african_ethiopian_23
+		3 = east_african_nubian_25
+		2 = east_african_ethiopian_24
+		3 = east_african_nubian_26
+		2 = east_african_ethiopian_25
+		3 = east_african_nubian_27
+		2 = east_african_ethiopian_26
+		3 = east_african_nubian_28
+		2 = east_african_ethiopian_27
+		3 = east_african_nubian_29
+		2 = east_african_ethiopian_28
+		3 = east_african_nubian_30
+		2 = east_african_ethiopian_29
+		3 = east_african_nubian_31
+		2 = east_african_ethiopian_30
+		3 = east_african_nubian_32
+		2 = east_african_ethiopian_31
+		3 = east_african_nubian_33
+		2 = east_african_ethiopian_32
+		3 = east_african_nubian_34
+		2 = east_african_ethiopian_33
+		3 = east_african_nubian_35
+		2 = east_african_ethiopian_34
+		3 = east_african_nubian_36
+		2 = east_african_ethiopian_35
+		3 = east_african_nubian_37
+		2 = east_african_ethiopian_36
+		3 = east_african_nubian_38
+		2 = east_african_ethiopian_37
+		3 = east_african_nubian_39
+		2 = east_african_ethiopian_38
+		3 = east_african_nubian_40
+		2 = east_african_ethiopian_39
+		3 = east_african_nubian_41
+		2 = east_african_ethiopian_40
+		3 = east_african_nubian_42
+		2 = east_african_ethiopian_41
+		3 = east_african_nubian_43
+		2 = east_african_ethiopian_42
+		3 = east_african_nubian_44
+		3 = east_african_nubian_45
+		3 = east_african_nubian_46
+		3 = east_african_nubian_47
+		3 = east_african_nubian_48
+		3 = east_african_nubian_49
+		3 = east_african_nubian_50
+	}
+}
+
+
+
+# Integrated from Africa Plus mod
+nuba = { 
+	color = { 96 55 48 }
+
+	ethos = ethos_stoic
+	heritage = heritage_east_african
+	language = language_kordofanian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_stalwart_defenders
+		tradition_staunch_traditionalists
+		tradition_festivities #Sibir for all
+	}
+
+	dlc_tradition = {
+		trait = tradition_fp1_performative_honour
+		requires_dlc_flag = the_northern_lords
+		fallback = tradition_warrior_culture
+	}
+
+	name_list = name_list_dinka #TO DO Replace
+
+	coa_gfx = { central_african_group_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { sub_sahran_unit_gfx }
+
+	ethnicities = {
+		2 = east_africa_ethiopian_01
+		3 = east_african_nubian_01
+		2 = east_africa_ethiopian_02
+		3 = east_african_nubian_02
+		2 = east_african_ethiopian_01
+		3 = east_african_nubian_03
+		2 = east_african_ethiopian_02
+		3 = east_african_nubian_04
+		2 = east_african_ethiopian_03
+		3 = east_african_nubian_05
+		2 = east_african_ethiopian_04
+		3 = east_african_nubian_06
+		2 = east_african_ethiopian_05
+		3 = east_african_nubian_07
+		2 = east_african_ethiopian_06
+		3 = east_african_nubian_08
+		2 = east_african_ethiopian_07
+		3 = east_african_nubian_09
+		2 = east_african_ethiopian_08
+		3 = east_african_nubian_10
+		2 = east_african_ethiopian_09
+		3 = east_african_nubian_11
+		2 = east_african_ethiopian_10
+		3 = east_african_nubian_12
+		2 = east_african_ethiopian_11
+		3 = east_african_nubian_13
+		2 = east_african_ethiopian_12
+		3 = east_african_nubian_14
+		2 = east_african_ethiopian_13
+		3 = east_african_nubian_15
+		2 = east_african_ethiopian_14
+		3 = east_african_nubian_16
+		2 = east_african_ethiopian_15
+		3 = east_african_nubian_17
+		2 = east_african_ethiopian_16
+		3 = east_african_nubian_18
+		2 = east_african_ethiopian_17
+		3 = east_african_nubian_19
+		2 = east_african_ethiopian_18
+		3 = east_african_nubian_20
+		2 = east_african_ethiopian_19
+		3 = east_african_nubian_21
+		2 = east_african_ethiopian_20
+		3 = east_african_nubian_22
+		2 = east_african_ethiopian_21
+		3 = east_african_nubian_23
+		2 = east_african_ethiopian_22
+		3 = east_african_nubian_24
+		2 = east_african_ethiopian_23
+		3 = east_african_nubian_25
+		2 = east_african_ethiopian_24
+		3 = east_african_nubian_26
+		2 = east_african_ethiopian_25
+		3 = east_african_nubian_27
+		2 = east_african_ethiopian_26
+		3 = east_african_nubian_28
+		2 = east_african_ethiopian_27
+		3 = east_african_nubian_29
+		2 = east_african_ethiopian_28
+		3 = east_african_nubian_30
+		2 = east_african_ethiopian_29
+		3 = east_african_nubian_31
+		2 = east_african_ethiopian_30
+		3 = east_african_nubian_32
+		2 = east_african_ethiopian_31
+		3 = east_african_nubian_33
+		2 = east_african_ethiopian_32
+		3 = east_african_nubian_34
+		2 = east_african_ethiopian_33
+		3 = east_african_nubian_35
+		2 = east_african_ethiopian_34
+		3 = east_african_nubian_36
+		2 = east_african_ethiopian_35
+		3 = east_african_nubian_37
+		2 = east_african_ethiopian_36
+		3 = east_african_nubian_38
+		2 = east_african_ethiopian_37
+		3 = east_african_nubian_39
+		2 = east_african_ethiopian_38
+		3 = east_african_nubian_40
+		2 = east_african_ethiopian_39
+		3 = east_african_nubian_41
+		2 = east_african_ethiopian_40
+		3 = east_african_nubian_42
+		2 = east_african_ethiopian_41
+		3 = east_african_nubian_43
+		2 = east_african_ethiopian_42
+		3 = east_african_nubian_44
+		3 = east_african_nubian_45
+		3 = east_african_nubian_46
+		3 = east_african_nubian_47
+		3 = east_african_nubian_48
+		3 = east_african_nubian_49
+		3 = east_african_nubian_50
+	}
+}
+
+
+# Integrated from RICE
+# Represents South Omotics
+aari = { 
+	color = { 152 180 108 }
+	
+	ethos = ethos_communal
+	heritage = heritage_east_african
+	language = language_omotic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_pastoralists
+		tradition_mystical_ancestors
+		tradition_welcoming # Name/reputation and friendly/affectionate behavior are important virtues
+		tradition_eye_for_an_eye # South Omotic often hold grudges/alliances against each other for a long time in the Omo valley
+	}
+	
+	name_list = name_list_welayta
+	
+	coa_gfx = { east_african_group_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { east_african_unit_gfx central_african_unit_gfx sub_sahran_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_ethiopian_01
+		2 = east_african_ethiopian_02
+		2 = east_african_ethiopian_03
+		2 = east_african_ethiopian_04
+		2 = east_african_ethiopian_05
+		2 = east_african_ethiopian_06
+		2 = east_african_ethiopian_07
+		2 = east_african_ethiopian_08
+		2 = east_african_ethiopian_09
+		2 = east_african_ethiopian_10
+		2 = east_african_ethiopian_11
+		2 = east_african_ethiopian_12
+		2 = east_african_ethiopian_13
+		2 = east_african_ethiopian_14
+		2 = east_african_ethiopian_15
+		2 = east_african_ethiopian_16
+		2 = east_african_ethiopian_17
+		2 = east_african_ethiopian_18
+		2 = east_african_ethiopian_19
+		2 = east_african_ethiopian_20
+		2 = east_african_ethiopian_21
+		2 = east_african_ethiopian_22
+		2 = east_african_ethiopian_23
+		2 = east_african_ethiopian_24
+		2 = east_african_ethiopian_25
+		2 = east_african_ethiopian_26
+		2 = east_african_ethiopian_27
+		2 = east_african_ethiopian_28
+		2 = east_african_ethiopian_29
+		2 = east_african_ethiopian_30
+		2 = east_african_ethiopian_31
+		2 = east_african_ethiopian_32
+		2 = east_african_ethiopian_33
+		2 = east_african_ethiopian_34
+		2 = east_african_ethiopian_35
+		2 = east_african_ethiopian_36
+		2 = east_african_ethiopian_37
+		2 = east_african_ethiopian_38
+		2 = east_african_ethiopian_39
+		2 = east_african_ethiopian_40
+		2 = east_african_ethiopian_41
+		2 = east_african_ethiopian_42
+	}
+}
+
+# Integrated from RICE
+sidama = {
+	color = { 220 250 58 } # 150 182 88 # 158 208 69 # 152 158 28 # 150 180 25 # 169 205 28
+	
+	ethos = ethos_communal
+	heritage = heritage_east_african
+	language = language_cushitic
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_horn_mountain_skirmishing
+		tradition_ancient_miners # Cybr: Damot mines	
+		tradition_equitable # Cybr: Moral code of Halale, replaced with Halale tradition in RICE
+	}
+
+	# dlc_tradition = {
+	# 	trait = tradition_staunch_traditionalists
+	# 	requires_dlc_flag = hybridize_culture
+	# }
+	
+	name_list = name_list_somali # name_list_sidama
+	
+	coa_gfx = { east_african_group_coa_gfx }
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { african_clothing_gfx }
+	unit_gfx = { east_african_unit_gfx mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_ethiopian_01
+		2 = east_african_ethiopian_02
+		2 = east_african_ethiopian_03
+		2 = east_african_ethiopian_04
+		2 = east_african_ethiopian_05
+		2 = east_african_ethiopian_06
+		2 = east_african_ethiopian_07
+		2 = east_african_ethiopian_08
+		2 = east_african_ethiopian_09
+		2 = east_african_ethiopian_10
+		2 = east_african_ethiopian_11
+		2 = east_african_ethiopian_12
+		2 = east_african_ethiopian_13
+		2 = east_african_ethiopian_14
+		2 = east_african_ethiopian_15
+		2 = east_african_ethiopian_16
+		2 = east_african_ethiopian_17
+		2 = east_african_ethiopian_18
+		2 = east_african_ethiopian_19
+		2 = east_african_ethiopian_20
+		2 = east_african_ethiopian_21
+		2 = east_african_ethiopian_22
+		2 = east_african_ethiopian_23
+		2 = east_african_ethiopian_24
+		2 = east_african_ethiopian_25
+		2 = east_african_ethiopian_26
+		2 = east_african_ethiopian_27
+		2 = east_african_ethiopian_28
+		2 = east_african_ethiopian_29
+		2 = east_african_ethiopian_30
+		2 = east_african_ethiopian_31
+		2 = east_african_ethiopian_32
+		2 = east_african_ethiopian_33
+		2 = east_african_ethiopian_34
+		2 = east_african_ethiopian_35
+		2 = east_african_ethiopian_36
+		2 = east_african_ethiopian_37
+		2 = east_african_ethiopian_38
+		2 = east_african_ethiopian_39
+		2 = east_african_ethiopian_40
+		2 = east_african_ethiopian_41
+		2 = east_african_ethiopian_42
+	}
+}
+
+
+
