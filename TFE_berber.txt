@@ -237,8 +237,8 @@ masmuda = { # Butr - nomadic Berber
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
@@ -346,8 +346,8 @@ sanhaja = { # Butr - nomadic Berber
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
@@ -454,8 +454,8 @@ tora = { # Butr - nomadic Berber
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		5 = west_african_1
@@ -486,8 +486,8 @@ tuareg = { # Butr - nomadic Berber
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { mena_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		1 = north_african_berber_71
@@ -536,8 +536,8 @@ garamantian = { # Butr - nomadic Berber
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
@@ -645,8 +645,8 @@ maurian = {
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		5 = north_african_baranis_1
@@ -757,8 +757,8 @@ gaetulian = {
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
@@ -869,8 +869,8 @@ libian = {
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
@@ -977,8 +977,8 @@ autoleles = {
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		5 = north_african_baranis_1
@@ -1073,8 +1073,8 @@ pharusian = {
 	
 	coa_gfx = { berber_group_coa_gfx }
 	building_gfx = { berber_group_building_gfx mena_building_gfx }
-	clothing_gfx = { african_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
+	clothing_gfx = { afr_berber_clothing_gfx mena_clothing_gfx }
+	unit_gfx = { berber_unit_gfx mena_unit_gfx }
 	
 	ethnicities = {
 		2 = north_african_berber_1
