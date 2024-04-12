@@ -1,0 +1,594 @@
+﻿alan = {
+	color = { 100 35 0 }
+	
+	ethos = ethos_communal
+	heritage = heritage_sarmatian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_mountaineers
+		tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+		#tradition_migrations
+		tradition_nomadic_migrations
+	}
+	
+	name_list = name_list_alan
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+#alans were quoted to be blond, so i used slavic as the most close to them imo
+		2 = iranian_saka_01
+		6 = european_slavic_blond_1
+		2 = iranian_saka_02
+		6 = european_slavic_blond_2
+		2 = iranian_saka_03
+		6 = european_slavic_blond_3
+		2 = iranian_saka_04
+		6 = european_slavic_blond_4
+		2 = iranian_saka_05
+		5 = european_slavic_ginger_1
+		2 = iranian_saka_06
+		5 = european_slavic_ginger_2
+		2 = iranian_saka_07
+		5 = european_slavic_brown_1
+		2 = iranian_saka_08
+		5 = european_slavic_brown_2
+		2 = iranian_saka_09
+		5 = european_slavic_brown_3
+		2 = iranian_saka_10
+		5 = european_slavic_brown_4
+		2 = iranian_saka_11
+		3 = european_slavic_dark_1
+		2 = iranian_saka_12
+		3 = european_slavic_dark_2
+		2 = iranian_saka_13
+		3 = european_slavic_dark_3
+		2 = iranian_saka_14
+		3 = european_slavic_dark_4
+		2 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = iranian_saka_20
+		2 = european_eastern_slavic_6
+		2 = european_eastern_slavic_7
+		2 = european_eastern_slavic_8
+		2 = european_eastern_slavic_9
+		2 = european_eastern_slavic_10
+		2 = european_eastern_slavic_11
+		2 = european_eastern_slavic_12
+		2 = european_eastern_slavic_13
+		2 = european_eastern_slavic_14
+		2 = european_eastern_slavic_15
+		2 = european_eastern_slavic_16
+		2 = european_eastern_slavic_17
+		2 = european_eastern_slavic_18
+		2 = european_eastern_slavic_19
+		2 = european_eastern_slavic_20
+		2 = european_eastern_slavic_21
+		2 = european_eastern_slavic_22
+		2 = european_eastern_slavic_23
+		2 = european_eastern_slavic_24
+		2 = european_eastern_slavic_25
+		2 = european_eastern_slavic_26
+		2 = european_eastern_slavic_27
+		2 = european_eastern_slavic_28
+		2 = european_eastern_slavic_29
+		2 = european_eastern_slavic_30
+	}
+}
+thyssagataen = {
+	color = { 150 80 10 }
+	
+	ethos = ethos_communal
+	heritage = heritage_sarmatian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		# Cybr: Quick search reveals literally nothing about these guys
+		tradition_horse_lords
+		tradition_mountaineers
+		tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+		tradition_migrations # Cybr: nomads
+	}
+	
+	name_list = name_list_alan
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		5 = european_slavic_blond_1
+		2 = iranian_saka_02
+		5 = european_slavic_blond_2
+		2 = iranian_saka_03
+		5 = european_slavic_blond_3
+		2 = iranian_saka_04
+		5 = european_slavic_blond_4
+		2 = iranian_saka_05
+		5 = european_slavic_ginger_1
+		2 = iranian_saka_06
+		5 = european_slavic_ginger_2
+		2 = iranian_saka_07
+		5 = european_slavic_brown_1
+		2 = iranian_saka_08
+		5 = european_slavic_brown_2
+		2 = iranian_saka_09
+		5 = european_slavic_brown_3
+		2 = iranian_saka_10
+		5 = european_slavic_brown_4
+		2 = iranian_saka_11
+		3 = european_slavic_dark_1
+		2 = iranian_saka_12
+		3 = european_slavic_dark_2
+		2 = iranian_saka_13
+		3 = european_slavic_dark_3
+		2 = iranian_saka_14
+		3 = european_slavic_dark_4
+		2 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = iranian_saka_20
+#they are bordering the volga fins
+		1 = steppe_volga_finn_mordvin_01
+		1 = steppe_volga_finn_mordvin_02
+		1 = steppe_volga_finn_mordvin_03
+		1 = steppe_volga_finn_mordvin_04
+		1 = steppe_volga_finn_mordvin_05
+		1 = steppe_volga_finn_mordvin_06
+		1 = steppe_volga_finn_mordvin_07
+		1 = steppe_volga_finn_mordvin_08
+		1 = steppe_volga_finn_mordvin_09
+		1 = steppe_volga_finn_mordvin_10
+		1 = steppe_volga_finn_mordvin_11
+		1 = steppe_volga_finn_mordvin_12
+		1 = steppe_volga_finn_mordvin_13
+		1 = steppe_volga_finn_mordvin_14
+		1 = steppe_volga_finn_mordvin_15
+		1 = steppe_volga_finn_mordvin_16
+		1 = steppe_volga_finn_mordvin_17
+		1 = steppe_volga_finn_mordvin_18
+		1 = steppe_volga_finn_mordvin_19
+		1 = steppe_volga_finn_mordvin_20
+		1 = steppe_volga_finn_mordvin_21
+		1 = steppe_volga_finn_mordvin_22
+		1 = steppe_volga_finn_mordvin_23
+		1 = steppe_volga_finn_mordvin_24
+		1 = steppe_volga_finn_mordvin_25
+		1 = steppe_volga_finn_mordvin_26
+		1 = steppe_volga_finn_mordvin_27
+		1 = steppe_volga_finn_mordvin_28
+		1 = steppe_volga_finn_mordvin_29
+		1 = steppe_volga_finn_mordvin_30
+		1 = steppe_volga_finn_mordvin_31
+		1 = steppe_volga_finn_mordvin_32
+		1 = steppe_volga_finn_mordvin_33
+		1 = steppe_volga_finn_mordvin_34
+		1 = steppe_volga_finn_mordvin_35
+	}
+}
+ciscaucasian = {
+	color = { 90 30 5 }
+	
+	ethos = ethos_communal
+	heritage = heritage_sarmatian
+	language = language_lezgic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_mountaineers
+		tradition_mountain_homes # Cybr: Since they live in mountainous regions... I guess?
+		#tradition_steppe_tolerance
+		tradition_wedding_ceremonies
+		tradition_nomadic_migrations # Cybr: nomads
+	}
+	
+	name_list = name_list_alan
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = european_slavic_blond_1
+		2 = iranian_saka_02
+		2 = european_slavic_blond_2
+		2 = iranian_saka_03
+		2 = european_slavic_blond_3
+		2 = iranian_saka_04
+		2 = european_slavic_blond_4
+		2 = iranian_saka_05
+		5 = european_slavic_ginger_1
+		2 = iranian_saka_06
+		5 = european_slavic_ginger_2
+		2 = iranian_saka_07
+		5 = european_slavic_brown_1
+		2 = iranian_saka_08
+		5 = european_slavic_brown_2
+		2 = iranian_saka_09
+		5 = european_slavic_brown_3
+		2 = iranian_saka_10
+		5 = european_slavic_brown_4
+		2 = iranian_saka_11
+		6 = european_slavic_dark_1
+		2 = iranian_saka_12
+		6 = european_slavic_dark_2
+		2 = iranian_saka_13
+		6 = european_slavic_dark_3
+		2 = iranian_saka_14
+		6 = european_slavic_dark_4
+		2 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = iranian_saka_20
+	}
+}
+roxolan = {
+	color = { 70 35 0 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_sarmatian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_mountaineers
+		tradition_steppe_tolerance
+		tradition_warrior_culture # Cybr: Eh, something to set them apart from the Alans
+		#tradition_migrations # Cybr: nomads
+		tradition_nomadic_migrations
+	}
+	
+	name_list = name_list_alan
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		10 = european_slavic_blond_1
+		2 = iranian_saka_02
+		10 = european_slavic_blond_2
+		2 = iranian_saka_03
+		10 = european_slavic_blond_3
+		2 = iranian_saka_04
+		10 = european_slavic_blond_4
+		2 = iranian_saka_05
+		10 = european_slavic_ginger_1
+		2 = iranian_saka_06
+		10 = european_slavic_ginger_2
+		2 = iranian_saka_07
+		10 = european_slavic_brown_1
+		2 = iranian_saka_08
+		10 = european_slavic_brown_2
+		2 = iranian_saka_09
+		10 = european_slavic_brown_3
+		2 = iranian_saka_10
+		10 = european_slavic_brown_4
+		2 = iranian_saka_11
+		10 = european_slavic_dark_1
+		2 = iranian_saka_12
+		10 = european_slavic_dark_2
+		2 = iranian_saka_13
+		10 = european_slavic_dark_3
+		2 = iranian_saka_14
+		5 = european_slavic_dark_4
+		2 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = iranian_saka_20
+		2 = european_eastern_slavic_6
+		2 = european_eastern_slavic_7
+		2 = european_eastern_slavic_8
+		2 = european_eastern_slavic_9
+		2 = european_eastern_slavic_10
+		2 = european_eastern_slavic_11
+		2 = european_eastern_slavic_12
+		2 = european_eastern_slavic_13
+		2 = european_eastern_slavic_14
+		2 = european_eastern_slavic_15
+		2 = european_eastern_slavic_16
+		2 = european_eastern_slavic_17
+		2 = european_eastern_slavic_18
+		2 = european_eastern_slavic_19
+		2 = european_eastern_slavic_20
+		2 = european_eastern_slavic_21
+		2 = european_eastern_slavic_22
+		2 = european_eastern_slavic_23
+		2 = european_eastern_slavic_24
+		2 = european_eastern_slavic_25
+		2 = european_eastern_slavic_26
+		2 = european_eastern_slavic_27
+		2 = european_eastern_slavic_28
+		2 = european_eastern_slavic_29
+		2 = european_eastern_slavic_30
+	}
+}
+yazige = {
+	color = { 80 40 10 }
+	
+	ethos = ethos_communal
+	heritage = heritage_sarmatian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_pastoralists # Cybr: Cattle grazing between the towns they settled in
+		tradition_steppe_tolerance
+		#tradition_migrations # Cybr: nomads
+		tradition_nomadic_migrations
+	}
+
+	dlc_tradition = { # Cybr: Lived near Romans for a long time
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_alan
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		3 = european_slavic_blond_1
+		2 = iranian_saka_02
+		3 = european_slavic_blond_2
+		2 = iranian_saka_03
+		3 = european_slavic_blond_3
+		2 = iranian_saka_04
+		3 = european_slavic_blond_4
+		2 = iranian_saka_05
+		8 = european_slavic_ginger_1
+		2 = iranian_saka_06
+		8 = european_slavic_ginger_2
+		2 = iranian_saka_07
+		6 = european_slavic_brown_1
+		2 = iranian_saka_08
+		6 = european_slavic_brown_2
+		2 = iranian_saka_09
+		6 = european_slavic_brown_3
+		2 = iranian_saka_10
+		6 = european_slavic_brown_4
+		2 = iranian_saka_11
+		3 = european_slavic_dark_1
+		2 = iranian_saka_12
+		3 = european_slavic_dark_2
+		2 = iranian_saka_13
+		3 = european_slavic_dark_3
+		2 = iranian_saka_14
+		3 = european_slavic_dark_4
+		2 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = iranian_saka_20
+	}
+}
+taifal = {
+	color = { 70 25 5 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_sarmatian
+	language = language_vandalic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_horse_lords
+		tradition_warrior_culture # Cybr: Taking stuff I see in Germanic culture to emphasize their blend
+		tradition_tribe_unity # Cybr: Taking stuff I see in Germanic culture to emphasize their blend
+	}
+
+	dlc_tradition = { # Cybr: Living in different parts of the Roman Empire?
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_taifalian
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		3 = iranian_saka_01
+		3 = european_slavic_blond_1
+		2 = european_caucasian_german_1
+		3 = iranian_saka_02
+		3 = european_slavic_blond_2
+		2 = european_caucasian_german_2
+		3 = iranian_saka_03
+		3 = european_slavic_blond_3
+		2 = european_caucasian_german_3
+		3 = iranian_saka_04
+		3 = european_slavic_blond_4
+		2 = european_caucasian_german_4
+		3 = iranian_saka_05
+		8 = european_slavic_ginger_1
+		2 = european_caucasian_german_5
+		3 = iranian_saka_06
+		8 = european_slavic_ginger_2
+		2 = european_caucasian_german_6
+		3 = iranian_saka_07
+		6 = european_slavic_brown_1
+		2 = european_caucasian_german_7
+		3 = iranian_saka_08
+		6 = european_slavic_brown_2
+		2 = european_caucasian_german_8
+		3 = iranian_saka_09
+		6 = european_slavic_brown_3
+		2 = european_caucasian_german_9
+		3 = iranian_saka_10
+		6 = european_slavic_brown_4
+		2 = european_caucasian_german_10
+		3 = iranian_saka_11
+		3 = european_slavic_dark_1
+		2 = european_caucasian_german_11
+		3 = iranian_saka_12
+		3 = european_slavic_dark_2
+		2 = european_caucasian_german_12
+		3 = iranian_saka_13
+		3 = european_slavic_dark_3
+		2 = european_caucasian_german_14_Vol
+		3 = iranian_saka_14
+		3 = european_slavic_dark_4
+		2 = european_caucasian_german_15_Em
+		3 = iranian_saka_15
+		2 = european_eastern_slavic_1
+		2 = european_caucasian_german_17
+		3 = iranian_saka_16
+		2 = european_eastern_slavic_2
+		2 = european_caucasian_german_18
+		3 = iranian_saka_17
+		2 = european_eastern_slavic_3
+		2 = european_caucasian_german_19
+		3 = iranian_saka_18
+		2 = european_eastern_slavic_4
+		2 = european_caucasian_german_20
+		3 = iranian_saka_19
+		2 = european_eastern_slavic_5
+		2 = european_caucasian_german_21
+		3 = iranian_saka_20
+		2 = european_caucasian_german_22
+	}
+}
+
+kangju = {
+	color = { 100 30 0 }
+
+	parents = { saka sogdian }
+
+	created = 2.1.1
+	history_loc_override = kangju_history_loc
+	
+	ethos = ethos_communal
+	heritage = heritage_sarmatian
+	language = language_scythian
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_horse_lords
+		tradition_steppe_tolerance
+		tradition_city_keepers
+		tradition_caravaneers
+	}
+
+	dlc_tradition = { # Cybr: Cultural blend
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_sogdian
+	
+	coa_gfx = { steppe_coa_gfx western_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		2 = iranian_saka_01
+		2 = iranian_sogdian_01
+		2 = iranian_saka_02
+		2 = iranian_sogdian_02
+		2 = iranian_saka_03
+		2 = iranian_sogdian_03
+		2 = iranian_saka_04
+		2 = iranian_sogdian_04
+		2 = iranian_saka_05
+		2 = iranian_sogdian_05
+		2 = iranian_saka_06
+		2 = iranian_sogdian_06
+		2 = iranian_saka_07
+		2 = iranian_sogdian_07
+		2 = iranian_saka_08
+		2 = iranian_sogdian_08
+		2 = iranian_saka_09
+		2 = iranian_sogdian_09
+		2 = iranian_saka_10
+		2 = iranian_sogdian_10
+		2 = iranian_saka_11
+		2 = iranian_sogdian_11
+		2 = iranian_saka_12
+		2 = iranian_sogdian_12
+		2 = iranian_saka_13
+		2 = iranian_sogdian_13
+		2 = iranian_saka_14
+		2 = iranian_sogdian_14
+		2 = iranian_saka_15
+		2 = iranian_sogdian_15
+		2 = iranian_saka_16
+		2 = iranian_sogdian_16
+		2 = iranian_saka_17
+		2 = iranian_sogdian_17
+		2 = iranian_saka_18
+		2 = iranian_sogdian_18
+		2 = iranian_saka_19
+		2 = iranian_sogdian_19
+		2 = iranian_saka_20
+		2 = iranian_sogdian_20
+		2 = asian_turkic_1_western
+		2 = asian_turkic_2_western
+		2 = asian_turkic_3_western
+		2 = asian_turkic_4_western
+		2 = asian_turkic_5_western
+		2 = asian_turkic_6_western
+		2 = asian_turkic_7_western
+		2 = asian_turkic_8_western 
+		2 = asian_turkic_9_western
+		2 = asian_turkic_15_western 
+		2 = asian_turkic_16_western
+		2 = asian_turkic_17_western
+		2 = asian_turkic_19_western
+		2 = asian_turkic_20_western
+		2 = asian_turkic_23_western
+	}
+}
