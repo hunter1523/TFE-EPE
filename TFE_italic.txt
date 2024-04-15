@@ -1,0 +1,295 @@
+﻿rhaetian = {
+	color = { 0.1 0.75 0.2 }
+	created = 2.1.1
+	parents = { etruscan }
+	history_loc_override = rhaetian_history_loc
+
+	ethos = ethos_stoic
+	heritage = heritage_latin
+	language = language_etruscan
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_stalwart_defenders # Cybr: Described as savage warriors by Strabo, but could be bias from the Roman POV
+		tradition_mountain_homes # Cybr: They're in the Alps
+		tradition_mountaineers # Cybr: Alpine legions
+	}
+
+	dlc_tradition = { # Cybr: Celtic and Roman influences
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_rhaetian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { late_roman_unit_gfx }
+
+	ethnicities = {
+		5 = european_med_cisalpine_1
+		5 = european_med_cisalpine_2
+		5 = european_med_cisalpine_3
+		5 = european_med_cisalpine_4
+		5 = european_med_cisalpine_5
+		5 = european_med_cisalpine_6
+		5 = european_med_cisalpine_7
+		5 = european_med_cisalpine_8
+		5 = european_med_cisalpine_9
+		5 = european_med_cisalpine_10
+		2 = european_caucasian_french_1
+		2 = european_caucasian_french_2
+		2 = european_caucasian_french_3
+		2 = european_caucasian_french_4
+		2 = european_caucasian_french_5
+		2 = european_caucasian_french_6
+		2 = european_caucasian_french_7
+		2 = european_caucasian_french_8
+		2 = european_caucasian_french_9
+		2 = european_caucasian_french_10
+		2 = european_caucasian_french_11
+		2 = european_caucasian_french_12
+		2 = european_caucasian_french_13
+		2 = european_caucasian_french_14
+		2 = european_caucasian_french_15
+		2 = european_caucasian_french_16
+		2 = european_caucasian_french_17
+		2 = european_caucasian_french_18
+		2 = european_caucasian_french_19
+		2 = european_caucasian_french_20
+		2 = european_caucasian_french_21
+		2 = european_caucasian_french_22
+		2 = european_caucasian_french_23
+		2 = european_caucasian_french_24
+		2 = european_caucasian_french_25
+		2 = european_caucasian_french_26
+		2 = european_caucasian_french_27
+		2 = european_caucasian_french_28
+		2 = european_caucasian_french_29
+		2 = european_caucasian_french_30
+		2 = european_caucasian_french_31
+		2 = european_caucasian_french_32
+		2 = european_caucasian_french_33
+		2 = european_caucasian_french_34
+		2 = european_caucasian_french_35
+		2 = european_caucasian_french_36
+		2 = european_caucasian_french_37
+		2 = european_caucasian_french_38
+		2 = european_caucasian_french_39
+		2 = european_caucasian_french_40
+		2 = european_caucasian_french_41
+		2 = european_caucasian_french_42
+		2 = european_caucasian_french_43
+		2 = european_caucasian_french_44
+		2 = european_caucasian_french_45
+		2 = european_caucasian_french_46
+	}
+}
+
+etruscan = {
+	color = { 0.1 0.9 0.3 }
+
+	ethos = ethos_communal
+	heritage = heritage_latin
+	language = language_etruscan
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_legalistic
+		tradition_poetry
+		tradition_parochialism # Cybr: Etruscan city-states
+		tradition_astute_diplomats # Cybr: Etruscan tradition of city-state leagues
+		tradition_maritime_mercantilism # Cybr: Etruscan trade
+	}
+	
+	name_list = name_list_rhaetian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { late_roman_unit_gfx }
+
+	ethnicities = {
+		2 = european_med_italian_1
+		2 = european_med_italian_2
+		2 = european_med_italian_3
+		2 = european_med_italian_4 
+		2 = european_med_italian_5
+		2 = european_med_italian_6
+		2 = european_med_italian_7
+		2 = european_med_italian_8
+		2 = european_med_italian_9
+		2 = european_med_italian_10
+		2 = european_med_italian_11
+		2 = european_med_italian_12
+		2 = european_med_italian_13
+		2 = european_med_italian_14
+		2 = european_med_italian_15
+		2 = european_med_italian_16
+		2 = european_med_italian_17
+		2 = european_med_italian_18
+		2 = european_med_italian_19
+		2 = european_med_italian_20
+		2 = european_med_italian_21
+		2 = european_med_italian_22
+		2 = european_med_italian_23
+		2 = european_med_italian_24
+		2 = european_med_italian_25
+		2 = european_med_italian_26
+		2 = european_med_italian_27
+		2 = european_med_italian_28
+		2 = european_med_italian_29
+		2 = european_med_italian_30
+		2 = european_med_italian_31
+		2 = european_med_italian_32
+		2 = european_med_italian_33
+		2 = european_med_italian_34
+		2 = european_med_italian_35
+		2 = european_med_italian_36
+		2 = european_med_italian_37
+		2 = european_med_italian_38
+		2 = european_med_italian_39
+		2 = european_med_italian_40
+		2 = european_med_italian_41
+		2 = european_med_italian_42
+		2 = european_med_italian_43
+		2 = european_med_italian_44
+		2 = european_med_italian_45
+		2 = european_med_italian_46
+		2 = european_med_italian_47
+		2 = european_med_italian_48
+		2 = european_med_italian_49
+		2 = european_med_italian_50
+		2 = european_med_italian_51
+		2 = european_med_italian_52
+		2 = european_med_italian_53
+		2 = european_med_italian_54
+		2 = european_med_italian_55
+		2 = european_med_italian_56
+		2 = european_med_italian_57
+		2 = european_med_italian_58
+		2 = european_med_italian_59
+		2 = european_med_italian_60
+		2 = european_med_italian_61
+		2 = european_med_italian_62
+		2 = european_med_italian_63
+		2 = european_med_italian_64
+		2 = european_med_italian_65
+		2 = european_med_italian_66
+		2 = european_med_italian_67
+		2 = european_med_italian_68
+		2 = european_med_italian_69
+		2 = european_med_italian_70
+		2 = european_med_italian_71
+		2 = european_med_italian_72
+		2 = european_med_italian_73
+		2 = european_med_italian_74
+		2 = european_med_italian_75
+		2 = european_med_italian_76
+		2 = european_med_italian_77
+		2 = european_med_italian_78
+		2 = european_med_italian_79
+		2 = european_med_italian_80
+		2 = european_med_italian_81
+		2 = european_med_italian_82
+		2 = european_med_italian_83
+		2 = european_med_italian_84
+		2 = european_med_italian_85
+		2 = european_med_italian_86
+		2 = european_med_italian_87
+		2 = european_med_italian_88
+		2 = european_med_italian_89
+		2 = european_med_italian_90
+		2 = european_med_italian_91
+		2 = european_med_italian_92
+		2 = european_med_italian_93
+		2 = european_med_italian_94
+		2 = european_med_italian_95
+		2 = european_med_italian_96
+		2 = european_med_italian_97
+		2 = european_med_italian_98
+		2 = european_med_italian_99
+		2 = european_med_italian_100
+		2 = european_med_italian_101
+		2 = european_med_italian_102
+		2 = european_med_italian_103
+	}
+}
+
+nuragic = {
+	color = { 222 158 255 }
+
+	ethos = ethos_spiritual
+	heritage = heritage_latin
+	language = language_etruscan
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_sardinian_barbarians # Cybr: Sea Peoples, and infamous raiders/pirates in Roman times too; Romans had difficulty controlling the island
+		#tradition_seafaring # Cybr: Efficient ships and shipbuilders
+		tradition_maritime_mercantilism # Cybr: Efficient ships and shipbuilders
+		# tradition_artisans # Cybr: Nuragic artwork and monument building
+		tradition_ancient_miners # Cybr: Important mining center in Roman times
+		tradition_fervent_temple_builders # Cybr: Building nuraghes
+		tradition_sacred_springs # Cybr: Nuraghe sacred springs which continued into Roman times
+	}
+	
+	name_list = name_list_sardinian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { late_roman_unit_gfx }
+	
+	ethnicities = {
+		2 = european_med_sicilian_01
+		2 = european_med_sicilian_02
+		2 = european_med_sicilian_03
+		2 = european_med_sicilian_04 
+		2 = european_med_sicilian_05
+		2 = european_med_sicilian_06
+		2 = european_med_sicilian_07
+		2 = european_med_sicilian_08
+		2 = european_med_sicilian_09
+		2 = european_med_sicilian_10
+		2 = european_med_sicilian_11
+		2 = european_med_sicilian_12
+		2 = european_med_sicilian_13
+		2 = european_med_sicilian_14
+		2 = european_med_sicilian_15
+		2 = european_med_sicilian_16
+		2 = european_med_sicilian_17
+		2 = european_med_sicilian_18
+		2 = european_med_sicilian_19
+		2 = european_med_sicilian_20
+		2 = european_med_sicilian_21
+		2 = european_med_sicilian_22
+		2 = european_med_sicilian_23
+		2 = european_med_sicilian_24
+		2 = european_med_sicilian_25
+		2 = european_med_sicilian_26
+		2 = european_med_sicilian_27
+		2 = european_med_sicilian_28
+		2 = european_med_sicilian_29
+		2 = european_med_sicilian_30
+		2 = european_med_sicilian_31
+		2 = european_med_sicilian_32
+		2 = european_med_sicilian_33
+		2 = european_med_sicilian_34
+		2 = european_med_sicilian_35
+		2 = european_med_sicilian_36
+		2 = european_med_sicilian_37
+		2 = european_med_sicilian_38
+		2 = european_med_sicilian_39
+		2 = european_med_sicilian_40
+		2 = european_med_sicilian_41
+		2 = european_med_sicilian_42
+		2 = european_med_sicilian_43
+		2 = european_med_sicilian_44
+		2 = european_med_sicilian_45
+		2 = european_med_sicilian_46
+		2 = european_med_sicilian_47
+		2 = european_med_sicilian_48
+		2 = european_med_sicilian_49
+		2 = european_med_sicilian_50
+	}
+}
+
