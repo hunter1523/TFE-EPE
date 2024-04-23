@@ -1,0 +1,115 @@
+﻿nabatean = {
+	color = { 0.33 0.08 0.13 }
+
+	parents = { bedouin aramean } 
+
+	created = 5.1.1
+	history_loc_override = nabatean_history_loc
+	
+	ethos = ethos_spiritual
+	heritage = heritage_arabic
+	language = language_aramaic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_city_keepers # Cybr: Something to represent Petra
+		tradition_dryland_dwellers # Cybr: It's a desert out there
+		tradition_caravaneers # Cybr: Major role in the incense trade
+		tradition_maritime_mercantilism # Cybr: Not as well known as the incense route, but still pretty important - Nabatean piracy was a major headache for the Ptolemies for instance, though I think just this tradition will suffice
+		#tradition_mubarizuns # Cybr: Probably need a more historically relevant tradition, but they were known for being good desert warriors
+	}
+	
+	name_list = name_list_nabatean
+
+	dlc_tradition = { # Cybr: Influence from Roman, Greek, Aramaic, and other Arab groups
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+
+	coa_gfx = { arabic_group_coa_gfx } 
+	building_gfx = { arabic_group_building_gfx mena_building_gfx } 
+	clothing_gfx = { dde_abbasid_clothing_gfx mena_clothing_gfx } 
+	unit_gfx = { mena_unit_gfx } 
+
+	ethnicities = {
+		3 = mid_east_bedouin_1
+		3 = mid_east_bedouin_2
+		3 = mid_east_bedouin_3
+		3 = mid_east_bedouin_4
+		3 = mid_east_bedouin_5
+		3 = mid_east_bedouin_6
+		3 = mid_east_bedouin_7
+		3 = mid_east_bedouin_8
+		3 = mid_east_bedouin_9
+		3 = mid_east_bedouin_10
+		3 = mid_east_bedouin_11
+		3 = mid_east_bedouin_12
+		3 = mid_east_bedouin_13
+		3 = mid_east_bedouin_14
+		3 = mid_east_bedouin_15
+		3 = mid_east_bedouin_16
+		3 = mid_east_bedouin_17
+		3 = mid_east_bedouin_18
+		3 = mid_east_bedouin_19
+		3 = mid_east_bedouin_20
+		3 = mid_east_bedouin_21
+		3 = mid_east_bedouin_22
+		3 = mid_east_bedouin_23
+		3 = mid_east_bedouin_24
+		3 = mid_east_bedouin_25
+		3 = mid_east_bedouin_26
+		3 = mid_east_bedouin_27
+		3 = mid_east_bedouin_28
+		3 = mid_east_bedouin_29
+		3 = mid_east_bedouin_30
+		3 = mid_east_bedouin_31
+		3 = mid_east_bedouin_32
+		3 = mid_east_bedouin_33
+		3 = mid_east_bedouin_34
+		3 = mid_east_bedouin_35
+		3 = mid_east_bedouin_36
+		3 = mid_east_bedouin_37
+		3 = mid_east_bedouin_38
+		3 = mid_east_bedouin_39
+		3 = mid_east_bedouin_40
+		2 = mid_east_arabic_1
+		2 = mid_east_arabic_2
+		2 = mid_east_arabic_3
+		2 = mid_east_arabic_4
+		2 = mid_east_arabic_5
+		2 = mid_east_arabic_6
+		2 = mid_east_arabic_7
+		2 = mid_east_arabic_8
+		2 = mid_east_arabic_9
+		2 = mid_east_arabic_10
+		2 = mid_east_arabic_11
+		2 = mid_east_arabic_12
+		2 = mid_east_arabic_13
+		2 = mid_east_arabic_14
+		2 = mid_east_arabic_15
+		2 = mid_east_arabic_16
+		2 = mid_east_arabic_17
+		2 = mid_east_arabic_18
+		2 = mid_east_arabic_19
+		2 = mid_east_arabic_20
+		2 = mid_east_arabic_21
+		2 = mid_east_arabic_22
+		2 = mid_east_arabic_23
+		2 = mid_east_arabic_24
+		2 = mid_east_arabic_25
+		2 = mid_east_arabic_26
+		2 = mid_east_arabic_27
+		2 = mid_east_arabic_28
+		2 = mid_east_arabic_29
+		2 = mid_east_arabic_30
+		2 = mid_east_arabic_31
+		2 = mid_east_arabic_32
+		2 = mid_east_arabic_33
+		2 = mid_east_arabic_34
+		2 = mid_east_arabic_35
+		2 = mid_east_arabic_36
+		2 = mid_east_arabic_37
+		2 = mid_east_arabic_38
+		2 = mid_east_arabic_39
+		2 = mid_east_arabic_40
+	}
+}

@@ -1,0 +1,160 @@
+﻿
+
+# Cybr: Conventional narratives about the collapse of the Kingdom of Meroe/Kush see movement of the "Noba" eastwards as a contirbuting factor.
+# However, it is hard to say whether it was an invasion, migration, cultural changes in the already present population, or something in between.
+# Either way, the Noba are then posited as ancestors of the later Nubians.
+# Further complicating matters is there is a dearth of written materials in this period.
+# However, for game purposes, I'm going with a more moderate interpretation of the migration theory
+noba = {
+	color = { 214 133 75 }
+	
+	ethos = ethos_communal
+	heritage = heritage_east_african
+	language = language_sudanic
+	martial_custom = martial_custom_equal
+
+	traditions = {
+		tradition_saharan_nomads		# Cybr: If we follow the older conventional theory, they came from the east aka the Sahara
+		tradition_land_of_the_bow
+		tradition_nubian_warrior_queens
+	}
+	
+	name_list = name_list_nubian
+
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { nubian_building_gfx african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_nubian_01
+		2 = east_african_nubian_02
+		2 = east_african_nubian_03
+		2 = east_african_nubian_04
+		2 = east_african_nubian_05
+		2 = east_african_nubian_06
+		2 = east_african_nubian_07
+		2 = east_african_nubian_08
+		2 = east_african_nubian_09
+		2 = east_african_nubian_10
+		2 = east_african_nubian_11
+		2 = east_african_nubian_12
+		2 = east_african_nubian_13
+		2 = east_african_nubian_14
+		2 = east_african_nubian_15
+		2 = east_african_nubian_16
+		2 = east_african_nubian_17
+		2 = east_african_nubian_18
+		2 = east_african_nubian_19
+		2 = east_african_nubian_20
+		2 = east_african_nubian_21
+		2 = east_african_nubian_22
+		2 = east_african_nubian_23
+		2 = east_african_nubian_24
+		2 = east_african_nubian_25
+		2 = east_african_nubian_26
+		2 = east_african_nubian_27
+		2 = east_african_nubian_28
+		2 = east_african_nubian_29
+		2 = east_african_nubian_30
+		2 = east_african_nubian_31
+		2 = east_african_nubian_32
+		2 = east_african_nubian_33
+		2 = east_african_nubian_34
+		2 = east_african_nubian_35
+		2 = east_african_nubian_36
+		2 = east_african_nubian_37
+		2 = east_african_nubian_38
+		2 = east_african_nubian_39
+		2 = east_african_nubian_40
+		2 = east_african_nubian_41
+		2 = east_african_nubian_42
+		2 = east_african_nubian_43
+		2 = east_african_nubian_44
+		2 = east_african_nubian_45
+		2 = east_african_nubian_46
+		2 = east_african_nubian_47
+		2 = east_african_nubian_48
+		2 = east_african_nubian_49
+		2 = east_african_nubian_50
+	}
+}
+
+
+# Cybr: Representing the culture of the Kingdom of Meroe/Kush
+meroitic = {
+	color = { 248 235 10 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_east_african
+	language = language_sudanic
+	martial_custom = martial_custom_equal
+
+	traditions = {
+		tradition_land_of_the_bow
+		tradition_agrarian
+		tradition_nubian_warrior_queens
+		tradition_fervent_temple_builders 	# Cybr: Built pyramids and temples and stuff
+		tradition_ancient_miners			# Cybr: Nubian/Kushite gold and iron trade
+	}
+	
+	name_list = name_list_meroitic
+
+	coa_gfx = { east_african_coa_gfx }
+	building_gfx = { nubian_building_gfx african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	
+	ethnicities = {
+		2 = east_african_nubian_01
+		2 = east_african_nubian_02
+		2 = east_african_nubian_03
+		2 = east_african_nubian_04
+		2 = east_african_nubian_05
+		2 = east_african_nubian_06
+		2 = east_african_nubian_07
+		2 = east_african_nubian_08
+		2 = east_african_nubian_09
+		2 = east_african_nubian_10
+		2 = east_african_nubian_11
+		2 = east_african_nubian_12
+		2 = east_african_nubian_13
+		2 = east_african_nubian_14
+		2 = east_african_nubian_15
+		2 = east_african_nubian_16
+		2 = east_african_nubian_17
+		2 = east_african_nubian_18
+		2 = east_african_nubian_19
+		2 = east_african_nubian_20
+		2 = east_african_nubian_21
+		2 = east_african_nubian_22
+		2 = east_african_nubian_23
+		2 = east_african_nubian_24
+		2 = east_african_nubian_25
+		2 = east_african_nubian_26
+		2 = east_african_nubian_27
+		2 = east_african_nubian_28
+		2 = east_african_nubian_29
+		2 = east_african_nubian_30
+		2 = east_african_nubian_31
+		2 = east_african_nubian_32
+		2 = east_african_nubian_33
+		2 = east_african_nubian_34
+		2 = east_african_nubian_35
+		2 = east_african_nubian_36
+		2 = east_african_nubian_37
+		2 = east_african_nubian_38
+		2 = east_african_nubian_39
+		2 = east_african_nubian_40
+		2 = east_african_nubian_41
+		2 = east_african_nubian_42
+		2 = east_african_nubian_43
+		2 = east_african_nubian_44
+		2 = east_african_nubian_45
+		2 = east_african_nubian_46
+		2 = east_african_nubian_47
+		2 = east_african_nubian_48
+		2 = east_african_nubian_49
+		2 = east_african_nubian_50
+	}
+}

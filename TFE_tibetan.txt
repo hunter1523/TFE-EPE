@@ -1,0 +1,158 @@
+﻿kachari = { # Kachari (Bodo-Kachari groups: Boro, Mech, Dimasa, Moran, Deori, etc)
+	color = { 228 120 128 }
+
+	ethos = ethos_communal
+	heritage = heritage_tibetan
+	language = language_kachari
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_jungle_dwellers
+		tradition_jungle_warriors
+		tradition_poetry
+		tradition_agrarian
+	}
+
+	name_list = name_list_assamese
+
+	coa_gfx = { tibetan_group_coa_gfx }
+	building_gfx = { tibetan_building_gfx indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		2 = indian_assamese_1
+		2 = indian_assamese_2
+		2 = indian_assamese_3
+		2 = indian_assamese_4
+		2 = indian_assamese_5
+		2 = indian_assamese_6
+		2 = indian_assamese_7
+		2 = indian_assamese_8
+		2 = indian_assamese_9
+		2 = indian_assamese_10
+	}
+}
+
+newari = { #Newari
+	color = { 148 16 8 }
+
+	ethos = ethos_spiritual
+	heritage = heritage_tibetan
+	language = language_newari
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_himalayan_settlers
+		tradition_philosopher_culture
+		tradition_zealous_people
+		tradition_caste_system
+	}
+
+	name_list = name_list_nepali
+
+	coa_gfx = { tibetan_group_coa_gfx }
+	building_gfx = { tibetan_building_gfx indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		10 = indian_nepalese_1
+		10 = indian_nepalese_2
+		10 = indian_nepalese_3
+		10 = indian_nepalese_4
+		10 = indian_nepalese_5
+	}
+}
+
+meitei = {
+	color = { 241 100 58 }
+	
+	ethos = ethos_stoic
+	ethos = ethos_communal
+	heritage = heritage_tibetan
+	language = language_meitei
+	martial_custom = martial_custom_male_only
+	
+	name_list = name_list_meitei
+	
+	coa_gfx = { tibetan_group_coa_gfx }
+	building_gfx = { tibetan_building_gfx indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	traditions = {
+		tradition_hill_dwellers
+		tradition_poetry
+		tradition_religion_blending
+		tradition_hereditary_hierarchy
+	}
+
+	ethnicities = {
+		20 = asian_tibetan_1
+		20 = asian_tibetan_2
+		20 = asian_tibetan_3
+		20 = asian_tibetan_4
+		20 = asian_tibetan_5
+	}
+}
+
+zo = {
+	color = { 241 58 58 }
+	
+	ethos = ethos_stoic
+	ethos = ethos_communal
+	heritage = heritage_tibetan
+	language = language_meitei
+	martial_custom = martial_custom_male_only
+	
+	name_list = name_list_meitei
+	
+	coa_gfx = { burman_group_coa_gfx }
+	building_gfx = { tibetan_building_gfx indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	traditions = {
+		tradition_jungle_dwellers
+		tradition_jungle_warriors
+		tradition_mystical_ancestors
+		tradition_collective_lands
+	}
+
+	ethnicities = {
+		20 = asian_tibetan_1
+		20 = asian_tibetan_2
+		20 = asian_tibetan_3
+		20 = asian_tibetan_4
+		20 = asian_tibetan_5
+	}
+}
+
+# Mostly adapted from Dharmachakra, credits to Herkles
+pyu = {
+	color = { 156 50 103 }
+	
+	ethos = ethos_spiritual
+	heritage = heritage_tibetan
+	language = language_pyu
+	martial_custom = martial_custom_male_only
+	
+	name_list = name_list_pyu
+	
+	coa_gfx = { burman_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	traditions = {
+		tradition_city_keepers
+		tradition_pacifism
+		tradition_vegetarianism
+		tradition_religion_blending
+	}
+
+	ethnicities = {
+		20 = asian_tibetan_1
+		20 = asian_tibetan_2
+		20 = asian_tibetan_3
+		20 = asian_tibetan_4
+		20 = asian_tibetan_5
+	}
+}
