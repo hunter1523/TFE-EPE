@@ -1,0 +1,756 @@
+﻿angle = {
+	color = { 0.8 0.4 0.4 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_ingvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_the_witenagemot
+		tradition_astute_diplomats
+		tradition_migrations
+	}
+	
+	name_list = name_list_anglo_saxon
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		8 = european_anglo_saxon_blond_1
+		8 = european_anglo_saxon_blond_2
+		8 = european_anglo_saxon_blond_3
+		8 = european_anglo_saxon_blond_4
+		8 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		6 = european_anglo_saxon_dark_1
+		6 = european_anglo_saxon_dark_2
+		6 = european_anglo_saxon_dark_3
+		6 = european_anglo_saxon_dark_4
+		6 = european_anglo_saxon_dark_5
+		6 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+	}
+}
+
+jute = {
+	color = { 0.8 0.5 0.5 }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_ingvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_fp2_ritualised_friendship
+		tradition_maritime_mercantilism
+		tradition_migrations
+	}
+	
+	name_list = name_list_anglo_saxon
+	
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	
+	ethnicities = {
+		8 = european_anglo_saxon_blond_1
+		8 = european_anglo_saxon_blond_2
+		8 = european_anglo_saxon_blond_3
+		8 = european_anglo_saxon_blond_4
+		8 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		6 = european_anglo_saxon_dark_1
+		6 = european_anglo_saxon_dark_2
+		6 = european_anglo_saxon_dark_3
+		6 = european_anglo_saxon_dark_4
+		6 = european_anglo_saxon_dark_5
+		6 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+	}
+}
+
+old_saxon = {
+	color = { 0.5 0.2 0.2 }
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_ingvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_practiced_pirates
+		tradition_the_witenagemot
+		tradition_migrations
+	}
+	name_list = name_list_old_saxon
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	ethnicities = {
+		8 = european_anglo_saxon_blond_1
+		8 = european_anglo_saxon_blond_2
+		8 = european_anglo_saxon_blond_3
+		8 = european_anglo_saxon_blond_4
+		8 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		6 = european_anglo_saxon_dark_1
+		6 = european_anglo_saxon_dark_2
+		6 = european_anglo_saxon_dark_3
+		6 = european_anglo_saxon_dark_4
+		6 = european_anglo_saxon_dark_5
+		6 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+	}
+}
+
+frisa = {
+	color = { 0.7 0.3 0.2 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_west_germanic
+	language = language_ingvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_fishermen
+		tradition_migrations
+		tradition_maritime_mercantilism
+	}
+	
+	name_list = name_list_frisian
+
+	coa_gfx = { frisian_coa_gfx german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+
+	ethnicities = {
+		8 = european_anglo_saxon_blond_1
+		8 = european_anglo_saxon_blond_2
+		8 = european_anglo_saxon_blond_3
+		8 = european_anglo_saxon_blond_4
+		8 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		6 = european_anglo_saxon_dark_1
+		6 = european_anglo_saxon_dark_2
+		6 = european_anglo_saxon_dark_3
+		6 = european_anglo_saxon_dark_4
+		6 = european_anglo_saxon_dark_5
+		6 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+	}
+}
+
+anglo_saxon = {
+	color = { 0.8 0.3 0.3 }
+	created = 500.1.1
+	parents = { angle jute old_saxon }
+	history_loc_override = anglo_saxon_history_loc
+	
+	ethos = ethos_bureaucratic
+	heritage = heritage_west_germanic
+	language = language_anglic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_the_witenagemot
+		tradition_city_keepers
+		tradition_hird
+		tradition_sacred_springs # Cybr: British Holy wells, enables them to do the special British holy well mechanics
+	}
+	
+	name_list = name_list_anglo_saxon
+
+	coa_gfx = { anglo_saxon_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { northern_clothing_gfx } 
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 	
+
+	ethnicities = {
+		2 = european_anglo_saxon_blond_1
+		2 = european_anglo_saxon_blond_2
+		2 = european_anglo_saxon_blond_3
+		2 = european_anglo_saxon_blond_4
+		2 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		2 = european_anglo_saxon_dark_1
+		2 = european_anglo_saxon_dark_2
+		2 = european_anglo_saxon_dark_3
+		2 = european_anglo_saxon_dark_4
+		2 = european_anglo_saxon_dark_5
+		2 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+		2 = european_caucasian_english_1
+		2 = european_caucasian_english_2
+		2 = european_caucasian_english_3
+		2 = european_caucasian_english_4
+		2 = european_caucasian_english_5
+		2 = european_caucasian_english_6
+		2 = european_caucasian_english_7
+		2 = european_caucasian_english_8
+		2 = european_caucasian_english_9
+		2 = european_caucasian_english_10
+		2 = european_caucasian_english_11
+		2 = european_caucasian_english_12
+		2 = european_caucasian_english_13
+		2 = european_caucasian_english_14
+		2 = european_caucasian_english_15
+		2 = european_caucasian_english_16
+		2 = european_caucasian_english_17
+		2 = european_caucasian_english_18
+		2 = european_caucasian_english_19
+		2 = european_caucasian_english_20
+		2 = european_caucasian_english_21
+		2 = european_caucasian_english_22
+		2 = european_caucasian_english_23
+		2 = european_caucasian_english_24
+		2 = european_caucasian_english_25
+		2 = european_caucasian_english_26
+		2 = european_caucasian_english_27
+		2 = european_caucasian_english_28
+		2 = european_caucasian_english_29
+		2 = european_caucasian_english_30
+		2 = european_caucasian_english_31
+		2 = european_caucasian_english_32
+		2 = european_caucasian_english_33
+		2 = european_caucasian_english_34
+		2 = european_caucasian_english_35
+		2 = european_caucasian_english_36
+		2 = european_caucasian_english_37
+		2 = european_caucasian_english_38
+		2 = european_caucasian_english_39
+		2 = european_caucasian_english_40
+		2 = european_caucasian_english_41
+		2 = european_caucasian_english_42
+		2 = european_caucasian_english_43
+		2 = european_caucasian_english_44
+		2 = european_caucasian_english_45
+		2 = european_caucasian_english_46
+		2 = european_caucasian_english_47
+		2 = european_caucasian_english_48
+		2 = european_caucasian_english_49
+		2 = european_caucasian_english_50
+		2 = european_caucasian_english_51
+		2 = european_caucasian_english_52
+		2 = european_caucasian_english_53
+		2 = european_caucasian_english_54
+		2 = european_caucasian_english_55
+		2 = european_caucasian_english_56
+		2 = european_caucasian_english_57
+		2 = european_caucasian_english_58
+		2 = european_caucasian_english_59
+		2 = european_caucasian_english_60
+		2 = european_caucasian_english_61
+		2 = european_caucasian_english_62
+		2 = european_caucasian_english_63
+		2 = european_caucasian_english_64
+		2 = european_caucasian_english_65
+		2 = european_caucasian_english_66
+		2 = european_caucasian_english_67
+		2 = european_caucasian_english_68
+		2 = european_caucasian_english_69
+		2 = european_caucasian_english_70
+		2 = european_caucasian_english_71
+		2 = european_caucasian_english_72
+		2 = european_caucasian_english_73
+		2 = european_caucasian_english_74
+		2 = european_caucasian_english_75
+		2 = european_caucasian_english_76
+		2 = european_caucasian_english_77
+		2 = european_caucasian_english_78
+		2 = european_caucasian_english_79
+		2 = european_caucasian_english_80
+		2 = european_caucasian_english_81
+		2 = european_caucasian_english_82
+		2 = european_caucasian_english_83
+		2 = european_caucasian_english_84
+		2 = european_caucasian_english_85
+		2 = european_caucasian_english_86
+		2 = european_caucasian_english_87
+		2 = european_caucasian_english_88
+		2 = european_caucasian_english_89
+		2 = european_caucasian_english_90
+		2 = european_caucasian_english_91
+		2 = european_caucasian_english_92
+		2 = european_caucasian_english_93
+		2 = european_caucasian_english_94
+		2 = european_caucasian_english_95
+		2 = european_caucasian_english_96
+		2 = european_caucasian_english_97
+		2 = european_caucasian_english_98
+		2 = european_caucasian_english_99
+		2 = european_caucasian_english_100
+		2 = european_caucasian_english_101
+	}
+}
+
+ripurian = {
+	color = { 0.4 0.4 0.4 }
+
+	parents = { franconian }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_istvaeonic
+	#language = language_irminonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_battlefield_looters
+		tradition_forest_fighters
+		tradition_tribe_unity
+		tradition_warrior_culture
+		tradition_migrations
+	}
+	
+	name_list = name_list_ripurian
+
+	coa_gfx = { german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { germanic_building_gfx western_building_gfx }
+	clothing_gfx = { dde_hre_clothing_gfx northern_clothing_gfx fp1_norse_clothing_gfx } 
+	unit_gfx = { norse_unit_gfx northern_unit_gfx } 		
+
+	ethnicities = {
+		2 = european_caucasian_german_1
+		2 = european_caucasian_german_2
+		2 = european_caucasian_german_3
+		2 = european_caucasian_german_4
+		2 = european_caucasian_german_5
+		2 = european_caucasian_german_6
+		2 = european_caucasian_german_7
+		2 = european_caucasian_german_8
+		2 = european_caucasian_german_9
+		2 = european_caucasian_german_10
+		2 = european_caucasian_german_11
+		2 = european_caucasian_german_12
+		2 = european_caucasian_german_14_Vol
+		2 = european_caucasian_german_15_Em
+		2 = european_caucasian_german_17
+		2 = european_caucasian_german_18
+		2 = european_caucasian_german_19
+		2 = european_caucasian_german_20
+		2 = european_caucasian_german_21
+		2 = european_caucasian_german_22
+		2 = european_caucasian_german_23
+		2 = european_caucasian_german_24
+		2 = european_caucasian_german_25
+		2 = european_caucasian_german_26
+		2 = european_caucasian_german_27
+		2 = european_caucasian_german_28
+		2 = european_caucasian_german_29
+		2 = european_caucasian_german_30
+		2 = european_caucasian_german_31
+		2 = european_caucasian_german_32
+		2 = european_caucasian_german_33
+		2 = european_caucasian_german_34
+		2 = european_caucasian_german_35
+		2 = european_caucasian_german_36
+		2 = european_caucasian_german_37
+		2 = european_caucasian_german_38
+		2 = european_caucasian_german_39
+		2 = european_caucasian_german_40
+		2 = european_caucasian_german_41
+		2 = european_caucasian_german_42
+		2 = european_caucasian_german_43
+		2 = european_caucasian_german_44
+		2 = european_caucasian_german_45
+		2 = european_caucasian_german_46
+		2 = european_caucasian_german_47
+		2 = european_caucasian_german_48
+		2 = european_caucasian_german_49
+		2 = european_caucasian_german_50
+		2 = european_caucasian_german_51
+		2 = european_caucasian_german_52
+		2 = european_caucasian_german_53
+		2 = european_caucasian_german_54
+		2 = european_caucasian_german_55
+		2 = european_caucasian_german_56
+		2 = european_caucasian_german_57
+		2 = european_caucasian_german_58
+		2 = european_caucasian_german_59
+		2 = european_caucasian_german_60
+		2 = european_caucasian_german_61
+		2 = european_caucasian_german_62
+		2 = european_caucasian_german_63
+		2 = european_caucasian_german_64
+		2 = european_caucasian_german_65
+		2 = european_caucasian_german_66
+		2 = european_caucasian_german_67
+		2 = european_caucasian_german_68
+		2 = european_caucasian_german_69
+		2 = european_caucasian_german_70
+		2 = european_caucasian_german_71
+		2 = european_caucasian_german_72
+		2 = european_caucasian_german_73
+		2 = european_caucasian_german_74
+		2 = european_caucasian_german_75
+		2 = european_caucasian_german_76
+		2 = european_caucasian_german_77
+	}
+}
+
+salian = {
+	color = { 0.3 0.3 0.6 }
+
+	parents = { franconian }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_west_germanic
+	language = language_istvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_warrior_culture
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+		tradition_migrations
+	}
+	
+	name_list = name_list_frankish
+	
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		2 = european_caucasian_german_1
+		2 = european_caucasian_german_2
+		2 = european_caucasian_german_3
+		2 = european_caucasian_german_4
+		2 = european_caucasian_german_5
+		2 = european_caucasian_german_6
+		2 = european_caucasian_german_7
+		2 = european_caucasian_german_8
+		2 = european_caucasian_german_9
+		2 = european_caucasian_german_10
+		2 = european_caucasian_german_11
+		2 = european_caucasian_german_12
+		2 = european_caucasian_german_14_Vol
+		2 = european_caucasian_german_15_Em
+		2 = european_caucasian_german_17
+		2 = european_caucasian_german_18
+		2 = european_caucasian_german_19
+		2 = european_caucasian_german_20
+		2 = european_caucasian_german_21
+		2 = european_caucasian_german_22
+		2 = european_caucasian_german_23
+		2 = european_caucasian_german_24
+		2 = european_caucasian_german_25
+		2 = european_caucasian_german_26
+		2 = european_caucasian_german_27
+		2 = european_caucasian_german_28
+		2 = european_caucasian_german_29
+		2 = european_caucasian_german_30
+		2 = european_caucasian_german_31
+		2 = european_caucasian_german_32
+		2 = european_caucasian_german_33
+		2 = european_caucasian_german_34
+		2 = european_caucasian_german_35
+		2 = european_caucasian_german_36
+		2 = european_caucasian_german_37
+		2 = european_caucasian_german_38
+		2 = european_caucasian_german_39
+		2 = european_caucasian_german_40
+		2 = european_caucasian_german_41
+		2 = european_caucasian_german_42
+		2 = european_caucasian_german_43
+		2 = european_caucasian_german_44
+		2 = european_caucasian_german_45
+		2 = european_caucasian_german_46
+		2 = european_caucasian_german_47
+		2 = european_caucasian_german_48
+		2 = european_caucasian_german_49
+		2 = european_caucasian_german_50
+		2 = european_caucasian_german_51
+		2 = european_caucasian_german_52
+		2 = european_caucasian_german_53
+		2 = european_caucasian_german_54
+		2 = european_caucasian_german_55
+		2 = european_caucasian_german_56
+		2 = european_caucasian_german_57
+		2 = european_caucasian_german_58
+		2 = european_caucasian_german_59
+		2 = european_caucasian_german_60
+		2 = european_caucasian_german_61
+		2 = european_caucasian_german_62
+		2 = european_caucasian_german_63
+		2 = european_caucasian_german_64
+		2 = european_caucasian_german_65
+		2 = european_caucasian_german_66
+		2 = european_caucasian_german_67
+		2 = european_caucasian_german_68
+		2 = european_caucasian_german_69
+		2 = european_caucasian_german_70
+		2 = european_caucasian_german_71
+		2 = european_caucasian_german_72
+		2 = european_caucasian_german_73
+		2 = european_caucasian_german_74
+		2 = european_caucasian_german_75
+		2 = european_caucasian_german_76
+		2 = european_caucasian_german_77
+	}
+}
+
+frankish = {
+	color = { 0.2 0.2 0.5 }
+
+	parents = { salian ripurian }
+	
+	ethos = ethos_bellicose
+	heritage = heritage_frankish
+	language = language_frankish
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_warrior_culture
+		tradition_hereditary_hierarchy
+		tradition_stand_and_fight
+		tradition_migrations
+	}
+	
+	name_list = name_list_frankish
+	
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		2 = european_caucasian_german_1
+		2 = european_caucasian_german_2
+		2 = european_caucasian_german_3
+		2 = european_caucasian_german_4
+		2 = european_caucasian_german_5
+		2 = european_caucasian_german_6
+		2 = european_caucasian_german_7
+		2 = european_caucasian_german_8
+		2 = european_caucasian_german_9
+		2 = european_caucasian_german_10
+		2 = european_caucasian_german_11
+		2 = european_caucasian_german_12
+		2 = european_caucasian_german_14_Vol
+		2 = european_caucasian_german_15_Em
+		2 = european_caucasian_german_17
+		2 = european_caucasian_german_18
+		2 = european_caucasian_german_19
+		2 = european_caucasian_german_20
+		2 = european_caucasian_german_21
+		2 = european_caucasian_german_22
+		2 = european_caucasian_german_23
+		2 = european_caucasian_german_24
+		2 = european_caucasian_german_25
+		2 = european_caucasian_german_26
+		2 = european_caucasian_german_27
+		2 = european_caucasian_german_28
+		2 = european_caucasian_german_29
+		2 = european_caucasian_german_30
+		2 = european_caucasian_german_31
+		2 = european_caucasian_german_32
+		2 = european_caucasian_german_33
+		2 = european_caucasian_german_34
+		2 = european_caucasian_german_35
+		2 = european_caucasian_german_36
+		2 = european_caucasian_german_37
+		2 = european_caucasian_german_38
+		2 = european_caucasian_german_39
+		2 = european_caucasian_german_40
+		2 = european_caucasian_german_41
+		2 = european_caucasian_german_42
+		2 = european_caucasian_german_43
+		2 = european_caucasian_german_44
+		2 = european_caucasian_german_45
+		2 = european_caucasian_german_46
+		2 = european_caucasian_german_47
+		2 = european_caucasian_german_48
+		2 = european_caucasian_german_49
+		2 = european_caucasian_german_50
+		2 = european_caucasian_german_51
+		2 = european_caucasian_german_52
+		2 = european_caucasian_german_53
+		2 = european_caucasian_german_54
+		2 = european_caucasian_german_55
+		2 = european_caucasian_german_56
+		2 = european_caucasian_german_57
+		2 = european_caucasian_german_58
+		2 = european_caucasian_german_59
+		2 = european_caucasian_german_60
+		2 = european_caucasian_german_61
+		2 = european_caucasian_german_62
+		2 = european_caucasian_german_63
+		2 = european_caucasian_german_64
+		2 = european_caucasian_german_65
+		2 = european_caucasian_german_66
+		2 = european_caucasian_german_67
+		2 = european_caucasian_german_68
+		2 = european_caucasian_german_69
+		2 = european_caucasian_german_70
+		2 = european_caucasian_german_71
+		2 = european_caucasian_german_72
+		2 = european_caucasian_german_73
+		2 = european_caucasian_german_74
+		2 = european_caucasian_german_75
+		2 = european_caucasian_german_76
+		2 = european_caucasian_german_77
+		2 = european_caucasian_french_1
+		2 = european_caucasian_french_2
+		2 = european_caucasian_french_3
+		2 = european_caucasian_french_4
+		2 = european_caucasian_french_5
+		2 = european_caucasian_french_6
+		2 = european_caucasian_french_7
+		2 = european_caucasian_french_8
+		2 = european_caucasian_french_9
+		2 = european_caucasian_french_10
+		2 = european_caucasian_french_11
+		2 = european_caucasian_french_12
+		2 = european_caucasian_french_13
+		2 = european_caucasian_french_14
+		2 = european_caucasian_french_15
+		2 = european_caucasian_french_16
+		2 = european_caucasian_french_17
+		2 = european_caucasian_french_18
+		2 = european_caucasian_french_19
+		2 = european_caucasian_french_20
+		2 = european_caucasian_french_21
+		2 = european_caucasian_french_22
+		2 = european_caucasian_french_23
+		2 = european_caucasian_french_24
+		2 = european_caucasian_french_25
+		2 = european_caucasian_french_26
+		2 = european_caucasian_french_27
+		2 = european_caucasian_french_28
+		2 = european_caucasian_french_29
+		2 = european_caucasian_french_30
+		2 = european_caucasian_french_31
+		2 = european_caucasian_french_32
+		2 = european_caucasian_french_33
+		2 = european_caucasian_french_34
+		2 = european_caucasian_french_35
+		2 = european_caucasian_french_36
+		2 = european_caucasian_french_37
+		2 = european_caucasian_french_38
+		2 = european_caucasian_french_39
+		2 = european_caucasian_french_40
+		2 = european_caucasian_french_41
+		2 = european_caucasian_french_42
+		2 = european_caucasian_french_43
+		2 = european_caucasian_french_44
+		2 = european_caucasian_french_45
+		2 = european_caucasian_french_46
+		2 = european_caucasian_french_47
+		2 = european_caucasian_french_48
+		2 = european_caucasian_french_49
+		2 = european_caucasian_french_50
+		2 = european_caucasian_french_51
+		2 = european_caucasian_french_52
+		2 = european_caucasian_french_53
+		2 = european_caucasian_french_54
+		2 = european_caucasian_french_55
+		2 = european_caucasian_french_56
+		2 = european_caucasian_french_57
+		2 = european_caucasian_french_58
+		2 = european_caucasian_french_59
+		2 = european_caucasian_french_60
+		2 = european_caucasian_french_61
+		2 = european_caucasian_french_62
+		2 = european_caucasian_french_63
+		2 = european_caucasian_french_64
+		2 = european_caucasian_french_65
+		2 = european_caucasian_french_66
+		2 = european_caucasian_french_67
+		2 = european_caucasian_french_68
+		2 = european_caucasian_french_69
+		2 = european_caucasian_french_70
+		2 = european_caucasian_french_71
+		2 = european_caucasian_french_72
+		2 = european_caucasian_french_73
+		2 = european_caucasian_french_74
+		2 = european_caucasian_french_75
+	}
+}
+
+frisian = {
+	color = { 0.7 0.3 0.0 }
+	
+	parents = { frankish frisa }
+	ethos = ethos_stoic
+	heritage = heritage_west_germanic
+	language = language_ingvaeonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_fishermen
+		tradition_zealous_people
+		tradition_migrations
+		tradition_battlefield_looters
+	}
+	
+	name_list = name_list_frisian
+
+	coa_gfx = { frisian_coa_gfx german_group_coa_gfx western_coa_gfx } 
+	building_gfx = { western_building_gfx } 
+	clothing_gfx = { dde_hre_clothing_gfx western_clothing_gfx } 
+	unit_gfx = { western_unit_gfx } 		
+
+	ethnicities = {
+		8 = european_anglo_saxon_blond_1
+		8 = european_anglo_saxon_blond_2
+		8 = european_anglo_saxon_blond_3
+		8 = european_anglo_saxon_blond_4
+		8 = european_anglo_saxon_blond_5
+		2 = european_anglo_saxon_brown_1
+		2 = european_anglo_saxon_brown_2
+		2 = european_anglo_saxon_brown_3
+		2 = european_anglo_saxon_brown_4
+		2 = european_anglo_saxon_brown_5
+		6 = european_anglo_saxon_dark_1
+		6 = european_anglo_saxon_dark_2
+		6 = european_anglo_saxon_dark_3
+		6 = european_anglo_saxon_dark_4
+		6 = european_anglo_saxon_dark_5
+		6 = european_anglo_saxon_dark_6
+		2 = european_anglo_saxon_ginger_1
+		2 = european_anglo_saxon_ginger_2
+		2 = european_anglo_saxon_ginger_3
+		2 = european_anglo_saxon_ginger_4
+		2 = european_anglo_saxon_ginger_5
+	}
+}
