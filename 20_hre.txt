@@ -1,9 +1,9 @@
-﻿#Intro:
+#Intro:
 #The majority of HRE laws have 5 policies with a very few which have less like the Golden Bull.
 #With the enactment of the Golden Bull, most HRE laws are set to the 3rd policy which has limited or no modifiers active at all
-#The HRE Emperor can try to change the policy to the next adjacent one (so from 3rd level to 4th or 2nd level)
-#The left level is the 2nd and 1st and is more in favor of benefitting the HRE as a whole
-#The right level is the 4th and 5th and is more in favor of benefitting the HRE Emperor first and foremost
+#The HRE Emperor can try to change the policy to the next adjacent one (so from 3rd tier to 4th or 2nd tier)
+#The left tier is the 4th and 5th and is more in favor of benefitting the HRE as a whole
+#The right tier is the 2nd and 1st and is more in favor of benefitting the HRE Emperor first and foremost
 
 #Some laws have only 3 policies in which cases there are not pro-Emperor vs pro-Member positions
 
@@ -23,7 +23,7 @@ golden_bull = {
 	type = international_organization
 	potential = { international_organization_type = international_organization_type:hre }
 	allow = {
-		has_currency_to_vote_for_law = { value = imperial_authority_golden_bull }
+		has_currency_to_vote_for_law = { value = imperial_authority_uncontroversial_law }
 	}
 	locked = {
 		custom_description = {
@@ -55,7 +55,7 @@ golden_bull = {
 			hre_lock_law = { law = golden_bull }
 			hre_setup_hre_variables = yes
 			hre_enable_all_imperial_laws = yes
-			hre_on_reform_passed_effect = { amount = imperial_authority_golden_bull }
+			hre_on_reform_passed_effect = { amount = imperial_authority_uncontroversial_law }
 			custom_tooltip = hre_golden_bull_formalizes_electorate_tt
 			custom_tooltip = hre_golden_bull_self_voting_regulated_via_electorate_law
 		}
@@ -68,7 +68,7 @@ golden_bull = {
 		}
 		international_organization_modifier = {
 			hre_enable_leave_hre_peace_treaty = yes
-			cannot_declare_no_cb_wars_on_members = yes 
+			cannot_declare_no_cb_wars_on_members = yes
 		}
 	}
 	no_golden_bull_policy = {
@@ -129,16 +129,14 @@ monetary_contribution = {
 	locked = {
 		hre_has_enabled_all_imperial_laws = no
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	no_monetary_contribution = {
-		level = 1
 		allow = {
-			hre_can_select_adjacent_reform_level = { law = law:monetary_contribution policy = policy:no_monetary_contribution }
+			hre_can_select_adjacent_reform_level = { law = monetary_contribution upper_level = 1 lower_level = -1 }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = monetary_contribution level = 0 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		gold = no
 		country_modifier = {
@@ -152,7 +150,18 @@ monetary_contribution = {
 		wants_propose_policy = {
 			subtract = {
 				desc = "POLICY_BIAS_LEADER_OPPOSES"
-				value = 1000
+				value = 2000
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_monetary_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -166,21 +175,20 @@ monetary_contribution = {
 		# How much the princes want to keep this policy
 		wants_keep_policy = {
 			add = hre_default_keep_policy_opinion
-			add = { 
+			add = {
 				desc = "POLICY_POPULARITY_TO_KEEP"
 				value = 125
 			}
 		}
 	}
 	only_treasury_payment = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:monetary_contribution
-			hre_can_select_adjacent_reform_level = { law = law:monetary_contribution policy = policy:only_treasury_payment }
+			hre_has_selected_policy_of_this_law = { law = monetary_contribution }
+			hre_can_select_adjacent_reform_level = { law = monetary_contribution upper_level = 2 lower_level = 0 }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = monetary_contribution level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		country_modifier = {
 			# All members, except emperor benefit
@@ -213,6 +221,17 @@ monetary_contribution = {
 					value = 1000
 				}
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_monetary_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -232,14 +251,13 @@ monetary_contribution = {
 		}
 	}
 	only_emperor_payment = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:monetary_contribution
-			hre_can_select_adjacent_reform_level = { law = law:monetary_contribution policy = policy:only_emperor_payment }
+			hre_has_selected_policy_of_this_law = { law = monetary_contribution }
+			hre_can_select_adjacent_reform_level = { law = monetary_contribution upper_level = 2 lower_level = 0 }
 			has_currency_to_vote_for_law = { value = imperial_authority_controversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_controversial_law }
+			hre_on_reform_level_passed_effect = { law = monetary_contribution level = 1 law_imperial_authority_cost = imperial_authority_controversial_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = controversial }
 		}
 		gold = no
@@ -251,11 +269,36 @@ monetary_contribution = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 100 # Also good if emperor needs money but doesnt enable diplo actions because IO treasury cannot be filled manually
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:complete_imperial_contribution }
+						NOT = { international_organization_has_policy = policy:only_treasury_payment }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 100 # Also good if emperor needs money but doesnt enable diplo actions because IO treasury cannot be filled manually
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_monetary_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -263,21 +306,20 @@ monetary_contribution = {
 			subtract = { desc = "POLICY_RESTRICTS_SOVEREIGNTY" value = 50 } # Generally unliked reform
 		}
 		wants_keep_policy = {
-			subtract = { 
-				desc = "POLICY_POPULARITY_TO_KEEP" 
+			subtract = {
+				desc = "POLICY_POPULARITY_TO_KEEP"
 				value = 50
 			} # and also not too high on wanting to keep it really
 		}
 	}
 	complete_imperial_contribution = {
-		level = 3
 		allow = {
-			international_organization_has_law = law:monetary_contribution
-			hre_can_select_adjacent_reform_level = { law = law:monetary_contribution policy = policy:complete_imperial_contribution }
+			hre_has_selected_policy_of_this_law = { law = monetary_contribution }
+			hre_can_select_adjacent_reform_level = { law = monetary_contribution upper_level = 3 lower_level = 1 }
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = monetary_contribution level = 2 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = opposed }
 		}
 		country_modifier = {
@@ -301,6 +343,17 @@ monetary_contribution = {
 				value = 500 # Very beneficial reform for the emperor, should be prioritized
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_monetary_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -310,8 +363,8 @@ monetary_contribution = {
 		# How much the princes want to keep this policy
 		wants_keep_policy = {
 			add = hre_default_keep_policy_opinion
-			subtract = { 
-				desc = "POLICY_POPULARITY_TO_KEEP" 
+			subtract = {
+				desc = "POLICY_POPULARITY_TO_KEEP"
 				value = 75
 			} # and also not too high on wanting to keep it really
 		}
@@ -329,26 +382,35 @@ military_contribution = {
 	allow = {
 		hre_allowed_emperor_reform_proposal = yes
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	no_military_contribution = {
-		level = 1
 		allow = {
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_friendly_law }
-			international_organization_has_law = law:military_contribution
-			hre_can_select_adjacent_reform_level = { law = law:military_contribution policy = policy:no_military_contribution }
+			hre_has_selected_policy_of_this_law = { law = military_contribution }
+			hre_can_select_adjacent_reform_level = { law = military_contribution upper_level = 1 lower_level = -1 }
 		}
 		on_activate = {
 			custom_tooltip = manpower_from_cities_tt
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = military_contribution level = 0 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
 			subtract = {
 				desc = "POLICY_BIAS_LEADER_OPPOSES"
-				value = 1000
+				value = 2000
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_military_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -367,26 +429,50 @@ military_contribution = {
 		}
 	}
 	manpower_from_cities = {
-		level = 2
 		allow = {
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
-			international_organization_has_law = law:military_contribution
-			hre_can_select_adjacent_reform_level = { law = law:military_contribution policy = policy:manpower_from_cities }
+			hre_has_selected_policy_of_this_law = { law = military_contribution }
+			hre_can_select_adjacent_reform_level = { law = military_contribution upper_level = 2 lower_level = 0 }
 		}
 		manpower = yes
 		payments_implemented = { imperial_army_contribution }
 		on_activate = {
 			custom_tooltip = manpower_from_cities_tt
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = military_contribution level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_on_reform_level_passed_opinion_effect_free_cities = { strength = controversial } # free cities lose opinion
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 75
-			}
 			add = hre_default_emperor_policy_desire
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:manpower_from_electors }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 75
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_military_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -405,6 +491,7 @@ military_contribution = {
 					value = 50
 				}
 			}
+
 		}
 		wants_keep_policy = {
 			add = hre_default_keep_policy_opinion
@@ -433,32 +520,55 @@ military_contribution = {
 		}
 	}
 	manpower_from_electors = {
-		level = 3
 		allow = {
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
-			international_organization_has_law = law:military_contribution
-			hre_can_select_adjacent_reform_level = { law = law:military_contribution policy = policy:manpower_from_electors }
+			hre_has_selected_policy_of_this_law = { law = military_contribution }
+			hre_can_select_adjacent_reform_level = { law = military_contribution upper_level = 3 lower_level = 1 }
 		}
 		manpower = yes
 		payments_implemented = { imperial_army_contribution }
 		on_activate = {
 			custom_tooltip = manpower_from_electors_tt
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = military_contribution level = 2 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_on_reform_level_passed_opinion_effect_electors = { strength = controversial } # free cities lose opinion
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 125
-			}
 			add = hre_default_emperor_policy_desire
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:manpower_from_princes }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 125
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_military_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = hre_default_policy_opinion
-			if = { 
-				limit = { is_elector = yes } 
+			if = {
+				limit = { is_elector = yes }
 				subtract = { desc = "POLICY_RESTRICTS_SOVEREIGNTY" value = 250 } # Electors oppose paying manpower
 			}
 		}
@@ -480,26 +590,50 @@ military_contribution = {
 		}
 	}
 	manpower_from_princes = {
-		level = 4
 		allow = {
 			has_currency_to_vote_for_law = { value = imperial_authority_controversial_law }
-			international_organization_has_law = law:military_contribution
-			hre_can_select_adjacent_reform_level = { law = law:military_contribution policy = policy:manpower_from_princes }
+			hre_has_selected_policy_of_this_law = { law = military_contribution }
+			hre_can_select_adjacent_reform_level = { law = military_contribution upper_level = 4 lower_level = 2 }
 		}
 		manpower = yes
 		payments_implemented = { imperial_army_contribution }
 		on_activate = {
 			custom_tooltip = manpower_from_princes_tt
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_controversial_law }
+			hre_on_reform_level_passed_effect = { law = military_contribution level = 3 law_imperial_authority_cost = imperial_authority_controversial_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = controversial } # all members lose opinion
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 200
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:great_imperial_army }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 200
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_military_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -515,17 +649,16 @@ military_contribution = {
 		}
 	}
 	great_imperial_army = {
-		level = 5
 		allow = {
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
-			international_organization_has_law = law:military_contribution
-			hre_can_select_adjacent_reform_level = { law = law:military_contribution policy = policy:great_imperial_army }
+			hre_has_selected_policy_of_this_law = { law = military_contribution }
+			hre_can_select_adjacent_reform_level = { law = military_contribution upper_level = 5 lower_level = 3 }
 		}
 		manpower = yes
 		payments_implemented = { imperial_army_contribution }
 		on_activate = {
 			custom_tooltip = great_imperial_army_tt
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = military_contribution level = 4 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = opposed } # all members lose opinion
 		}
 		international_organization_modifier = {
@@ -541,6 +674,17 @@ military_contribution = {
 				value = 250
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_military_contribution }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -577,12 +721,12 @@ imperial_religion = {
 		potential = {
 		}
 		allow = {
-			international_organization_has_law = law:imperial_religion
+			hre_has_selected_policy_of_this_law = { law = imperial_religion }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		#There is no vote for it, this is the default law for the HRE
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_religion level = 1	law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = imperial_religion }
 			hre_set_imperial_religion = { type = religion value = catholic }
 			hre_bind_voting_to_religion = yes
@@ -591,12 +735,12 @@ imperial_religion = {
 	hre_religion_lutheran = {
 		potential = { religion:lutheran = { is_religion_enabled = yes } }
 		allow = {
-			international_organization_has_law = law:imperial_religion
+			hre_has_selected_policy_of_this_law = { law = imperial_religion }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		#There is no vote for it, this policy is enforced through the Religious War
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_religion level = 1	law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = imperial_religion }
 			hre_set_imperial_religion = { type = religion value = lutheran }
 			hre_bind_voting_to_religion = yes
@@ -605,12 +749,12 @@ imperial_religion = {
 	hre_religion_hussite = {
 		potential = { religion:hussite = { is_religion_enabled = yes } }
 		allow = {
-			international_organization_has_law = law:imperial_religion
+			hre_has_selected_policy_of_this_law = { law = imperial_religion }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		#There is no vote for it, this policy is enforced through the Religious War
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_religion level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = imperial_religion }
 			hre_set_imperial_religion = { type = religion value = hussite }
 			hre_bind_voting_to_religion = yes
@@ -619,12 +763,12 @@ imperial_religion = {
 	hre_religion_calvinist = {
 		potential = { religion:calvinist = { is_religion_enabled = yes } }
 		allow = {
-			international_organization_has_law = law:imperial_religion
+			hre_has_selected_policy_of_this_law = { law = imperial_religion }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		#There is no vote for it, this policy is enforced through the Religious War
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_religion level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = imperial_religion }
 			hre_set_imperial_religion = { type = religion value = calvinist }
 			hre_bind_voting_to_religion = yes
@@ -639,12 +783,12 @@ imperial_religion = {
 			}
 		}
 		allow = {
-			international_organization_has_law = law:imperial_religion
+			hre_has_selected_policy_of_this_law = { law = imperial_religion }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		#There is no vote for it, this policy is enforced through the Peace of Westphalia
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_religion level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = imperial_religion }
 			hre_set_imperial_religion = { type = religion_group value = christian }
 			international_organization:hre = {
@@ -672,11 +816,11 @@ electorate_religion_law = {
 	custom_tags = { forbids_no_policy }
 	only_imperial_religion_group_policy = {
 		allow = {
-			international_organization_has_law = law:electorate_religion_law
+			hre_has_selected_policy_of_this_law = { law = electorate_religion_law }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = electorate_religion_law level = 2 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = electorate_religion_law }
 			hre_bind_electorship_to_religion_group = yes
 		}
@@ -684,11 +828,11 @@ electorate_religion_law = {
 	}
 	only_imperial_religion_policy = {
 		allow = {
-			international_organization_has_law = law:electorate_religion_law
+			hre_has_selected_policy_of_this_law = { law = electorate_religion_law }
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = electorate_religion_law level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			hre_lock_law = { law = electorate_religion_law }
 			hre_bind_electorship_to_religion = yes
 		}
@@ -717,17 +861,46 @@ imperial_succession_law = {
 	}
 	hre_agnatic_succession_policy = {
 		allow = {
+			hre_can_select_adjacent_reform_level = {
+				law = imperial_succession_law
+				upper_level = 4
+				lower_level = 2
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = imperial_succession_law level = 3 law_imperial_authority_cost = imperial_authority_standard_law }
 			custom_tooltip = { text = hre_agnatic_succession_policy_custom_tooltip }
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_ANCIENT_TRADITION"
-				value = 150
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:hre_pragmatic_sanction_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_ANCIENT_TRADITION"
+					value = 150
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_succession_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -741,18 +914,28 @@ imperial_succession_law = {
 	}
 	hre_pragmatic_sanction_policy = {
 		allow = {
+			hre_has_selected_policy_of_this_law = { law = imperial_succession_law }
+			hre_can_select_adjacent_reform_level = {
+				law = imperial_succession_law
+				upper_level = 3
+				lower_level = 1
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 			OR = {
-				international_organization_has_policy = policy:hre_pragmatic_sanction_policy
-				leader_country ?= {
-					heir ?= {
-						is_female = yes
+				international_organization:hre = {
+					international_organization_has_policy = policy:hre_pragmatic_sanction_policy
+				}
+				international_organization:hre = {
+					leader_country ?= {
+						heir ?= {
+							is_female = yes
+						}
 					}
 				}
 			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = imperial_succession_law level = 2 law_imperial_authority_cost = imperial_authority_opposed_law }
 			custom_tooltip = {
 				text = hre_pragmatic_sanction_policy_opinion_impact
 				every_international_organization_member = {
@@ -788,6 +971,17 @@ imperial_succession_law = {
 					value = -500 # if no female heir emperor wont try to enact it as it is long standing tradition
 				}
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_succession_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -813,15 +1007,14 @@ imperial_voting_law = {
 	}
 	locked = {}
 	custom_tags = { forbids_no_policy }
-	has_levels = yes
+
 	rotating_emperorship_policy = {
-		level = 1
 		allow = {
-			hre_can_select_adjacent_reform_level = { law = law:imperial_voting_law policy = policy:rotating_emperorship_policy }
+			hre_can_select_adjacent_reform_level = { law = imperial_voting_law upper_level = 6 lower_level = 4 }
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = imperial_voting_law level = 5 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 		}
 		international_organization_modifier = {
 			allow_self_vote = no
@@ -829,17 +1022,41 @@ imperial_voting_law = {
 		}
 		country_modifier = {
 			# Emperor Modifier
-			potential_trigger = { 
-				is_leader_of_international_organization = scope:recipient 
+			potential_trigger = {
+				is_leader_of_international_organization = scope:recipient
 			}
 			reasons_to_elect = -200
 			monthly_imperial_authority = -0.025
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_OPPOSES"
-				value = -500 # Terrible reform for the emperor
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:emperor_successor_preference_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_OPPOSES"
+					value = -2000 # Terrible reform for the emperor
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_voting_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -858,23 +1075,47 @@ imperial_voting_law = {
 	}
 
 	free_electorate_policy = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:imperial_voting_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_voting_law policy = policy:free_electorate_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_voting_law }
+			hre_can_select_adjacent_reform_level = { law = imperial_voting_law upper_level = 5 lower_level = 3 }
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = imperial_voting_law level = 4 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 		}
 		international_organization_modifier = { allow_self_vote = yes }
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 50
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:emperor_dynastic_preference_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 50
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_voting_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -892,14 +1133,13 @@ imperial_voting_law = {
 	}
 
 	emperor_dynastic_preference_policy = {
-		level = 3
 		allow = {
-			international_organization_has_law = law:imperial_voting_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_voting_law policy = policy:emperor_dynastic_preference_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_voting_law }
+			hre_can_select_adjacent_reform_level = { law = imperial_voting_law upper_level = 4 lower_level = 2 }
 			has_currency_to_vote_for_law = { value = imperial_authority_uncontroversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_uncontroversial_law }
+			hre_on_reform_level_passed_effect = { law = imperial_voting_law level = 3 law_imperial_authority_cost = imperial_authority_uncontroversial_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = controversial }
 		}
 		international_organization_modifier = { allow_self_vote = yes }
@@ -911,7 +1151,7 @@ imperial_voting_law = {
 			monthly_imperial_authority = monthly_imperial_authority_mild_bonus
 		}
 		country_modifier = {
-			potential_trigger = { 
+			potential_trigger = {
 				# Emperor Dynasty Members benefit
 				same_dynasty_as = { target = international_organization:hre.leader_country }
 			}
@@ -919,17 +1159,41 @@ imperial_voting_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 100 # Good reform for the emperor to ensure succession
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:emperor_successor_preference_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 100
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_voting_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = POLICY_BIAS_PRINCE_OPPOSES
-				value = -50 # Base opposition of all princes to this law
+				value = -100 # Base opposition of all princes to this law # MOD: Increased from 50 to 100
 			}
 			if = { limit = { is_elector = yes } add = { desc = "IS_ELECTOR" value = -250 } }
 			else = { add = io_electors_opinion_value }
@@ -941,14 +1205,13 @@ imperial_voting_law = {
 	}
 
 	emperor_successor_preference_policy = {
-		level = 4
 		allow = {
-			international_organization_has_law = law:imperial_voting_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_voting_law policy = policy:emperor_successor_preference_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_voting_law }
+			hre_can_select_adjacent_reform_level = { law = imperial_voting_law upper_level = 3 lower_level = 1 }
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = imperial_voting_law level = 2 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = opposed }
 		}
 		international_organization_modifier = {
@@ -956,28 +1219,52 @@ imperial_voting_law = {
 		}
 		international_organization_modifier = { allow_self_vote = yes }
 		country_modifier = {
-			potential_trigger = { 
+			potential_trigger = {
 				# Emperor Modifier
-				is_leader_of_international_organization = scope:recipient 
+				is_leader_of_international_organization = scope:recipient
 			}
 			reasons_to_elect = 50
 			monthly_imperial_authority = monthly_imperial_authority_mild_bonus
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 150 # Good reform for the emperor to ensure succession
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:erbkaisertum_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 150
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_voting_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = POLICY_BIAS_PRINCE_OPPOSES
-				value = -75 # Base opposition of all princes to this law
+				value = -125 # Base opposition of all princes to this law # MOD: Increased from 75 to 125
 			}
-			if = { limit = { is_elector = yes } add = { desc = "IS_ELECTOR" value = -100 } }
+			if = { limit = { is_elector = yes } add = { desc = "IS_ELECTOR" value = -150 } } # MOD: Increased from 100 to 150
 			else = { add = io_electors_opinion_value }
 			add = hre_default_policy_opinion
 		}
@@ -987,15 +1274,14 @@ imperial_voting_law = {
 	}
 
 	erbkaisertum_policy = {
-		level = 5
 		allow = {
-			international_organization_has_law = law:imperial_voting_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_voting_law policy = policy:erbkaisertum_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_voting_law }
+			hre_can_select_adjacent_reform_level = { law = imperial_voting_law upper_level = 2 lower_level = 0 }
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		leader_change_method = none
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = imperial_voting_law level = 1 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_lock_law = { law = electorate_organization_law }
 			hre_lock_law = { law = electorate_religion_law }
 			hre_lock_law = { law = imperial_succession_law }
@@ -1013,9 +1299,9 @@ imperial_voting_law = {
 			hre_emperor_comfort_policies_counter = 1
 		}
 		country_modifier = {
-			potential_trigger = { 
+			potential_trigger = {
 				# Emperor Modifier
-				is_leader_of_international_organization = scope:recipient 
+				is_leader_of_international_organization = scope:recipient
 			}
 			monthly_imperial_authority = monthly_imperial_authority_strong_penalty
 		}
@@ -1026,12 +1312,23 @@ imperial_voting_law = {
 				value = 250 # Permanent succession should always be prioritized
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_voting_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = POLICY_BIAS_PRINCE_OPPOSES
-				value = -100 # Base opposition of all princes to this law
+				value = -150 # Base opposition of all princes to this law # MOD: Increased from 100 to 150
 			}
 			if = { limit = { is_elector = yes } add = { desc = "IS_ELECTOR" value = -500 } }
 			else = { add = io_electors_opinion_value }
@@ -1060,17 +1357,19 @@ electorate_organization_law = {
 			hre_has_locked_law = { law = electorate_organization_law }
 		}
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	elector_council_policy = {
-		level = 1
 		allow = {
-			international_organization_has_law = law:electorate_organization_law
-			hre_can_select_adjacent_reform_level = { law = law:electorate_organization_law policy = policy:elector_council_policy }
+			hre_has_selected_policy_of_this_law = { law = electorate_organization_law }
+			hre_can_select_adjacent_reform_level = {
+				law = electorate_organization_law
+				upper_level = 6
+				lower_level = 4
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_very_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = electorate_organization_law level = 5 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 			hre_clear_emperor_from_electorship = yes
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = prince_very_friendly }
 			international_organization_unlock_parliament_issue_effect = { type = hre_force_emperor_to_abdicate }
@@ -1097,6 +1396,17 @@ electorate_organization_law = {
 				desc = "POLICY_BIAS_LEADER_OPPOSES"
 				value = -500 # Empowering the electors is not good for the emperor
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_electorate_organization_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1121,14 +1431,17 @@ electorate_organization_law = {
 		}
 	}
 	expanded_electors_policy = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:electorate_organization_law
-			hre_can_select_adjacent_reform_level = { law = law:electorate_organization_law policy = policy:expanded_electors_policy }
+			hre_has_selected_policy_of_this_law = { law = electorate_organization_law }
+			hre_can_select_adjacent_reform_level = {
+				law = electorate_organization_law
+				upper_level = 5
+				lower_level = 3
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = electorate_organization_law level = 4 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 			hre_clear_emperor_from_electorship = yes
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = prince_friendly }
 		}
@@ -1150,6 +1463,17 @@ electorate_organization_law = {
 			add = {
 				desc = "POLICY_BIAS_LEADER_OPPOSES"
 				value = -250 # Empowering the electors is not good for the emperor
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_electorate_organization_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -1175,14 +1499,17 @@ electorate_organization_law = {
 		}
 	}
 	electorate_policy = {
-		level = 3
 		allow = {
-			international_organization_has_law = law:electorate_organization_law
-			hre_can_select_adjacent_reform_level = { law = law:electorate_organization_law policy = policy:electorate_policy }
+			hre_has_selected_policy_of_this_law = { law = electorate_organization_law }
+			hre_can_select_adjacent_reform_level = {
+				law = electorate_organization_law
+				upper_level = 4
+				lower_level = 2
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_uncontroversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_uncontroversial_law }
+			hre_on_reform_level_passed_effect = { law = electorate_organization_law level = 3 law_imperial_authority_cost = imperial_authority_uncontroversial_law }
 		}
 		on_deactivate = {
 		}
@@ -1206,19 +1533,33 @@ electorate_organization_law = {
 			else = {
 				add = io_electors_opinion_value
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_electorate_organization_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		wants_keep_policy = {
 			add = hre_default_keep_policy_opinion
 		}
 	}
 	limited_electors_policy = {
-		level = 4
 		allow = {
-			hre_can_select_adjacent_reform_level = { law = law:electorate_organization_law policy = policy:limited_electors_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = electorate_organization_law
+				upper_level = 3
+				lower_level = 1
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_controversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_controversial_law }
+			hre_on_reform_level_passed_effect = { law = electorate_organization_law level = 2 law_imperial_authority_cost = imperial_authority_controversial_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = controversial }
 		}
 		country_modifier = {
@@ -1234,24 +1575,48 @@ electorate_organization_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 50 # Useful reform but not very useful
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:integrated_electors_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 50
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_electorate_organization_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_BIAS_PRINCE_OPPOSES"
-				value = -50 # Base opposition to restricting electors
+				value = -75 # Base opposition to restricting electors # MOD: Increased from 50 to 75
 			}
 			add = hre_default_policy_opinion
 			if = {
 				limit = { is_elector = yes }
 				add = {
 					desc = "IS_ELECTOR"
-					value = -50
+					value = -100 # MOD: Increased from 50 to 100
 				}
 			}
 			else = {
@@ -1263,14 +1628,17 @@ electorate_organization_law = {
 		}
 	}
 	integrated_electors_policy = {
-		level = 5
 		allow = {
-			international_organization_has_law = law:electorate_organization_law
-			hre_can_select_adjacent_reform_level = { law = law:electorate_organization_law policy = policy:integrated_electors_policy }
+			hre_has_selected_policy_of_this_law = { law = electorate_organization_law }
+			hre_can_select_adjacent_reform_level = {
+				law = electorate_organization_law
+				upper_level = 2
+				lower_level = 0
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = electorate_organization_law level = 1 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = opposed }
 			#applied before the modifier change is registered
 			custom_tooltip = {
@@ -1325,19 +1693,30 @@ electorate_organization_law = {
 				value = 250 # Very useful for the emperor to get easier succession and comfort policies
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_electorate_organization_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_BIAS_PRINCE_OPPOSES"
-				value = -100 # Base opposition to restricting electors
+				value = -150 # Base opposition to restricting electors # MOD: Increased from 100 to 150
 			}
 			add = hre_default_policy_opinion
 			if = {
 				limit = { is_elector = yes }
 				add = {
 					desc = "IS_ELECTOR"
-					value = -150
+					value = -250 # MOD: Increased from 150 to 250
 				}
 			}
 			else = {
@@ -1369,17 +1748,19 @@ free_city_law = {
 	}
 	locked = {
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	no_free_cities_policy = {
-		level = 1
 		allow = {
-			international_organization_has_law = law:free_city_law
-			hre_can_select_adjacent_reform_level = { law = law:free_city_law policy = policy:no_free_cities_policy }
+			hre_has_selected_policy_of_this_law = { law = free_city_law }
+			hre_can_select_adjacent_reform_level = {
+				law = free_city_law
+				upper_level = 6
+				lower_level = 4
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_very_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_very_friendly_law }
+			hre_on_reform_level_passed_effect = { law = free_city_law level = 5 law_imperial_authority_cost = imperial_authority_prince_very_friendly_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = prince_very_friendly }
 			hre_disable_free_cities = yes
 		}
@@ -1395,6 +1776,17 @@ free_city_law = {
 			add = {
 				desc = "BIAS_FROM_RULER_TRAITS"
 				value = modifier:bias_for_militarist_policies
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -1427,14 +1819,17 @@ free_city_law = {
 		}
 	}
 	no_emperor_allegiance_policy = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:free_city_law
-			hre_can_select_adjacent_reform_level = { law = law:free_city_law policy = policy:no_emperor_allegiance_policy }
+			hre_has_selected_policy_of_this_law = { law = free_city_law }
+			hre_can_select_adjacent_reform_level = {
+				law = free_city_law
+				upper_level = 5
+				lower_level = 3
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_friendly_law }
+			hre_on_reform_level_passed_effect = { law = free_city_law level = 4 law_imperial_authority_cost = imperial_authority_prince_friendly_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = prince_friendly }
 			hre_disable_free_cities_protection = yes
 		}
@@ -1450,6 +1845,17 @@ free_city_law = {
 			add = {
 				desc = "BIAS_FROM_RULER_TRAITS"
 				value = modifier:bias_for_militarist_policies
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -1482,13 +1888,16 @@ free_city_law = {
 		}
 	}
 	free_cities_policy = {
-		level = 3
 		allow = {
-			hre_can_select_adjacent_reform_level = { law = law:free_city_law policy = policy:free_cities_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = free_city_law
+				upper_level = 4
+				lower_level = 2
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = free_city_law level = 3 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		country_modifier = {
 			#Free Cities benefits
@@ -1507,15 +1916,40 @@ free_city_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 25 # somewhat good reform for the emperor for IA
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:cities_of_the_emperor_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 25 # somewhat good reform for the emperor for IA
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_diplomat_policies
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_diplomat_policies
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1539,21 +1973,35 @@ free_city_law = {
 				value = modifier:bias_for_militarist_policies
 				multiply = -1
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		wants_keep_policy = {
 			add = hre_default_keep_policy_opinion
 		}
 	}
 	cities_of_the_emperor_policy = {
-		level = 4
 		allow = {
-			international_organization_has_law = law:free_city_law
-			hre_can_select_adjacent_reform_level = { law = law:free_city_law policy = policy:cities_of_the_emperor_policy }
+			hre_has_selected_policy_of_this_law = { law = free_city_law }
+			hre_can_select_adjacent_reform_level = {
+				law = free_city_law
+				upper_level = 3
+				lower_level = 1
+			}
 			hre_num_of_emperor_comfort_policies_active = { value = 1 }
 			has_currency_to_vote_for_law = { value = imperial_authority_controversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_controversial_law }
+			hre_on_reform_level_passed_effect = { law = free_city_law level = 2 law_imperial_authority_cost = imperial_authority_controversial_law }
 			hre_enable_free_city_subjects = yes # This triggers the event and created antagonism bombs
 			if = {
 				limit = { exists = leader_country }
@@ -1569,7 +2017,7 @@ free_city_law = {
 									value = scope:average_free_city_antagonism
 									add = {
 										value = "bias_value(antagonism_broke_subject_union)"
-										multiply = {											
+										multiply = {
 											value = prev.great_power_score
 											divide = 200
 										}
@@ -1607,32 +2055,56 @@ free_city_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 75 # beneficial Reform
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:direct_imperial_cities_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 75 # beneficial Reform
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_administrative_policies
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_diplomat_policies
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_administrative_policies
-			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_diplomat_policies
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_BIAS_PRINCE_OPPOSES"
-				value = -50 # Princes dont like emperor expanding his power
+				value = -75 # Princes dont like emperor expanding his power # MOD: Increased from 50 to 75
 			}
 			add = hre_default_policy_opinion
 			if = {
 				limit = { has_special_status_in_international_organization = { type = special_status:free_city international_organization = scope:recipient } }
 				add = {
 					desc = "POLICY_RESTRICTS_SOVEREIGNTY"
-					value = -100
+					value = -150 # MOD: Increased from 100 to 150
 				}
 			}
 		}
@@ -1641,15 +2113,18 @@ free_city_law = {
 		}
 	}
 	direct_imperial_cities_policy = {
-		level = 5
 		allow = {
-			international_organization_has_law = law:free_city_law
-			hre_can_select_adjacent_reform_level = { law = law:free_city_law policy = policy:direct_imperial_cities_policy }
+			hre_has_selected_policy_of_this_law = { law = free_city_law }
+			hre_can_select_adjacent_reform_level = {
+				law = free_city_law
+				upper_level = 2
+				lower_level = 0
+			}
 			hre_num_of_emperor_comfort_policies_active = { value = 2 }
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = free_city_law level = 1 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_enable_direct_free_city_subjects = yes # This triggers the event and created antagonism bombs
 			if = {
 				limit = { exists = leader_country }
@@ -1665,7 +2140,7 @@ free_city_law = {
 									value = scope:average_free_city_antagonism
 									add = {
 										value = "bias_value(antagonism_broke_subject_union)"
-										multiply = {											
+										multiply = {
 											value = prev.great_power_score
 											divide = 200
 										}
@@ -1719,12 +2194,23 @@ free_city_law = {
 				value = modifier:bias_for_diplomat_policies
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_BIAS_PRINCE_OPPOSES"
-				value = -50 # Princes dont like emperor expanding his power
+				value = -75 # Princes dont like emperor expanding his power # MOD: Increased from 50 to 75
 			}
 			add = hre_default_policy_opinion
 			if = {
@@ -1768,11 +2254,36 @@ free_city_rights_law = {
 		on_activate = { custom_tooltip = german_free_cities_only_policy_at }
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_ANCIENT_TRADITION"
-				value = 25
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:german_and_german_adjacent_free_cities_policy }
+						NOT = { international_organization_has_policy = policy:empire_wide_free_cities_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_ANCIENT_TRADITION"
+					value = 25
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_rights_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1790,11 +2301,35 @@ free_city_rights_law = {
 		on_activate = { custom_tooltip = german_and_german_adjacent_free_cities_policy_at }
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_EMPEROR_WANTS"
-				value = 40 # good for more IA gain potentially but not very important reform
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:empire_wide_free_cities_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_EMPEROR_WANTS"
+					value = 40 # good for more IA gain potentially but not very important reform
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_rights_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1820,6 +2355,17 @@ free_city_rights_law = {
 				value = 50 # good for more IA gain potentially but not very important reform
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_free_city_rights_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1849,15 +2395,17 @@ landfriede_law = {
 	}
 	locked = {
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	no_landfriede_policy = {
-		level = 1
 		allow = {
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:no_landfriede_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 6
+				lower_level = 4
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 5 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		country_modifier = {
 			#hurts for all members
@@ -1865,14 +2413,39 @@ landfriede_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = -50 # No good reform from the emperor point of view except if militarist
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:landfriede_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = -50 # No good reform from the emperor point of view except if militarist
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_militarist_policies
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_militarist_policies
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1891,13 +2464,16 @@ landfriede_law = {
 		}
 	}
 	landfriede_policy = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:landfriede_law
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:landfriede_policy }
+			hre_has_selected_policy_of_this_law = { law = landfriede_law }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 5
+				lower_level = 3
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 4 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		on_deactivate = {
 		}
@@ -1914,20 +2490,44 @@ landfriede_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 25 # Improvement but not priority.
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:landfriede_rank_2_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 50 # Improvement but not priority. # MOD: Increased from 25 to 50
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_administrative_policies
+				}
+				add = {
+					desc = "POLICY_STRATEGIC_VALUE"
+					value = stability
+					multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_administrative_policies
-			}
-			add = {
-				desc = "POLICY_STRATEGIC_VALUE"
-				value = stability
-				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -1936,7 +2536,7 @@ landfriede_law = {
 				value = 25 # Princes dont like wild west HRE with higher stability costs
 			}
 			add = hre_default_policy_opinion
-				add = {
+			add = {
 				desc = "POLICY_STRATEGIC_VALUE"
 				value = stability
 				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
@@ -1947,13 +2547,16 @@ landfriede_law = {
 		}
 	}
 	landfriede_rank_2_policy = {
-		level = 3
 		allow = {
-			international_organization_has_law = law:landfriede_law
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:landfriede_rank_2_policy }
+			hre_has_selected_policy_of_this_law = { law = landfriede_law }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 4
+				lower_level = 2
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 3 law_imperial_authority_cost = imperial_authority_standard_law }
 			custom_tooltip = {
 				text = landfriede_parliament_issue_rank_2
 				international_organization_unlock_parliament_issue_effect = { type = hre_demand_internal_peace }
@@ -1977,20 +2580,44 @@ landfriede_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 50 # Improvement but not high priority.
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:landfriede_rank_3_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 50 # Improvement but not high priority.
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_administrative_policies
+				}
+				add = {
+					desc = "POLICY_STRATEGIC_VALUE"
+					value = stability
+					multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_administrative_policies
-			}
-			add = {
-				desc = "POLICY_STRATEGIC_VALUE"
-				value = stability
-				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2010,13 +2637,16 @@ landfriede_law = {
 		}
 	}
 	landfriede_rank_3_policy = {
-		level = 4
 		allow = {
-			international_organization_has_law = law:landfriede_law
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:landfriede_rank_3_policy }
+			hre_has_selected_policy_of_this_law = { law = landfriede_law }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 3
+				lower_level = 1
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 2 law_imperial_authority_cost = imperial_authority_standard_law }
 			custom_tooltip = {
 				text = landfriede_parliament_issue_rank_3
 				international_organization_unlock_parliament_issue_effect = { type = hre_demand_internal_peace }
@@ -2040,20 +2670,44 @@ landfriede_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 50 # Improvement but not high priority.
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:landfriede_rank_4_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 50 # Improvement but not high priority.
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_administrative_policies
+				}
+				add = {
+					desc = "POLICY_STRATEGIC_VALUE"
+					value = stability
+					multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_administrative_policies
-			}
-			add = {
-				desc = "POLICY_STRATEGIC_VALUE"
-				value = stability
-				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2073,13 +2727,16 @@ landfriede_law = {
 		}
 	}
 	landfriede_rank_4_policy = {
-		level = 5
 		allow = {
-			international_organization_has_law = law:landfriede_law
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:landfriede_rank_4_policy }
+			hre_has_selected_policy_of_this_law = { law = landfriede_law }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 2
+				lower_level = 0
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			custom_tooltip = {
 				text = landfriede_parliament_issue_rank_4
 				international_organization_unlock_parliament_issue_effect = { type = hre_demand_internal_peace }
@@ -2106,20 +2763,44 @@ landfriede_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_SUPPORTS"
-				value = 75 # Need to progress to comfort policy
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:outlaw_internal_warfare_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_SUPPORTS"
+					value = 75 # Need to progress to comfort policy
+				}
+				add = {
+					desc = "BIAS_FROM_RULER_TRAITS"
+					value = modifier:bias_for_administrative_policies
+				}
+				add = {
+					desc = "POLICY_STRATEGIC_VALUE"
+					value = stability
+					multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+				}
 			}
-			add = {
-				desc = "BIAS_FROM_RULER_TRAITS"
-				value = modifier:bias_for_administrative_policies
-			}
-			add = {
-				desc = "POLICY_STRATEGIC_VALUE"
-				value = stability
-				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2139,15 +2820,18 @@ landfriede_law = {
 		}
 	}
 	outlaw_internal_warfare_policy = {
-		level = 6
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:landfriede_law
+			hre_has_selected_policy_of_this_law = { law = landfriede_law }
 			hre_num_of_emperor_comfort_policies_active = { value = 4 }
-			hre_can_select_adjacent_reform_level = { law = law:landfriede_law policy = policy:outlaw_internal_warfare_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = landfriede_law
+				upper_level = 1
+				lower_level = -1
+			}
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = landfriede_law level = 0 law_imperial_authority_cost = imperial_authority_standard_law }
 			custom_tooltip = {
 				text = landfriede_parliament_issue_rank_4
 				international_organization_unlock_parliament_issue_effect = { type = hre_demand_internal_peace }
@@ -2192,12 +2876,23 @@ landfriede_law = {
 				multiply = -0.5 # Stability cost gets more interesting if you have no enough of it
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_landfriede_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_BIAS_PRINCE_OPPOSES"
-				value = -75 # Princes dont like Emperor expanding power
+				value = -100 # Princes dont like Emperor expanding power # MOD: Increased from 75 to 100
 			}
 			add = hre_default_policy_opinion
 			add = {
@@ -2233,25 +2928,53 @@ imperial_diet_law = {
 	allow = {
 		hre_allowed_emperor_reform_proposal = yes
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	no_imperial_diet_policy = {
-		level = 1
 		allow = {
 			always = no # Cant propose no diet once it is established once
+
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:imperial_diet_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_diet_law policy = policy:no_imperial_diet_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_diet_law }
+			hre_can_select_adjacent_reform_level = {
+				law = imperial_diet_law
+				upper_level = 1
+				lower_level = -1
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
+
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }			
+			hre_on_reform_level_passed_effect = { law = imperial_diet_law level = 0 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_OPPOSES"
-				value = -25 # No benefits from this
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:hre_early_imperial_diet_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_OPPOSES"
+					value = -25 # No benefits from this
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_diet_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -2270,16 +2993,18 @@ imperial_diet_law = {
 		}
 	}
 	hre_early_imperial_diet_policy = {
-		level = 2
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:imperial_diet_law
-			# Only selectable if no diet is current status, cant go back after establishing camerial systems
-			hre_can_select_adjacent_reform_level = { law = law:imperial_diet_law policy = policy:hre_early_imperial_diet_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_diet_law }
+			hre_can_select_adjacent_reform_level = { # Only selectable if no diet is current status, cant go back after establishing camerial systems
+				law = imperial_diet_law
+				upper_level = 1
+				lower_level = 0
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }			
+			hre_on_reform_level_passed_effect = { law = imperial_diet_law level = 1 law_imperial_authority_cost = imperial_authority_standard_law }
 			set_parliament_type = parliament_type:hre_early_imperial_diet
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = mild_prince_friendly }
 		}
@@ -2289,14 +3014,38 @@ imperial_diet_law = {
 				is_leader_of_international_organization = scope:recipient
 			}
 			monthly_imperial_authority = monthly_imperial_authority_weak_bonus
-		}		
+		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 50 # Emperor wants to formalize imperial diet for IA gain
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:hre_bi_camerial_imperial_diet_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 50 # Emperor wants to formalize imperial diet for IA gain
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_diet_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2311,15 +3060,18 @@ imperial_diet_law = {
 		}
 	}
 	hre_bi_camerial_imperial_diet_policy = {
-		level = 3
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:imperial_diet_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_diet_law policy = policy:hre_bi_camerial_imperial_diet_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_diet_law }
+			hre_can_select_adjacent_reform_level = {
+				law = imperial_diet_law
+				upper_level = 3
+				lower_level = 1
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }			
+			hre_on_reform_level_passed_effect = { law = imperial_diet_law level = 2 law_imperial_authority_cost = imperial_authority_standard_law }
 			set_parliament_type = parliament_type:hre_bi_camerial_imperial_diet
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = mild_prince_friendly }
 		}
@@ -2329,14 +3081,38 @@ imperial_diet_law = {
 				is_leader_of_international_organization = scope:recipient
 			}
 			monthly_imperial_authority = monthly_imperial_authority_mild_bonus
-		}		
+		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_BIAS_LEADER_WANTS"
-				value = 66 # Emperor wants to formalize imperial diet for IA gain, but no high prio
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:hre_tri_camerial_imperial_diet_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_BIAS_LEADER_WANTS"
+					value = 66 # Emperor wants to formalize imperial diet for IA gain, but no high prio
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_diet_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2365,15 +3141,18 @@ imperial_diet_law = {
 		}
 	}
 	hre_tri_camerial_imperial_diet_policy = {
-		level = 4
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:imperial_diet_law
-			hre_can_select_adjacent_reform_level = { law = law:imperial_diet_law policy = policy:hre_tri_camerial_imperial_diet_policy }
+			hre_has_selected_policy_of_this_law = { law = imperial_diet_law }
+			hre_can_select_adjacent_reform_level = {
+				law = imperial_diet_law
+				upper_level = 4
+				lower_level = 2
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }			
+			hre_on_reform_level_passed_effect = { law = imperial_diet_law level = 3 law_imperial_authority_cost = imperial_authority_standard_law }
 			set_parliament_type = parliament_type:hre_tri_camerial_imperial_diet
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = mild_prince_friendly }
 			hre_on_reform_level_passed_opinion_effect_free_cities = { strength = prince_friendly }
@@ -2384,7 +3163,7 @@ imperial_diet_law = {
 				is_leader_of_international_organization = scope:recipient
 			}
 			monthly_imperial_authority = monthly_imperial_authority_medium_bonus
-		}		
+		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
 			add = {
@@ -2392,6 +3171,17 @@ imperial_diet_law = {
 				value = 66 # Emperor wants to formalize imperial diet for IA gain, but no high prio
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_imperial_diet_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2445,7 +3235,7 @@ perpetual_diet_law = {
 			always = no
 		}
 		on_activate = {
-			
+
 		}
 		wants_this_policy_bias = {
 			add = {
@@ -2499,6 +3289,17 @@ perpetual_diet_law = {
 				value = 33 # OK reform, no big priority but can be done if no other options
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_perpetual_diet_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2523,17 +3324,19 @@ power_of_the_emperor_law = {
 	}
 	locked = {
 	}
-	has_levels = yes
 	custom_tags = { forbids_no_policy }
 	holy_roman_figurehead_policy = {
-		level = 1
 		allow = {
-			international_organization_has_law = law:power_of_the_emperor_law
-			hre_can_select_adjacent_reform_level = { law = law:power_of_the_emperor_law policy = policy:holy_roman_figurehead_policy }
+			hre_has_selected_policy_of_this_law = { law = power_of_the_emperor_law }
+			hre_can_select_adjacent_reform_level = {
+				law = power_of_the_emperor_law
+				upper_level = 6
+				lower_level = 4
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_prince_very_friendly_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_prince_very_friendly_law }
+			hre_on_reform_level_passed_effect = { law = power_of_the_emperor_law level = 5 law_imperial_authority_cost = imperial_authority_prince_very_friendly_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = prince_very_friendly }
 			# hre_disallow_emperor_reform_proposals = yes #disregarded because it was not working properly
 			international_organization_unlock_parliament_issue_effect = { type = hre_force_emperor_to_abdicate }
@@ -2554,6 +3357,17 @@ power_of_the_emperor_law = {
 			subtract = {
 				desc = "POLICY_BIAS_LEADER_OPPOSES"
 				value = 10000 # Terrible reform for the emperor
+			}
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_power_of_the_emperor_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
 			}
 		}
 		# How much the princes want to vote for / against the policy
@@ -2581,25 +3395,53 @@ power_of_the_emperor_law = {
 		}
 	}
 	kaisertum_policy = {
-		level = 2
 		allow = {
-			international_organization_has_law = law:power_of_the_emperor_law
-			hre_can_select_adjacent_reform_level = { law = law:power_of_the_emperor_law policy = policy:kaisertum_policy }
+			hre_has_selected_policy_of_this_law = { law = power_of_the_emperor_law }
+			hre_can_select_adjacent_reform_level = {
+				law = power_of_the_emperor_law
+				upper_level = 5
+				lower_level = 3
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_standard_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_standard_law }
+			hre_on_reform_level_passed_effect = { law = power_of_the_emperor_law level = 4 law_imperial_authority_cost = imperial_authority_standard_law }
 		}
 		international_organization_modifier = {
 			imperial_ban_allowed = yes
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_ANCIENT_TRADITION"
-				value = 25 # Baseline for this law, better than figurehead
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:improved_imperial_authority_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_ANCIENT_TRADITION"
+					value = 25 # Baseline for this law, better than figurehead
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_power_of_the_emperor_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
+
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
@@ -2614,15 +3456,18 @@ power_of_the_emperor_law = {
 		}
 	}
 	improved_imperial_authority_policy = {
-		level = 3
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
 			hre_num_of_emperor_comfort_policies_active = { value = 2 }
-			hre_can_select_adjacent_reform_level = { law = law:power_of_the_emperor_law policy = policy:improved_imperial_authority_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = power_of_the_emperor_law
+				upper_level = 4
+				lower_level = 2
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_controversial_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_controversial_law }
+			hre_on_reform_level_passed_effect = { law = power_of_the_emperor_law level = 3 law_imperial_authority_cost = imperial_authority_controversial_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = controversial }
 		}
 		country_modifier = {
@@ -2639,17 +3484,41 @@ power_of_the_emperor_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_EMPEROR_WANTS"
-				value = 100 # Priority reform for the emperor to progress integration if possible to do
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:revoke_privilegia_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_EMPEROR_WANTS"
+					value = 100 # Priority reform for the emperor to progress integration if possible to do
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_power_of_the_emperor_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_PRINCE_OPPOSES"
-				value = -75  # Princes dont like centralization
+				value = -100  # Princes dont like centralization # MOD: Increased from 75 to 100
 			}
 			add = hre_default_policy_opinion
 		}
@@ -2658,19 +3527,22 @@ power_of_the_emperor_law = {
 		}
 	}
 	revoke_privilegia_policy = {
-		level = 4
 		allow = {
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:power_of_the_emperor_law
+			hre_has_selected_policy_of_this_law = { law = power_of_the_emperor_law }
 			hre_num_of_emperor_comfort_policies_active = { value = 5 }
-			hre_can_select_adjacent_reform_level = { law = law:power_of_the_emperor_law policy = policy:revoke_privilegia_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = power_of_the_emperor_law
+				upper_level = 3
+				lower_level = 1
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_opposed_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_opposed_law }
+			hre_on_reform_level_passed_effect = { law = power_of_the_emperor_law level = 2 law_imperial_authority_cost = imperial_authority_opposed_law }
 			hre_on_reform_level_passed_opinion_effect_all_members = { strength = opposed }
 			leader_country ?= {
-				trigger_event_non_silently = { 
+				trigger_event_non_silently = {
 					id = hre.100
 				}
 			}
@@ -2700,17 +3572,41 @@ power_of_the_emperor_law = {
 		}
 		# How much the Emperor wants to propose a policy
 		wants_propose_policy = {
-			add = {
-				desc = "POLICY_EMPEROR_WANTS"
-				value = 250 # Priority reform for the emperor to progress integration if possible to do
+			if = {
+				limit = {
+					scope:recipient = {
+						NOT = { international_organization_has_policy = policy:renovatio_policy }
+					}
+				}
+				add = {
+					desc = "POLICY_EMPEROR_WANTS"
+					value = 250 # Priority reform for the emperor to progress integration if possible to do
+				}
+			}
+			else = {
+				subtract = {
+					desc = "WE_ALREADY_HAVE_A_BETTER_POLICY"
+					value = 1000
+				}
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_power_of_the_emperor_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_PRINCE_OPPOSES"
-				value = -100  # Princes dont like centralization
+				value = -150  # Princes dont like centralization # MOD: Increased from 100 to 150
 			}
 			add = hre_default_policy_opinion
 			add = {
@@ -2725,19 +3621,21 @@ power_of_the_emperor_law = {
 		}
 	}
 	renovatio_policy = {
-		level = 5
 		allow = {
-			current_year >= 1700  #PV
 			hre_allowed_emperor_reform_proposal = yes
-			international_organization_has_law = law:power_of_the_emperor_law
+			hre_has_selected_policy_of_this_law = { law = power_of_the_emperor_law }
 			hre_num_of_emperor_comfort_policies_active = { value = 5 }
-			hre_can_select_adjacent_reform_level = { law = law:power_of_the_emperor_law policy = policy:renovatio_policy }
+			hre_can_select_adjacent_reform_level = {
+				law = power_of_the_emperor_law
+				upper_level = 2
+				lower_level = 0
+			}
 			has_currency_to_vote_for_law = { value = imperial_authority_rebellious_law }
 		}
 		on_activate = {
-			hre_on_reform_level_passed_effect = { law_imperial_authority_cost = imperial_authority_rebellious_law }
+			hre_on_reform_level_passed_effect = { law = power_of_the_emperor_law level = 1 law_imperial_authority_cost = imperial_authority_rebellious_law }
 			leader_country = {
-				trigger_event_non_silently = { 
+				trigger_event_non_silently = {
 					id = hre.102
 				}
 			}
@@ -2776,12 +3674,23 @@ power_of_the_emperor_law = {
 				value = 500 # Priority reform for the emperor to progress integration if possible to do
 			}
 			add = hre_default_emperor_policy_desire
+			# Prevent proposing a policy for the same law again after a recent proposal
+			if = {
+				limit = {
+					scope:recipient = { has_cooldown = hre_proposed_power_of_the_emperor_law }
+				}
+				#ai spam protection
+				subtract = {
+					desc = "INERTIA"
+					value = 10000
+				}
+			}
 		}
 		# How much the princes want to vote for / against the policy
 		wants_this_policy_bias = {
 			add = {
 				desc = "POLICY_PRINCE_OPPOSES"
-				value = -100  # Princes dont like centralization
+				value = -150  # Princes dont like centralization # MOD: Increased from 100 to 150
 			}
 			add = hre_default_policy_opinion
 			add = {
